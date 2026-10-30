@@ -26,9 +26,23 @@ export default function ComoFunciona({ voltar }: { voltar: () => void }) {
         certo. Por isso, antes de entregar, confira sempre no extrato do seu banco.
       </p>
 
+      <h2>Agendamento não é pagamento</h2>
+      <p>
+        Um golpe comum: a pessoa agenda um Pix para amanhã, manda o comprovante do agendamento e cancela depois que
+        leva o produto. Quando o comprovante diz agendado, pendente, cancelado ou devolvido, avisamos que aquilo ainda
+        não é um pagamento.
+      </p>
+
+      <h2>Boleto e QR Code</h2>
+      <p>
+        Na tela inicial, em Outras conferências, dá para conferir a linha de um boleto e o QR Code (ou o código copia e
+        cola) de um Pix antes de pagar. Mostramos para quem o dinheiro vai. Se não for quem você espera, não pague.
+      </p>
+
       <h2>O que o resultado quer dizer</h2>
       <ul className="lista-grande">
         <li><strong>Falso:</strong> encontramos um erro que um comprovante verdadeiro não teria.</li>
+        <li><strong>Ainda não é um pagamento:</strong> o Pix foi só agendado, está pendente ou foi cancelado.</li>
         <li><strong>Suspeito:</strong> há sinais estranhos. Pode ter explicação, então confira no extrato.</li>
         <li><strong>Não encontramos erros:</strong> o comprovante passou nas conferências. Mas um falsificador cuidadoso
           pode acertar tudo. Só o extrato do seu banco confirma que o dinheiro entrou.</li>

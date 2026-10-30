@@ -1,4 +1,6 @@
-import { AlertTriangle, ArrowLeft, Check, HelpCircle, Info, Pencil, Printer, SearchCheck, Volume2, X, XCircle } from "lucide-react";
+import { useEffect, useState } from "react";
+import { AlertTriangle, ArrowLeft, CalendarClock, Check, HelpCircle, Info, Pencil, Printer, SearchCheck, Send, Volume2, X, XCircle } from "lucide-react";
+import { gravarPreferencia, lerPreferencia } from "./preferencias";
 import type { Achado, Resultado, Veredito } from "./tipos";
 import { falar, temVoz } from "./voz";
 
@@ -7,6 +9,11 @@ const cabecalhos: Record<Veredito, { classe: string; icone: React.ReactNode; tit
     classe: "falso", icone: <XCircle size={72} aria-hidden />,
     titulo: "Este comprovante é falso",
     texto: "Ele tem erros que um comprovante verdadeiro não teria.",
+  },
+  nao_pago: {
+    classe: "nao-pago", icone: <CalendarClock size={72} aria-hidden />,
+    titulo: "Isto ainda não é um pagamento",
+    texto: "O comprovante mostra um Pix agendado, pendente, cancelado ou devolvido. O dinheiro pode nunca chegar.",
   },
   suspeito: {
     classe: "suspeito", icone: <AlertTriangle size={72} aria-hidden />,
@@ -25,16 +32,17 @@ const cabecalhos: Record<Veredito, { classe: string; icone: React.ReactNode; tit
   },
 };
 
-const ordem: Record<string, number> = { falso: 0, alerta: 1, ok: 2, info: 3 };
+const ordem: Record<string, number> = { falso: 0, nao_pago: 1, alerta: 2, ok: 3, info: 4 };
 
 const icones: Record<string, React.ReactNode> = {
   falso: <X size={28} aria-hidden />,
+  nao_pago: <CalendarClock size={26} aria-hidden />,
   alerta: <AlertTriangle size={26} aria-hidden />,
   ok: <Check size={28} aria-hidden />,
   info: <Info size={26} aria-hidden />,
 };
 
-const rotulosPeso: Record<string, string> = { falso: "Erro", alerta: "Atenção", ok: "Certo", info: "Informação" };
+const rotulosPeso: Record<string, string> = { falso: "Erro", nao_pago: "Não é pagamento", alerta: "Atenção", ok: "Certo", info: "Informação" };
 
 interface Props {
   resultado: Resultado;
@@ -50,11 +58,36 @@ function imprimir() {
 export default function ResultadoTela({ resultado: r, corrigir, outro }: Props) {
   const cab = cabecalhos[r.veredito];
   const achados = [...r.achados].sort((a, b) => ordem[a.peso] - ordem[b.peso]);
-  const importantes = achados.filter((a) => a.peso === "falso" || a.peso === "alerta");
+  const importantes = achados.filter((a) => a.peso === "falso" || a.peso === "nao_pago" || a.peso === "alerta");
 
   const ouvir = () => {
     const partes = [cab.titulo + ".", cab.texto, ...importantes.map((a) => a.titulo)];
     falar(partes.join(" "));
+  };
+
+  const [vozSempre, setVozSempre] = useState(() => lerPreferencia("claw:voz") === "sim");
+  useEffect(() => {
+    if (vozSempre) ouvir();
+    // Só ao abrir o resultado.
+  }, []);
+  const mudarVoz = (sim: boolean) => {
+    setVozSempre(sim);
+    gravarPreferencia("claw:voz", sim ? "sim" : "nao");
+    if (sim) ouvir();
+  };
+
+  const mandar = async () => {
+    const texto = [
+      `Conferi um comprovante de Pix${r.campos.valor ? ` de ${r.campos.valor}` : ""} no Panthera Claw.`,
+      `Resultado: ${cab.titulo}.`,
+      ...importantes.map((a) => `- ${a.titulo}`),
+      "",
+      "https://marianabsctba.github.io/Panthera_Claw/",
+    ].join("\n");
+    if (navigator.share) {
+      try { await navigator.share({ text: texto }); return; } catch { /* cancelado: cai no WhatsApp */ }
+    }
+    window.open(`https://wa.me/?text=${encodeURIComponent(texto)}`, "_blank", "noopener");
   };
 
   return (
@@ -67,7 +100,14 @@ export default function ResultadoTela({ resultado: r, corrigir, outro }: Props) 
 
       <div className="acoes-resultado">
         {temVoz && <button className="botao-secundario" onClick={ouvir}><Volume2 size={24} aria-hidden /> Ouvir o resultado</button>}
+        <button className="botao-secundario" onClick={() => void mandar()}><Send size={24} aria-hidden /> Mandar para alguém da família</button>
       </div>
+      {temVoz && (
+        <label className="opcao-grande">
+          <input type="checkbox" checked={vozSempre} onChange={(e) => mudarVoz(e.target.checked)} />
+          Sempre ler o resultado em voz alta
+        </label>
+      )}
 
       <h2>O que encontramos</h2>
       <ul className="achados">
@@ -76,7 +116,13 @@ export default function ResultadoTela({ resultado: r, corrigir, outro }: Props) 
 
       <h2>O que fazer agora</h2>
       <ol className="passos">
-        {r.veredito === "falso" ? (
+        {r.veredito === "nao_pago" ? (
+          <>
+            <li>Não entregue nada por enquanto.</li>
+            <li>Espere o dinheiro aparecer no extrato do seu banco. Agendamento pode ser cancelado a qualquer hora.</li>
+            <li>Se a pessoa insistir para você entregar antes, desconfie.</li>
+          </>
+        ) : r.veredito === "falso" ? (
           <>
             <li>Não entregue o produto nem devolva troco.</li>
             <li>Abra o aplicativo do seu banco e veja que o dinheiro não entrou.</li>

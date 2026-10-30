@@ -11,6 +11,8 @@ export interface Campos {
   chave: string;
   emissor: string;
   idDuvidoso?: boolean;
+  situacao?: string;
+  situacaoTrecho?: string;
 }
 
 export interface InfoArquivo {
@@ -28,7 +30,7 @@ export interface InfoArquivo {
   ia?: { tipo: "gerada" | "editada"; origem: string; gerador: string };
 }
 
-export type Peso = "falso" | "alerta" | "ok" | "info";
+export type Peso = "falso" | "nao_pago" | "alerta" | "ok" | "info";
 
 export interface Achado {
   codigo: string;
@@ -51,7 +53,7 @@ export interface Codigo {
   conhecido: boolean;
 }
 
-export type Veredito = "falso" | "suspeito" | "sem_erros" | "incompleto";
+export type Veredito = "falso" | "nao_pago" | "suspeito" | "sem_erros" | "incompleto";
 
 export interface Resultado {
   veredito: Veredito;
@@ -74,4 +76,13 @@ export interface Entrada {
   pdfSemTexto: boolean;
   sobrepostos?: { cima: string; baixo: string }[];
   vistos?: Visto[];
+}
+
+export interface ResultadoCodigo {
+  tipo: "boleto" | "pix";
+  veredito: "errado" | "suspeito" | "confira";
+  resumo: { rotulo: string; valor: string }[];
+  achados: Achado[];
+  boleto?: { linha: string; barras: string; tipo: string; banco?: string; vencimento?: string; valor?: string; erros?: string[] };
+  pix?: { texto: string; chave?: string; nome?: string; cidade?: string; valor?: string; url?: string; dominio?: string; txid?: string; crc: string; crcCerto: string; crcValido: boolean; dinamico: boolean };
 }

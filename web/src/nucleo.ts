@@ -1,5 +1,5 @@
 // Cliente do worker do núcleo: cada chamada vira uma promessa.
-import type { Campos, Entrada, InfoArquivo, Resultado } from "./tipos";
+import type { Campos, Entrada, InfoArquivo, Resultado, ResultadoCodigo } from "./tipos";
 
 const worker = new Worker(new URL("./nucleo.worker.ts", import.meta.url), { type: "module" });
 let seq = 0;
@@ -25,4 +25,5 @@ export const nucleo = {
   ler: async (texto: string) => JSON.parse(await chamar<string>("ler", texto)) as Campos,
   analisar: async (nome: string, dados: Uint8Array) => JSON.parse(await chamar<string>("analisar", nome, dados)) as InfoArquivo,
   conferir: async (e: Entrada) => JSON.parse(await chamar<string>("conferir", JSON.stringify(e))) as Resultado,
+  conferirCodigo: async (texto: string) => JSON.parse(await chamar<string>("conferirCodigo", texto)) as ResultadoCodigo,
 };

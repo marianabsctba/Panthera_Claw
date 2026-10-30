@@ -1,12 +1,15 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import { ClipboardPaste, Download, FileUp, Github, Loader2, Lock, Minus, Plus } from "lucide-react";
+import { ClipboardPaste, Download, FileUp, Github, Loader2, Lock, Minus, Moon, Plus, QrCode, Receipt, Sun } from "lucide-react";
+import { gravarPreferencia, lerPreferencia } from "./preferencias";
 import ComoFunciona from "./ComoFunciona";
 import Conferencia from "./Conferencia";
 import ResultadoTela from "./Resultado";
 import { guardar, vistos } from "./historico";
 import { ler, type Leitura } from "./leitor";
 import { nucleo } from "./nucleo";
-import type { Campos, InfoArquivo, Resultado } from "./tipos";
+import type { Campos, InfoArquivo, Resultado, ResultadoCodigo } from "./tipos";
+import { CodigoEntrada, CodigoResultado } from "./Codigo";
+import { lerQR, pareceCodigo } from "./qr";
 import { calar } from "./voz";
 
 type Tela =
@@ -14,7 +17,9 @@ type Tela =
   | { nome: "lendo"; etapa: string }
   | { nome: "conferir"; leitura: Leitura; campos: Campos; info: InfoArquivo }
   | { nome: "resultado"; leitura: Leitura; campos: Campos; info: InfoArquivo; resultado: Resultado }
-  | { nome: "erro"; mensagem: string };
+  | { nome: "erro"; mensagem: string }
+  | { nome: "codigo-entrada"; tipo: "boleto" | "pix"; erro?: string }
+  | { nome: "codigo-resultado"; r: ResultadoCodigo };
 
 interface EventoInstalar extends Event { prompt(): Promise<void> }
 
@@ -54,6 +59,11 @@ export default function App() {
   const [tela, setTela] = useState<Tela>({ nome: "inicio" });
   const [como, setComo] = useState(location.hash === "#como");
   const [tamanho, setTamanho] = useState(tamanhoSalvo);
+  const [tema, setTema] = useState<"claro" | "escuro">(() => {
+    const t = lerPreferencia("claw:tema");
+    if (t === "claro" || t === "escuro") return t;
+    return window.matchMedia?.("(prefers-color-scheme: light)").matches ? "claro" : "escuro";
+  });
   const [instalar, setInstalar] = useState<EventoInstalar | null>(null);
   const [arrastando, setArrastando] = useState(false);
   const entrada = useRef<HTMLInputElement>(null);
@@ -62,6 +72,12 @@ export default function App() {
     document.documentElement.style.fontSize = `${tamanho * 100}%`;
     try { localStorage.setItem("claw:tamanho", String(tamanho)); } catch { /* sem armazenamento */ }
   }, [tamanho]);
+
+  useEffect(() => {
+    document.documentElement.dataset.tema = tema;
+    document.querySelector('meta[name="theme-color"]')?.setAttribute("content", tema === "claro" ? "#ffffff" : "#0b0b0b");
+    gravarPreferencia("claw:tema", tema);
+  }, [tema]);
 
   useEffect(() => {
     const f = () => setComo(location.hash === "#como");
@@ -81,12 +97,28 @@ export default function App() {
     window.scrollTo(0, 0);
   }, []);
 
+  const conferirCodigo = useCallback(async (texto: string, tipo: "boleto" | "pix") => {
+    calar();
+    try {
+      const r = await nucleo.conferirCodigo(texto);
+      setTela({ nome: "codigo-resultado", r });
+      window.scrollTo(0, 0);
+    } catch {
+      setTela({ nome: "codigo-entrada", tipo, erro: "Não conseguimos ler este código." });
+    }
+  }, []);
+
   const processar = useCallback(async (arquivo: File) => {
     calar();
     if (location.hash) history.replaceState(null, "", location.pathname + location.search);
     setComo(false);
     setTela({ nome: "lendo", etapa: "Abrindo o comprovante" });
     try {
+      // Imagem com QR Code de Pix não é comprovante: é uma cobrança a pagar.
+      if (arquivo.type.startsWith("image/")) {
+        const qr = await lerQR(arquivo).catch(() => null);
+        if (qr && pareceCodigo(qr)) { await conferirCodigo(qr, "pix"); return; }
+      }
       const dados = new Uint8Array(await arquivo.arrayBuffer());
       const info = await nucleo.analisar(arquivo.name || "comprovante", dados);
       const leitura = await ler(arquivo, (etapa) => setTela({ nome: "lendo", etapa }));
@@ -98,7 +130,15 @@ export default function App() {
       console.error(e);
       setTela({ nome: "erro", mensagem: "Não conseguimos abrir este arquivo. Tente uma foto (print) ou o PDF do comprovante." });
     }
-  }, [conferir]);
+  }, [conferir, conferirCodigo]);
+
+  // Imagem escolhida na tela do QR Code: precisa ter um QR Code de Pix.
+  const lerImagemQR = useCallback(async (arquivo: File) => {
+    setTela({ nome: "lendo", etapa: "Procurando o QR Code" });
+    const qr = await lerQR(arquivo).catch(() => null);
+    if (qr && pareceCodigo(qr)) await conferirCodigo(qr, "pix");
+    else setTela({ nome: "codigo-entrada", tipo: "pix", erro: qr ? "Achamos um QR Code, mas ele não é de Pix." : "Não achamos um QR Code nesta imagem. Tente uma imagem mais nítida, só com o QR Code." });
+  }, [conferirCodigo]);
 
   // Comprovante compartilhado por outro aplicativo (celular com o site instalado).
   useEffect(() => {
@@ -132,14 +172,14 @@ export default function App() {
       const f = arquivoColado(e.clipboardData);
       if (f) { e.preventDefault(); void processar(f); return; }
       // Dentro de um campo, colar texto é só preencher o campo.
-      const alvo = e.target as HTMLElement | null;
-      if (alvo?.closest("input, textarea, [contenteditable]")) return;
+      if (e.target instanceof Element && e.target.closest("input, textarea, [contenteditable]")) return;
       const texto = e.clipboardData.getData("text/plain");
+      if (pareceCodigo(texto)) { e.preventDefault(); void conferirCodigo(texto, texto.trim().startsWith("000201") ? "pix" : "boleto"); return; }
       if (pareceComprovante(texto)) { e.preventDefault(); void processarTexto(texto); }
     };
     document.addEventListener("paste", colar);
     return () => document.removeEventListener("paste", colar);
-  }, [tela.nome, processar, processarTexto]);
+  }, [tela.nome, processar, processarTexto, conferirCodigo]);
 
   // Botão "Colar comprovante", para quem não usa Ctrl+V.
   const colarDoBotao = async () => {
@@ -153,6 +193,7 @@ export default function App() {
         }
       }
       const texto = await navigator.clipboard.readText();
+      if (pareceCodigo(texto)) { await conferirCodigo(texto, texto.trim().startsWith("000201") ? "pix" : "boleto"); return; }
       if (pareceComprovante(texto)) { await processarTexto(texto); return; }
       setTela({ nome: "erro", mensagem: "Não achamos um comprovante copiado. Copie a imagem do comprovante e toque em Colar de novo." });
     } catch {
@@ -176,7 +217,11 @@ export default function App() {
           <img src={`${import.meta.env.BASE_URL}pantera.webp`} alt="" />
           <span className="nome">PANTHERA CLAW</span>
         </a>
-        <div className="tamanho" role="group" aria-label="Tamanho da letra">
+        <div className="tamanho" role="group" aria-label="Tamanho da letra e cores">
+          <button aria-label={tema === "claro" ? "Usar fundo escuro" : "Usar fundo claro"} title={tema === "claro" ? "Fundo escuro" : "Fundo claro"}
+            onClick={() => setTema(tema === "claro" ? "escuro" : "claro")}>
+            {tema === "claro" ? <Moon size={22} /> : <Sun size={22} />}
+          </button>
           <button aria-label="Diminuir a letra" disabled={tamanho === TAMANHOS[0]} onClick={() => setTamanho(TAMANHOS[Math.max(0, TAMANHOS.indexOf(tamanho) - 1)])}><Minus size={18} /> A</button>
           <button aria-label="Aumentar a letra" disabled={tamanho === TAMANHOS[TAMANHOS.length - 1]} onClick={() => setTamanho(TAMANHOS[Math.min(TAMANHOS.length - 1, TAMANHOS.indexOf(tamanho) + 1)])}><Plus size={18} /> A</button>
         </div>
@@ -207,6 +252,15 @@ export default function App() {
                 <Download size={22} aria-hidden /> Instalar no celular
               </button>
             )}
+            <h2 className="outras">Outras conferências</h2>
+            <div className="outras-botoes">
+              <button className="botao-secundario largo" onClick={() => setTela({ nome: "codigo-entrada", tipo: "boleto" })}>
+                <Receipt size={26} aria-hidden /> Conferir um boleto
+              </button>
+              <button className="botao-secundario largo" onClick={() => setTela({ nome: "codigo-entrada", tipo: "pix" })}>
+                <QrCode size={26} aria-hidden /> Conferir um QR Code de Pix
+              </button>
+            </div>
             <a className="link-grande" href="#como">Como funciona e como usar pelo WhatsApp</a>
           </section>
         ) : tela.nome === "lendo" ? (
@@ -215,6 +269,11 @@ export default function App() {
             <p className="grande">{tela.etapa}…</p>
             <p className="dica">Isso leva alguns segundos.</p>
           </section>
+        ) : tela.nome === "codigo-entrada" ? (
+          <CodigoEntrada key={tela.tipo + (tela.erro ?? "")} tipo={tela.tipo} erro={tela.erro} voltar={recomecar}
+            conferir={(t) => void conferirCodigo(t, tela.tipo)} lerImagem={(f) => void lerImagemQR(f)} />
+        ) : tela.nome === "codigo-resultado" ? (
+          <CodigoResultado r={tela.r} inicio={recomecar} outro={() => setTela({ nome: "codigo-entrada", tipo: tela.r.tipo })} />
         ) : tela.nome === "conferir" ? (
           <Conferencia
             leitura={tela.leitura}

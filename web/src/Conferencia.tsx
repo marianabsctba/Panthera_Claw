@@ -46,6 +46,12 @@ export default function Conferencia({ leitura, campos, voltar, confirmar }: Prop
                   ? "O final do código pode ter sido lido errado. Compare as últimas letras com a imagem."
                   : "32 de 32 caracteres"}
           </small>
+          {leitura.origem === "imagem" && id.length === 32 && (
+            <small className="final-codigo">
+              A leitura de imagem pode trocar letras parecidas (q e g, Z e 2). Confira se o final é mesmo{" "}
+              <strong>{id.slice(21)}</strong>
+            </small>
+          )}
         </label>
         <label>
           <span>Valor</span>

@@ -18,11 +18,40 @@
   --azul: #6cb6ff;
   --azul-fundo: #0e2236;
   --verde: #6ee39a;
+  --laranja: #ff9a4d;
+  --laranja-fundo: #33190a;
   --cinza-fundo: #222;
   --raio: 14px;
   --mono: ui-monospace, "Cascadia Code", "JetBrains Mono", Consolas, monospace;
   color-scheme: dark;
 }
+
+/* Fundo claro de alto contraste: muita gente mais velha lê melhor assim. */
+:root[data-tema="claro"] {
+  --fundo: #ffffff;
+  --painel: #f3f3f5;
+  --painel-2: #ffffff;
+  --borda: #d0d0d6;
+  --borda-forte: #8a8a92;
+  --rosa: #c0007a;
+  --rosa-claro: #9e0065;
+  --rosa-fundo: #fde6f3;
+  --texto: #111114;
+  --texto-2: #45454d;
+  --vermelho: #b3261e;
+  --vermelho-fundo: #fdeceb;
+  --amarelo: #8a5a00;
+  --amarelo-fundo: #fff4d6;
+  --azul: #0b57a4;
+  --azul-fundo: #e5f0fb;
+  --verde: #1b7a3d;
+  --laranja: #9c3d00;
+  --laranja-fundo: #fff0e5;
+  --cinza-fundo: #ececef;
+  color-scheme: light;
+}
+:root[data-tema="claro"] .botao-gigante { color: #fff; }
+:root[data-tema="claro"] .previa .lupa { background: rgba(0, 0, 0, 0.75); }
 
 * { box-sizing: border-box; }
 html { font-size: 100%; }
@@ -132,6 +161,10 @@ button:disabled { opacity: 0.4; cursor: default; }
 .campos small.certo { color: var(--verde); }
 .campos small.errado { color: var(--amarelo); }
 .campos .botao-secundario { width: 100%; }
+.campos small.final-codigo { color: var(--texto); font-size: 1.05rem; }
+.final-codigo strong { font-family: var(--mono); font-size: 1.3rem; letter-spacing: 2px; background: var(--rosa-fundo); padding: 2px 8px; border-radius: 6px; }
+.opcao-grande { display: flex; align-items: center; gap: 12px; margin-top: 14px; font-size: 1.1rem; cursor: pointer; min-height: 48px; }
+.opcao-grande input { width: 28px; height: 28px; accent-color: var(--rosa); }
 
 /* Resultado */
 .resultado { display: flex; flex-direction: column; }
@@ -146,6 +179,10 @@ button:disabled { opacity: 0.4; cursor: default; }
 .veredito.suspeito svg, .veredito.suspeito h1 { color: var(--amarelo); }
 .veredito.sem-erros { background: var(--azul-fundo); border-color: var(--azul); }
 .veredito.sem-erros svg, .veredito.sem-erros h1 { color: var(--azul); }
+.veredito.nao-pago { background: var(--laranja-fundo); border-color: var(--laranja); }
+.veredito.nao-pago svg, .veredito.nao-pago h1 { color: var(--laranja); }
+.achado.nao_pago { border-left-color: var(--laranja); }
+.achado.nao_pago .selo { color: var(--laranja); }
 .veredito.incompleto { background: var(--cinza-fundo); border-color: var(--borda-forte); }
 .acoes-resultado { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 16px; }
 .acoes-resultado .botao-secundario { flex: 1 1 220px; }
@@ -193,3 +230,17 @@ button:disabled { opacity: 0.4; cursor: default; }
   .veredito h1, .veredito svg, .achado .selo { color: #000 !important; }
   .detalhes th, .suave, .achado.info { color: #333; }
 }
+
+/* Outras conferências e resumo de boleto e QR Code */
+.outras { margin-top: 28px; }
+.outras-botoes { display: flex; flex-direction: column; gap: 12px; }
+.outras-botoes .botao-secundario.largo { margin-top: 0; justify-content: flex-start; }
+.campos textarea {
+  font: inherit; font-family: var(--mono); font-size: 1.1rem; color: var(--texto); background: var(--painel-2);
+  border: 2px solid var(--borda-forte); border-radius: var(--raio); padding: 14px 16px; width: 100%; resize: vertical; word-break: break-all;
+}
+.campos textarea:focus { border-color: var(--rosa); outline: none; }
+.resumo { margin: 20px 0 0; display: flex; flex-direction: column; gap: 10px; }
+.resumo > div { background: var(--painel); border-radius: var(--raio); padding: 12px 16px; }
+.resumo dt { color: var(--texto-2); font-size: 1rem; }
+.resumo dd { margin: 2px 0 0; font-size: 1.5rem; font-weight: 700; word-break: break-word; }

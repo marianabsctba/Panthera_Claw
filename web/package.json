@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@tesseract.js-data/por": "1.0.0",
+    "jsqr": "1.4.0",
     "lucide-react": "0.460.0",
     "pdfjs-dist": "6.4.299",
     "react": "18.3.1",
