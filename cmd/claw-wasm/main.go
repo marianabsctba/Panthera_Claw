@@ -66,6 +66,11 @@ func main() {
 		return jsonJS(conferir.Conferir(e))
 	}))
 
+	// conferirCodigo(texto) -> JSON do boleto ou do Pix copia e cola
+	api.Set("conferirCodigo", metodo(func(a []js.Value) any {
+		return jsonJS(conferir.ConferirCodigo(a[0].String(), time.Now()))
+	}))
+
 	api.Set("versao", versao)
 	js.Global().Set("pantheraClaw", api)
 	select {}

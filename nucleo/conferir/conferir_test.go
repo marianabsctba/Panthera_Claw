@@ -185,3 +185,39 @@ func TestArquivoDeIA(t *testing.T) {
 		t.Fatalf("%+v", r.Achados)
 	}
 }
+
+func TestNaoPago(t *testing.T) {
+	c := certo
+	c.Situacao, c.SituacaoTrecho = "agendado", "Pix agendado para 30/10/2026"
+	r := Conferir(Entrada{Campos: c, Agora: agora})
+	if r.Veredito != VereditoNaoPago || !codigos(r, NaoPago)["situacao-agendado"] {
+		t.Fatalf("%s %+v", r.Veredito, r.Achados)
+	}
+	// Falso continua mais forte que agendado.
+	c.Chave = "529.982.247-24"
+	if r := Conferir(Entrada{Campos: c, Agora: agora}); r.Veredito != VereditoFalso {
+		t.Fatalf("%s", r.Veredito)
+	}
+}
+
+func TestConferirBoleto(t *testing.T) {
+	r := ConferirCodigo("00190.50095 40144.816069 06809.350314 3 37370000000100", agora)
+	if r.Tipo != "boleto" || r.Veredito != CodigoConfira || len(r.Resumo) == 0 || r.Resumo[0].Valor != "R$ 1,00" {
+		t.Fatalf("%+v", r)
+	}
+	if r := ConferirCodigo("00190.50095 40144.816069 06809.350314 3 37370000000900", agora); r.Veredito != CodigoErrado {
+		t.Fatalf("valor trocado: %+v", r)
+	}
+}
+
+func TestConferirPixCodigo(t *testing.T) {
+	ok := "00020126580014br.gov.bcb.pix0136123e4567-e12b-12d1-a456-4266554400005204000053039865802BR5913Fulano de Tal6008BRASILIA62070503***63041D3D"
+	r := ConferirCodigo(ok, agora)
+	if r.Tipo != "pix" || r.Veredito != CodigoConfira || r.Resumo[0].Valor != "Fulano de Tal" {
+		t.Fatalf("%+v", r)
+	}
+	trocado := ok[:40] + "9" + ok[41:]
+	if r := ConferirCodigo(trocado, agora); r.Veredito != CodigoErrado {
+		t.Fatalf("%+v", r)
+	}
+}

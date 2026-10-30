@@ -32,6 +32,8 @@ func main() {
 		os.Exit(cmdConferir(os.Args[2:]))
 	case "codigo":
 		os.Exit(cmdCodigo(os.Args[2:]))
+	case "boleto", "pix":
+		os.Exit(cmdLinha(os.Args[2:]))
 	case "versao", "-v", "--version":
 		fmt.Println("claw", versao)
 	default:
@@ -45,6 +47,8 @@ func ajuda() {
 
   claw conferir [opções] [arquivo]   confere um comprovante
   claw codigo ID                     mostra o que o código da transação revela
+  claw boleto LINHA                  confere a linha digitável ou o código de barras
+  claw pix CODIGO                    confere o Pix copia e cola (texto do QR Code)
   claw versao
 
 Opções de conferir:
@@ -156,4 +160,29 @@ func cmdCodigo(args []string) int {
 		fmt.Printf("ajuste      %s\n", c)
 	}
 	return 0
+}
+
+func cmdLinha(args []string) int {
+	if len(args) == 0 {
+		ajuda()
+		return 2
+	}
+	r := conferir.ConferirCodigo(strings.Join(args, " "), time.Now())
+	fmt.Println(map[string]string{
+		conferir.CodigoErrado:   "CÓDIGO ERRADO: NÃO PAGUE",
+		conferir.CodigoSuspeito: "CÓDIGO SUSPEITO",
+		conferir.CodigoConfira:  "CÓDIGO ÍNTEGRO: CONFIRA QUEM VAI RECEBER",
+	}[r.Veredito])
+	fmt.Println()
+	for _, l := range r.Resumo {
+		fmt.Printf("  %-22s %s\n", l.Rotulo, l.Valor)
+	}
+	fmt.Println()
+	for _, a := range r.Achados {
+		fmt.Printf("  %s %s\n", marcas[a.Peso], a.Titulo)
+	}
+	if r.Veredito == conferir.CodigoConfira {
+		return 0
+	}
+	return 1
 }

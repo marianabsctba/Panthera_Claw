@@ -142,3 +142,14 @@ var semAcento = map[rune]rune{
 	'ú': 'u', 'ù': 'u', 'û': 'u', 'ü': 'u',
 	'ç': 'c', 'ñ': 'n',
 }
+
+// PorCompe devolve a instituição pelo número de banco (o que aparece nos
+// três primeiros dígitos do boleto).
+func PorCompe(compe string) (Banco, bool) {
+	for _, b := range porISPB {
+		if b.Compe == compe {
+			return b, true
+		}
+	}
+	return Banco{}, false
+}
