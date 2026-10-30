@@ -57,7 +57,7 @@ function imprimir() {
 
 export default function ResultadoTela({ resultado: r, corrigir, outro }: Props) {
   const cab = cabecalhos[r.veredito];
-  const achados = [...r.achados].sort((a, b) => ordem[a.peso] - ordem[b.peso]);
+  const achados = [...(r.achados ?? [])].sort((a, b) => ordem[a.peso] - ordem[b.peso]);
   const importantes = achados.filter((a) => a.peso === "falso" || a.peso === "nao_pago" || a.peso === "alerta");
 
   const ouvir = () => {

@@ -37,7 +37,7 @@ export default function Conferencia({ leitura, campos, voltar, confirmar }: Prop
           <span>Código da transação (ID)</span>
           <input className="codigo" value={c.id} onChange={muda("id")} spellCheck={false} autoCapitalize="off" autoComplete="off"
             placeholder="Começa com a letra E" />
-          <small className={id.length === 32 && !campos.idDuvidoso ? "certo" : id.length ? "errado" : ""}>
+          <small className={id.length === 32 && !(campos.idDuvidoso && c.id === campos.id) ? "certo" : id.length ? "errado" : ""}>
             {!id.length
               ? "Não encontramos o código. Se ele aparecer na imagem, digite aqui."
               : id.length !== 32

@@ -66,6 +66,7 @@ const icones: Record<string, React.ReactNode> = {
   ok: <Check size={28} aria-hidden />, info: <Info size={26} aria-hidden />,
 };
 const ordem: Record<string, number> = { falso: 0, alerta: 1, info: 2, ok: 3 };
+const rotulos: Record<string, string> = { falso: "Erro", alerta: "Atenção", ok: "Certo", info: "Informação" };
 
 interface ResultadoProps {
   r: ResultadoCodigo;
@@ -74,9 +75,13 @@ interface ResultadoProps {
 }
 
 export function CodigoResultado({ r, outro, inicio }: ResultadoProps) {
-  const cab = cabecalhos[r.veredito];
-  const achados = [...r.achados].sort((a: Achado, b: Achado) => ordem[a.peso] - ordem[b.peso]);
-  const ouvir = () => falar([cab.titulo, cab.texto, ...r.resumo.map((l) => `${l.rotulo}: ${l.valor}.`),
+  const incompleto = (r.achados ?? []).some((a) => a.codigo === "tamanho" || a.codigo === "quebrado");
+  const cab = incompleto
+    ? { ...cabecalhos.errado, titulo: "Não deu para ler este código", texto: "Confira se você copiou o código inteiro, sem faltar nenhum número." }
+    : cabecalhos[r.veredito];
+  const resumo = r.resumo ?? [];
+  const achados = [...(r.achados ?? [])].sort((a: Achado, b: Achado) => ordem[a.peso] - ordem[b.peso]);
+  const ouvir = () => falar([cab.titulo, cab.texto, ...resumo.map((l) => `${l.rotulo}: ${l.valor}.`),
     ...achados.filter((a) => a.peso === "falso" || a.peso === "alerta").map((a) => a.titulo)].join(" "));
   return (
     <section className="resultado">
@@ -85,9 +90,9 @@ export function CodigoResultado({ r, outro, inicio }: ResultadoProps) {
         <h1>{cab.titulo}</h1>
         <p>{cab.texto}</p>
       </div>
-      {r.resumo.length > 0 && (
+      {resumo.length > 0 && (
         <dl className="resumo">
-          {r.resumo.map((l, i) => (
+          {resumo.map((l, i) => (
             <div key={i}><dt>{l.rotulo}</dt><dd>{l.valor}</dd></div>
           ))}
         </dl>
@@ -102,7 +107,7 @@ export function CodigoResultado({ r, outro, inicio }: ResultadoProps) {
         {achados.map((a, i) => (
           <li key={i} className={`achado ${a.peso}`}>
             <span className="selo">{icones[a.peso]}</span>
-            <span>{a.titulo}</span>
+            <span><span className="sr">{rotulos[a.peso]}: </span>{a.titulo}</span>
           </li>
         ))}
       </ul>
@@ -126,7 +131,7 @@ export function CodigoResultado({ r, outro, inicio }: ResultadoProps) {
             {r.pix.txid && <tr><th>Identificador</th><td>{r.pix.txid}</td></tr>}
             {r.pix.url && <tr><th>Endereço da cobrança</th><td>{r.pix.url}</td></tr>}
           </>}
-          {r.achados.filter((a) => a.detalhe).map((a, i) => <tr key={i}><th>{a.codigo}</th><td>{a.detalhe}</td></tr>)}
+          {achados.filter((a) => a.detalhe).map((a, i) => <tr key={i}><th>{a.codigo}</th><td>{a.detalhe}</td></tr>)}
         </tbody></table>
       </details>
     </section>

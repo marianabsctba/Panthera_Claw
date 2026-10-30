@@ -160,9 +160,14 @@ export default function App() {
     calar();
     setComo(false);
     setTela({ nome: "lendo", etapa: "Lendo o texto colado" });
-    const info = await nucleo.analisar("texto colado", new TextEncoder().encode(texto));
-    const campos = await nucleo.ler(texto);
-    setTela({ nome: "conferir", leitura: { texto, origem: "texto", pdfSemTexto: false, confianca: 100, previa: "" }, campos, info });
+    try {
+      const info = await nucleo.analisar("texto colado", new TextEncoder().encode(texto));
+      const campos = await nucleo.ler(texto);
+      setTela({ nome: "conferir", leitura: { texto, origem: "texto", pdfSemTexto: false, confianca: 100, previa: "" }, campos, info });
+    } catch (e) {
+      console.error(e);
+      setTela({ nome: "erro", mensagem: "Não conseguimos ler o texto colado. Tente o print ou o PDF do comprovante." });
+    }
   }, []);
 
   // Colar (Ctrl+V) em qualquer tela: imagem, PDF ou texto do comprovante.
@@ -279,7 +284,10 @@ export default function App() {
             leitura={tela.leitura}
             campos={tela.campos}
             voltar={recomecar}
-            confirmar={(campos) => void conferir(tela.leitura, campos, tela.info)}
+            confirmar={(campos) => void conferir(tela.leitura, campos, tela.info).catch((e) => {
+              console.error(e);
+              setTela({ nome: "erro", mensagem: "Não conseguimos conferir agora. Tente de novo." });
+            })}
           />
         ) : (
           <ResultadoTela
