@@ -16,7 +16,9 @@ print/PDF ──> leitura (pdf.js ou Tesseract.js) ──> campos ──> confir
 | `pix` | Lê o EndToEndId (com correção de confusões de leitura só na parte numérica) e classifica chaves Pix (CPF, CNPJ inclusive alfanumérico, telefone, e-mail, aleatória). |
 | `leitura` | Tira os campos do texto: rótulos na mesma linha ou na seguinte, seções de origem e destino, datas numéricas e por extenso, correção do @ mal lido. |
 | `arquivo` | Metadados do arquivo: SHA-256, programas declarados (PDF Info, XMP, EXIF, PNG), versões gravadas no PDF e o texto escrito em cada versão posterior (fluxos Flate e ASCII85), assinatura digital, marcas de IA (C2PA, IPTC, prompt no PNG). |
-| `conferir` | Junta tudo e devolve achados com peso (`falso`, `alerta`, `ok`, `info`) e o veredito. |
+| `boleto` | Linha digitável e código de barras, bancário e de arrecadação: dígitos verificadores (módulo 10 e 11), banco, valor e vencimento. |
+| `brcode` | Pix copia e cola no padrão EMV: campos, chave, recebedor, cobrança dinâmica e CRC16/CCITT-FALSE. |
+| `conferir` | Junta tudo e devolve achados com peso (`falso`, `nao_pago`, `alerta`, `ok`, `info`) e o veredito; para boleto e copia e cola, `errado`, `suspeito` ou `confira`. |
 
 Decisões:
 
@@ -27,6 +29,8 @@ Decisões:
 - **Versão nova do PDF:** só conta como nova a frase que não existia na primeira versão, porque alguns programas regravam a página inteira ao salvar por cima.
 - **Marca de IA é erro, ausência de marca não diz nada.** Comprovante de banco nunca é gerado nem editado por IA.
 - **Sem análise de pixels no print.** A análise do nível de erro (ELA) foi medida em prints recomprimidos como no WhatsApp e não separou editados de verdadeiros; foi removida.
+- **Situação do Pix por palavras do comprovante** (agendado, pendente, cancelado, devolvido): gera o veredito "ainda não é um pagamento", abaixo de "falso" e acima de "suspeito".
+- **QR Code de Pix numa imagem** vai direto para a conferência do copia e cola (lido no aparelho com jsQR): comprovante não traz QR de cobrança.
 - **Mesmo código com o mesmo valor em outro arquivo** é o mesmo Pix enviado como PDF e como print: informação, não fraude.
 
 ## Site (`web/`)
@@ -41,6 +45,5 @@ Acessibilidade: letra base de 20 px com ajuste em quatro tamanhos, alvos de toqu
 
 ## Próximas fases
 
-2. Boleto (linha digitável contra código de barras, dígitos verificadores, fator de vencimento reiniciado em 22/02/2025) e Pix copia e cola (CRC16 e recebedor).
 3. Relatório para B.O. e processo com resumo do arquivo e carimbo de tempo; conferência em lote na linha de comando.
 4. Modelos de layout por banco, abertos para contribuição.
