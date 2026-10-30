@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <!-- O comprovante nunca sai do aparelho: nenhuma conexão com outro endereço é permitida. -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval' blob:; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; worker-src 'self' blob:; connect-src 'self' blob: data:; object-src 'none'; base-uri 'self'; form-action 'none'"
+    />
+    <meta name="theme-color" content="#0b0b0b" />
+    <meta name="description" content="Confira se um comprovante de Pix é falso em poucos segundos. O comprovante não sai do seu aparelho." />
+    <link rel="icon" type="image/webp" href="/pantera.webp" />
+    <link rel="apple-touch-icon" href="/icone-192.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <title>Panthera Claw</title>
+  </head>
+  <body>
+    <div id="raiz"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
