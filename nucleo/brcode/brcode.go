@@ -5,8 +5,9 @@ package brcode
 import (
 	"fmt"
 	"net/url"
-	"strconv"
 	"strings"
+
+	"github.com/marianabsctba/Panthera_Claw/nucleo/dinheiro"
 )
 
 // Codigo é o que o Pix copia e cola revela.
@@ -96,35 +97,44 @@ func (c Codigo) ValorReais() string {
 	if c.Valor == "" {
 		return ""
 	}
-	f, err := strconv.ParseFloat(c.Valor, 64)
-	if err != nil {
-		return c.Valor
+	if v, ok := dinheiro.CentavosPonto(c.Valor); ok {
+		return dinheiro.Formatar(v)
 	}
-	centavos := int64(f*100 + 0.5)
-	inteiro := strconv.FormatInt(centavos/100, 10)
-	var b strings.Builder
-	for k, r := range inteiro {
-		if k > 0 && (len(inteiro)-k)%3 == 0 {
-			b.WriteByte('.')
-		}
-		b.WriteRune(r)
-	}
-	return fmt.Sprintf("R$ %s,%02d", b.String(), centavos%100)
+	return c.Valor
 }
 
 type campo struct{ id, valor string }
 
+// tlv separa os campos (identificador, tamanho com 2 dígitos, valor). O
+// padrão conta o tamanho em caracteres; há geradores que contam em bytes
+// quando o nome tem acento. Tenta por bytes e, se não fechar, por
+// caracteres.
 func tlv(s string) ([]campo, error) {
+	out, err := tlvUnidades([]byte(s), func(b []byte) string { return string(b) })
+	if err == nil {
+		return out, nil
+	}
+	if r, err2 := tlvUnidades([]rune(s), func(r []rune) string { return string(r) }); err2 == nil {
+		return r, nil
+	}
+	return out, err
+}
+
+func tlvUnidades[T byte | rune](s []T, texto func([]T) string) ([]campo, error) {
 	var out []campo
 	for k := 0; k < len(s); {
 		if k+4 > len(s) {
 			return out, fmt.Errorf("o código termina no meio de um campo")
 		}
-		n, err := strconv.Atoi(s[k+2 : k+4])
-		if err != nil || k+4+n > len(s) {
+		d1, d2 := s[k+2], s[k+3]
+		if d1 < '0' || d1 > '9' || d2 < '0' || d2 > '9' {
 			return out, fmt.Errorf("o código está quebrado perto da posição %d", k+1)
 		}
-		out = append(out, campo{s[k : k+2], s[k+4 : k+4+n]})
+		n := int(d1-'0')*10 + int(d2-'0')
+		if k+4+n > len(s) {
+			return out, fmt.Errorf("o código está quebrado perto da posição %d", k+1)
+		}
+		out = append(out, campo{texto(s[k : k+2]), texto(s[k+4 : k+4+n])})
 		k += 4 + n
 	}
 	return out, nil

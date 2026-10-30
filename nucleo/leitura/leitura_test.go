@@ -164,3 +164,12 @@ func TestSituacao(t *testing.T) {
 		}
 	}
 }
+
+func TestValoresSemDuasCasas(t *testing.T) {
+	casos := map[string]string{"Valor R$ 1,5": "R$ 1,50", "Valor: R$ 150": "R$ 150,00", "Total R$ 15,0": "R$ 15,00", "R$1.250,00": "R$ 1.250,00"}
+	for texto, quer := range casos {
+		if c := Ler(texto); c.Valor != quer {
+			t.Errorf("%q: %q, quero %q", texto, c.Valor, quer)
+		}
+	}
+}

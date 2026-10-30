@@ -8,6 +8,8 @@ import (
 	"strconv"
 	"strings"
 	"time"
+
+	"github.com/marianabsctba/Panthera_Claw/nucleo/dinheiro"
 )
 
 // Tipos de boleto.
@@ -213,15 +215,7 @@ func reais(c int64) string {
 	if c == 0 {
 		return ""
 	}
-	s := strconv.FormatInt(c/100, 10)
-	var b strings.Builder
-	for k, r := range s {
-		if k > 0 && (len(s)-k)%3 == 0 {
-			b.WriteByte('.')
-		}
-		b.WriteRune(r)
-	}
-	return fmt.Sprintf("R$ %s,%02d", b.String(), c%100)
+	return dinheiro.Formatar(c)
 }
 
 func soDigitos(s string) string {

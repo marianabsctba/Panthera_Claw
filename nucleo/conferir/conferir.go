@@ -14,6 +14,7 @@ import (
 
 	"github.com/marianabsctba/Panthera_Claw/nucleo/arquivo"
 	"github.com/marianabsctba/Panthera_Claw/nucleo/bancos"
+	"github.com/marianabsctba/Panthera_Claw/nucleo/dinheiro"
 	"github.com/marianabsctba/Panthera_Claw/nucleo/leitura"
 	"github.com/marianabsctba/Panthera_Claw/nucleo/pix"
 )
@@ -187,7 +188,7 @@ func conferirCodigo(e Entrada, e2e pix.E2E, d *Codigo, add func(string, string, 
 	case e2e.Instante.After(e.Agora.Add(10 * time.Minute)):
 		add("futuro", Falso, "A data escondida no código da transação ainda não chegou ("+d.Brasilia+").", "Instante do código: "+d.UTC)
 	case e2e.Instante.Before(pix.Lancamento):
-		add("antes-do-pix", Falso, "A data escondida no código ("+d.Brasilia+") é de antes de o Pix existir.", "O Pix começou em 16/11/2020.")
+		add("antes-do-pix", Falso, "A data escondida no código ("+d.Brasilia+") é de antes de o Pix existir.", "O Pix começou em 03/11/2020 (fase restrita) e foi aberto a todos em 16/11/2020.")
 	}
 
 	// Banco: o código diz quem gerou a transação.
@@ -210,8 +211,13 @@ func conferirCodigo(e Entrada, e2e pix.E2E, d *Codigo, add func(string, string, 
 		case g == nil:
 			add("banco-codigo", Info, "Pelo código, o Pix saiu do "+nomeBanco+". Não reconhecemos o banco escrito no comprovante ("+impresso+").",
 				"ISPB "+e2e.ISPB+": "+d.Banco)
-		case !g.ISPBs[e2e.ISPB]:
+		case !g.ISPBs[e2e.ISPB] && c.BancoPagador != "":
 			add("banco-diferente", Falso, "O comprovante diz que o Pix saiu do "+g.Marca+", mas o código da transação é do "+nomeBanco+".",
+				"Comparado com o "+origemImpresso+": "+impresso+". ISPB "+e2e.ISPB+": "+d.Banco)
+		case !g.ISPBs[e2e.ISPB]:
+			// A marca do topo é um indício mais fraco que o banco escrito na
+			// parte de quem pagou: o comprovante pode ser do recebedor.
+			add("banco-diferente-topo", Alerta, "O comprovante parece ser do "+g.Marca+", mas o código da transação é do "+nomeBanco+".",
 				"Comparado com o "+origemImpresso+": "+impresso+". ISPB "+e2e.ISPB+": "+d.Banco)
 		default:
 			add("banco-ok", OK, "O código da transação é do mesmo banco do comprovante ("+g.Marca+").", "ISPB "+e2e.ISPB+": "+d.Banco)
@@ -312,7 +318,7 @@ func conferirAlteracao(e Entrada, a *arquivo.Info, add func(string, string, stri
 		det += " Texto escrito na versão nova: " + strings.Join(alt.Textos, " | ")
 	}
 	for _, t := range alt.Textos {
-		if ehValor(t) {
+		if _, ok := valorNoTexto(t); ok {
 			add("pdf-valor-alterado", Falso, "O valor foi escrito no PDF depois que ele foi criado ("+strings.TrimSpace(t)+"). Comprovante de banco não é alterado assim.", det)
 			return
 		}
@@ -322,7 +328,9 @@ func conferirAlteracao(e Entrada, a *arquivo.Info, add func(string, string, stri
 
 func conferirSobrepostos(e Entrada, add func(string, string, string, string)) {
 	for _, s := range e.Sobrepostos {
-		if ehValor(s.Cima) && ehValor(s.Baixo) && normalizarValor(s.Cima) != normalizarValor(s.Baixo) {
+		cima, ok1 := valorNoTexto(s.Cima)
+		baixo, ok2 := valorNoTexto(s.Baixo)
+		if ok1 && ok2 && cima != baixo {
 			add("valor-por-baixo", Falso, "Há outro valor escondido por baixo do valor do comprovante: por baixo de "+s.Cima+" está escrito "+s.Baixo+".",
 				"Dois textos no mesmo lugar da página. O de cima foi escrito depois.")
 			return
@@ -335,10 +343,23 @@ func conferirSobrepostos(e Entrada, add func(string, string, string, string)) {
 	}
 }
 
-var reValorTexto = regexp.MustCompile(`\d,\d{2}(\D|$)`)
+// Um valor em reais dentro de um texto: com "R$" (centavos opcionais) ou
+// com vírgula decimal de uma ou duas casas.
+var reValorTexto = regexp.MustCompile(`R\$\s*\d{1,3}(?:\.\d{3})+(?:,\d{1,2})?|R\$\s*\d+(?:,\d{1,2})?|\d{1,3}(?:\.\d{3})+,\d{1,2}|\d+,\d{1,2}`)
 
-// ehValor diz se o texto parece um valor em reais.
-func ehValor(t string) bool { return reValorTexto.MatchString(t) }
+// valorNoTexto acha o primeiro valor em reais no texto, em centavos.
+func valorNoTexto(t string) (int64, bool) {
+	for _, m := range reValorTexto.FindAllStringIndex(t, -1) {
+		// Não vale pedaço de número maior ("1,505" ou "12,34,56").
+		if m[1] < len(t) && t[m[1]] >= '0' && t[m[1]] <= '9' {
+			continue
+		}
+		if c, ok := dinheiro.Centavos(t[m[0]:m[1]]); ok {
+			return c, true
+		}
+	}
+	return 0, false
+}
 
 func conferirVistos(e Entrada, cod *pix.E2E, add func(string, string, string, string)) {
 	if cod == nil {
@@ -352,7 +373,8 @@ func conferirVistos(e Entrada, cod *pix.E2E, add func(string, string, string, st
 			add("ja-conferido", Info, "Você já conferiu este mesmo arquivo em "+v.Quando+".", "")
 			return
 		}
-		if v.Valor != "" && e.Campos.Valor != "" && normalizarValor(v.Valor) != normalizarValor(e.Campos.Valor) {
+		// Só acusa com os dois valores lidos com certeza; na dúvida, informa.
+		if iguais, ok := dinheiro.Iguais(v.Valor, e.Campos.Valor); ok && !iguais {
 			add("id-repetido", Falso, "Este mesmo código de transação já apareceu em outro comprovante, com outro valor ("+v.Valor+"), conferido em "+v.Quando+".",
 				"Cada Pix tem um código único.")
 			return
@@ -385,17 +407,10 @@ func veredito(as []Achado, temCodigo bool) string {
 	return VereditoSemErros
 }
 
-func normalizarValor(v string) string {
-	var b strings.Builder
-	for _, r := range v {
-		if r >= '0' && r <= '9' {
-			b.WriteRune(r)
-		}
-	}
-	return strings.TrimLeft(b.String(), "0")
+func valorZero(v string) bool {
+	c, ok := dinheiro.Centavos(v)
+	return ok && c == 0
 }
-
-func valorZero(v string) bool { return normalizarValor(v) == "" }
 
 func abs(d time.Duration) time.Duration {
 	if d < 0 {

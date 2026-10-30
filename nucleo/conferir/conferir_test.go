@@ -56,8 +56,8 @@ func TestBancoPeloEmissor(t *testing.T) {
 	c := certo
 	c.BancoPagador, c.Emissor = "", "Itaú"
 	r := Conferir(Entrada{Campos: c, Agora: agora})
-	if !codigos(r, Falso)["banco-diferente"] {
-		t.Fatalf("%+v", r.Achados)
+	if !codigos(r, Alerta)["banco-diferente-topo"] || r.Veredito != VereditoSuspeito {
+		t.Fatalf("%s %+v", r.Veredito, r.Achados)
 	}
 }
 
@@ -219,5 +219,32 @@ func TestConferirPixCodigo(t *testing.T) {
 	trocado := ok[:40] + "9" + ok[41:]
 	if r := ConferirCodigo(trocado, agora); r.Veredito != CodigoErrado {
 		t.Fatalf("%+v", r)
+	}
+}
+
+// Antes, R$ 1,50, R$ 15,0 e R$ 150 viravam todos "150" na comparação.
+func TestValoresComVirgula(t *testing.T) {
+	a := &arquivo.Info{Tipo: "png", SHA256: "novo"}
+	c := certo
+	c.Valor = "R$ 150,00"
+	for _, antigo := range []string{"R$ 1,50", "R$ 15,0", "R$ 15,00"} {
+		vistos := []Visto{{ID: certo.ID, SHA256: "antigo", Valor: antigo, Quando: "28/10/2026"}}
+		if r := Conferir(Entrada{Campos: c, Arquivo: a, Vistos: vistos, Agora: agora}); !codigos(r, Falso)["id-repetido"] {
+			t.Errorf("%s contra R$ 150,00 deveria ser outro valor: %+v", antigo, r.Achados)
+		}
+	}
+	// Mesmo valor escrito de outro jeito não é fraude.
+	vistos := []Visto{{ID: certo.ID, SHA256: "antigo", Valor: "R$ 150", Quando: "28/10/2026"}}
+	if r := Conferir(Entrada{Campos: c, Arquivo: a, Vistos: vistos, Agora: agora}); codigos(r, Falso)["id-repetido"] {
+		t.Errorf("R$ 150 e R$ 150,00 são o mesmo valor")
+	}
+	// Texto por baixo com centavos de uma casa ou sem centavos.
+	e := Entrada{Campos: certo, Agora: agora, Sobrepostos: []Sobreposicao{{Cima: "R$ 150", Baixo: "R$ 1,5"}}}
+	if r := Conferir(e); !codigos(r, Falso)["valor-por-baixo"] {
+		t.Errorf("valor por baixo não detectado: %+v", r.Achados)
+	}
+	e.Sobrepostos = []Sobreposicao{{Cima: "R$ 150,00", Baixo: "R$ 150"}}
+	if r := Conferir(e); codigos(r, Falso)["valor-por-baixo"] {
+		t.Errorf("mesmo valor por baixo não é troca de valor")
 	}
 }

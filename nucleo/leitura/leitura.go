@@ -10,6 +10,7 @@ import (
 	"strings"
 
 	"github.com/marianabsctba/Panthera_Claw/nucleo/bancos"
+	"github.com/marianabsctba/Panthera_Claw/nucleo/dinheiro"
 	"github.com/marianabsctba/Panthera_Claw/nucleo/pix"
 )
 
@@ -58,8 +59,10 @@ func corrigirEmail(s string) string {
 var reArrobaQ = regexp.MustCompile(`^([a-z0-9._%+-]+)\s*Q\s*([a-z0-9-]+(?:\.[a-z0-9-]+)*\.[a-z]{2,})$`)
 
 var (
-	reID    = regexp.MustCompile(`[EeDd][0-9OoQIl|SsZzBGb]{20}[0-9A-Za-z]{11}`)
-	reValor = regexp.MustCompile(`R\s?[$S5]\s*-?\s*(\d{1,3}(?:[.\s]?\d{3})*,\d{2})`)
+	reID = regexp.MustCompile(`[EeDd][0-9OoQDIil|!SsZzBGb]{20}[0-9A-Za-z]{11}`)
+	// "R$" (que a leitura de imagem às vezes lê como RS ou R5) seguido do
+	// valor; centavos com uma ou duas casas, ou sem centavos.
+	reValor = regexp.MustCompile(`R\s?[$S5]\s*-?\s*(\d{1,3}(?:\.\d{3})+(?:,\d{1,2})?|\d+(?:,\d{1,2})?)`)
 )
 
 type secao int
@@ -111,9 +114,7 @@ func Ler(texto string) Campos {
 			c.Chave = corrigirEmail(v)
 		}
 		if v := valor(rotulosValor); v != "" && c.Valor == "" {
-			if m := reValor.FindStringSubmatch(v); m != nil {
-				c.Valor = "R$ " + strings.ReplaceAll(m[1], " ", ".")
-			}
+			c.Valor = acharValor(v)
 		}
 		if v := valor(rotulosData); v != "" && c.DataHora == "" {
 			if _, ok := LerDataHora(v); ok {
@@ -123,9 +124,7 @@ func Ler(texto string) Campos {
 	}
 
 	if c.Valor == "" {
-		if m := reValor.FindStringSubmatch(texto); m != nil {
-			c.Valor = "R$ " + strings.ReplaceAll(m[1], " ", ".")
-		}
+		c.Valor = acharValor(texto)
 	}
 	if c.DataHora == "" {
 		for _, l := range linhas {
@@ -140,12 +139,25 @@ func Ler(texto string) Campos {
 		if i >= 6 {
 			break
 		}
-		if g := bancos.Reconhecer(l); g != nil {
+		if g := bancos.ReconhecerLogo(l); g != nil {
 			c.Emissor = g.Marca
 			break
 		}
 	}
 	return c
+}
+
+// acharValor devolve o primeiro valor em reais do texto, já no formato
+// "R$ 1.250,00", ou "".
+func acharValor(texto string) string {
+	m := reValor.FindStringSubmatch(texto)
+	if m == nil {
+		return ""
+	}
+	if c, ok := dinheiro.Centavos(m[1]); ok {
+		return dinheiro.Formatar(c)
+	}
+	return "R$ " + m[1]
 }
 
 func quebrar(texto string) []string {
