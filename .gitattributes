@@ -1,2 +1,3 @@
 # Listas do Banco Central guardadas byte a byte (a de Pix vem em ISO-8859-1).
 dados/*.csv -text
+nucleo/**/testdata/** -text

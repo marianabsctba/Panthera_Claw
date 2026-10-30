@@ -125,7 +125,8 @@ func TestChaveInvalida(t *testing.T) {
 }
 
 func TestArquivoEditado(t *testing.T) {
-	a := &arquivo.Info{Tipo: "pdf", Editor: "Canva", Programas: []string{"Canva"}, Salvamentos: 2, SHA256: "x"}
+	a := &arquivo.Info{Tipo: "pdf", Editor: "Canva", Programas: []string{"Canva"}, Salvamentos: 2, SHA256: "x",
+		Alteracao: &arquivo.Alteracao{Objetos: 2, Pagina: true}}
 	r := Conferir(Entrada{Campos: certo, Arquivo: a, Agora: agora})
 	al := codigos(r, Alerta)
 	if r.Veredito != VereditoSuspeito || !al["editor"] || !al["pdf-alterado"] {
@@ -151,5 +152,36 @@ func TestChaveMalLidaNaoEhFalso(t *testing.T) {
 	r := Conferir(Entrada{Campos: c, Agora: agora})
 	if r.Veredito != VereditoSuspeito || !codigos(r, Alerta)["chave-estranha"] {
 		t.Fatalf("%s %+v", r.Veredito, r.Achados)
+	}
+}
+
+func TestPDFComValorEscritoDepois(t *testing.T) {
+	a := &arquivo.Info{Tipo: "pdf", Salvamentos: 2, SHA256: "x",
+		Alteracao: &arquivo.Alteracao{Objetos: 2, Pagina: true, Textos: []string{"R$ 1.500,00"}}}
+	if r := Conferir(Entrada{Campos: certo, Arquivo: a, Agora: agora}); !codigos(r, Falso)["pdf-valor-alterado"] {
+		t.Fatalf("%+v", r.Achados)
+	}
+	a.Alteracao = &arquivo.Alteracao{Objetos: 1}
+	if r := Conferir(Entrada{Campos: certo, Arquivo: a, Agora: agora}); r.Veredito != VereditoSemErros {
+		t.Fatalf("salvar de novo sem mexer na página não é suspeito: %+v", r.Achados)
+	}
+}
+
+func TestValorPorBaixo(t *testing.T) {
+	e := Entrada{Campos: certo, Agora: agora, Sobrepostos: []Sobreposicao{{Cima: "R$ 150,00", Baixo: "R$ 1,50"}}}
+	if r := Conferir(e); !codigos(r, Falso)["valor-por-baixo"] {
+		t.Fatalf("%+v", r.Achados)
+	}
+	e.Sobrepostos = []Sobreposicao{{Cima: "Maria", Baixo: "José"}}
+	if r := Conferir(e); !codigos(r, Alerta)["texto-por-baixo"] {
+		t.Fatalf("%+v", r.Achados)
+	}
+}
+
+func TestArquivoDeIA(t *testing.T) {
+	a := &arquivo.Info{Tipo: "png", SHA256: "x", IA: &arquivo.MarcaIA{Tipo: "gerada", Origem: "c2pa", Gerador: "ChatGPT"}}
+	r := Conferir(Entrada{Campos: certo, Arquivo: a, Agora: agora})
+	if r.Veredito != VereditoFalso || !codigos(r, Falso)["ia-gerada"] {
+		t.Fatalf("%+v", r.Achados)
 	}
 }

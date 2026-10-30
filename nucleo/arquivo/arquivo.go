@@ -29,6 +29,13 @@ type Info struct {
 	Assinado    bool `json:"assinado,omitempty"`
 	// Editor é o primeiro programa reconhecido como editor, se houver.
 	Editor string `json:"editor,omitempty"`
+	// Alteracao diz o que mudou nas versões gravadas depois da primeira.
+	Alteracao *Alteracao `json:"alteracao,omitempty"`
+	// IA é a marca de geração ou edição por inteligência artificial
+	// declarada no arquivo, se houver.
+	IA *MarcaIA `json:"ia,omitempty"`
+
+	chavesPNG []string
 }
 
 // Analisar identifica o tipo e lê os metadados que existirem.
@@ -50,6 +57,7 @@ func Analisar(nome string, dados []byte) Info {
 	}
 	xmp(&i, dados)
 	i.Programas = unicos(i.Programas)
+	i.IA = marcaIA(dados, i.Programas, i.chavesPNG)
 	for _, p := range i.Programas {
 		if e := Editor(p); e != "" {
 			i.Editor = e
@@ -80,10 +88,14 @@ func pdf(i *Info, d []byte) {
 	i.Salvamentos = bytes.Count(d, []byte("%%EOF"))
 	// Um PDF "linearizado" (otimizado para a web) já nasce com duas marcas
 	// de fim; não é edição.
-	if bytes.Contains(d[:min(len(d), 2048)], []byte("/Linearized")) && i.Salvamentos > 1 {
+	linearizado := bytes.Contains(d[:min(len(d), 2048)], []byte("/Linearized"))
+	if linearizado && i.Salvamentos > 1 {
 		i.Salvamentos--
 	}
 	i.Assinado = bytes.Contains(d, []byte("/ByteRange")) && bytes.Contains(d, []byte("/Sig"))
+	if i.Salvamentos > 1 {
+		i.Alteracao = alteracoes(d, linearizado)
+	}
 }
 
 // textoPDF decodifica uma string literal de PDF, inclusive em UTF-16.
@@ -200,6 +212,11 @@ func png(i *Info, d []byte) {
 			return
 		}
 		corpo := d[k+8 : k+8+tam]
+		if tipo == "tEXt" || tipo == "iTXt" || tipo == "zTXt" {
+			if chave, _, ok := bytes.Cut(corpo, []byte{0}); ok {
+				i.chavesPNG = append(i.chavesPNG, string(chave))
+			}
+		}
 		if tipo == "tEXt" || tipo == "iTXt" {
 			if chave, valor, ok := bytes.Cut(corpo, []byte{0}); ok && string(chave) == "Software" {
 				if tipo == "iTXt" && len(valor) > 2 {

@@ -8,6 +8,7 @@ package conferir
 
 import (
 	"fmt"
+	"regexp"
 	"strings"
 	"time"
 
@@ -55,9 +56,19 @@ type Entrada struct {
 	Arquivo *arquivo.Info  `json:"arquivo,omitempty"`
 	// PDFSemTexto indica um PDF que é só uma imagem (foto ou print
 	// colado), sem o texto que o aplicativo do banco grava.
-	PDFSemTexto bool      `json:"pdfSemTexto"`
-	Vistos      []Visto   `json:"vistos,omitempty"`
-	Agora       time.Time `json:"agora"`
+	PDFSemTexto bool `json:"pdfSemTexto"`
+	// Sobrepostos são textos do PDF desenhados um em cima do outro, no
+	// mesmo lugar: o jeito comum de editar um PDF é cobrir o valor antigo
+	// com um retângulo e escrever o novo por cima.
+	Sobrepostos []Sobreposicao `json:"sobrepostos,omitempty"`
+	Vistos      []Visto        `json:"vistos,omitempty"`
+	Agora       time.Time      `json:"agora"`
+}
+
+// Sobreposicao é um par de textos no mesmo lugar da página.
+type Sobreposicao struct {
+	Cima  string `json:"cima"`
+	Baixo string `json:"baixo"`
 }
 
 // Codigo é o que o código da transação revela.
@@ -131,6 +142,7 @@ func Conferir(e Entrada) Resultado {
 	}
 
 	conferirArquivo(e, add)
+	conferirSobrepostos(e, add)
 	conferirVistos(e, cod, add)
 
 	r.Veredito = veredito(r.Achados, cod != nil)
@@ -245,20 +257,75 @@ func conferirArquivo(e Entrada, add func(string, string, string, string)) {
 	if a == nil {
 		return
 	}
+	if m := a.IA; m != nil {
+		quem := ""
+		if m.Gerador != "" {
+			quem = " (" + m.Gerador + ")"
+		}
+		det := map[string]string{
+			"c2pa":     "Selo de procedência C2PA (Content Credentials) dentro do arquivo.",
+			"iptc":     "Etiqueta IPTC de origem digital: mídia gerada por algoritmo treinado.",
+			"prompt":   "O pedido (prompt) usado para gerar a imagem está gravado no arquivo.",
+			"programa": "Programa registrado no arquivo: " + strings.Join(a.Programas, "; "),
+		}[m.Origem]
+		if m.Tipo == "editada" {
+			add("ia-editada", Falso, "O próprio arquivo declara que foi editado com inteligência artificial"+quem+".", det)
+		} else {
+			add("ia-gerada", Falso, "O próprio arquivo declara que foi criado por inteligência artificial"+quem+". Comprovante de banco não é feito assim.", det)
+		}
+	}
 	if a.Editor != "" {
 		add("editor", Alerta, "O arquivo passou por um programa de edição, e não veio direto do aplicativo do banco.",
 			"Programa registrado no arquivo: "+a.Editor+" ("+strings.Join(a.Programas, "; ")+")")
 	}
 	if a.Tipo == "pdf" {
 		if a.Salvamentos > 1 && !a.Assinado {
-			add("pdf-alterado", Alerta, "O PDF foi salvo de novo depois de criado.",
-				fmt.Sprintf("%d versões gravadas no mesmo arquivo.", a.Salvamentos))
+			conferirAlteracao(e, a, add)
 		}
 		if e.PDFSemTexto {
 			add("pdf-imagem", Alerta, "O PDF é só uma imagem, sem o texto que o aplicativo do banco costuma gravar.", "Nenhum texto selecionável no documento.")
 		}
 	}
 }
+
+func conferirAlteracao(e Entrada, a *arquivo.Info, add func(string, string, string, string)) {
+	det := fmt.Sprintf("%d versões gravadas no mesmo arquivo.", a.Salvamentos)
+	alt := a.Alteracao
+	if alt == nil || !alt.Pagina {
+		add("pdf-salvo-de-novo", Info, "O PDF foi salvo de novo depois de criado, mas sem mudar o que aparece na página.", det)
+		return
+	}
+	if len(alt.Textos) > 0 {
+		det += " Texto escrito na versão nova: " + strings.Join(alt.Textos, " | ")
+	}
+	for _, t := range alt.Textos {
+		if ehValor(t) {
+			add("pdf-valor-alterado", Falso, "O valor foi escrito no PDF depois que ele foi criado ("+strings.TrimSpace(t)+"). Comprovante de banco não é alterado assim.", det)
+			return
+		}
+	}
+	add("pdf-alterado", Alerta, "O PDF foi alterado depois de criado: algo foi escrito ou desenhado na página por cima do original.", det)
+}
+
+func conferirSobrepostos(e Entrada, add func(string, string, string, string)) {
+	for _, s := range e.Sobrepostos {
+		if ehValor(s.Cima) && ehValor(s.Baixo) && normalizarValor(s.Cima) != normalizarValor(s.Baixo) {
+			add("valor-por-baixo", Falso, "Há outro valor escondido por baixo do valor do comprovante: por baixo de "+s.Cima+" está escrito "+s.Baixo+".",
+				"Dois textos no mesmo lugar da página. O de cima foi escrito depois.")
+			return
+		}
+	}
+	if len(e.Sobrepostos) > 0 {
+		s := e.Sobrepostos[0]
+		add("texto-por-baixo", Alerta, "Há texto escondido por baixo de outro texto no PDF, sinal de que algo foi escrito por cima.",
+			fmt.Sprintf("Por cima: %q. Por baixo: %q.", s.Cima, s.Baixo))
+	}
+}
+
+var reValorTexto = regexp.MustCompile(`\d,\d{2}(\D|$)`)
+
+// ehValor diz se o texto parece um valor em reais.
+func ehValor(t string) bool { return reValorTexto.MatchString(t) }
 
 func conferirVistos(e Entrada, cod *pix.E2E, add func(string, string, string, string)) {
 	if cod == nil {

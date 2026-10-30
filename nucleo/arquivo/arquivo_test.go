@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"encoding/binary"
 	"hash/crc32"
+	"os"
 	"testing"
 )
 
@@ -70,5 +71,71 @@ func TestPNGComSoftware(t *testing.T) {
 	bloco("IEND", nil)
 	if i := Analisar("c.png", p.Bytes()); i.Tipo != "png" || i.Editor != "Canva" {
 		t.Fatalf("%+v", i)
+	}
+}
+
+// PDFs fictícios: o original, uma edição salva por cima (valor coberto e
+// reescrito) e um salvamento que só mudou metadados.
+func TestAlteracoesDoPDF(t *testing.T) {
+	ler := func(n string) Info {
+		d, err := os.ReadFile("testdata/" + n)
+		if err != nil {
+			t.Fatal(err)
+		}
+		return Analisar(n, d)
+	}
+	if a := ler("original.pdf").Alteracao; a != nil {
+		t.Fatalf("original com alteração: %+v", a)
+	}
+	a := ler("editado-incremental.pdf").Alteracao
+	if a == nil || !a.Pagina || len(a.Textos) != 1 || a.Textos[0] != "R$ 890,00" {
+		t.Fatalf("edição: %+v", a)
+	}
+	if a := ler("salvo-so-metadados.pdf").Alteracao; a == nil || a.Pagina {
+		t.Fatalf("só metadados: %+v", a)
+	}
+}
+
+func pngCom(chave, valor string) []byte {
+	var p bytes.Buffer
+	p.WriteString("\x89PNG\r\n\x1a\n")
+	bloco := func(tipo string, corpo []byte) {
+		binary.Write(&p, binary.BigEndian, uint32(len(corpo)))
+		p.WriteString(tipo)
+		p.Write(corpo)
+		binary.Write(&p, binary.BigEndian, crc32.ChecksumIEEE(append([]byte(tipo), corpo...)))
+	}
+	bloco("tEXt", []byte(chave+"\x00"+valor))
+	bloco("IEND", nil)
+	return p.Bytes()
+}
+
+func TestMarcasDeIA(t *testing.T) {
+	casos := []struct {
+		nome   string
+		dados  []byte
+		tipo   string
+		origem string
+		gerado string
+	}{
+		{"sd.png", pngCom("parameters", "comprovante pix nubank, Steps: 30"), "gerada", "prompt", "Stable Diffusion"},
+		{"comfy.png", pngCom("workflow", "{}"), "gerada", "prompt", "ComfyUI"},
+		{"iptc.jpg", []byte("\xff\xd8\xff<x:xmpmeta><Iptc4xmpExt:DigitalSourceType>http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia</Iptc4xmpExt:DigitalSourceType></x:xmpmeta>"), "gerada", "iptc", ""},
+		{"editada.jpg", []byte("\xff\xd8\xff<x:xmpmeta>digitalsourcetype/compositeWithTrainedAlgorithmicMedia</x:xmpmeta>"), "editada", "iptc", ""},
+		{"c2pa.png", append(pngCom("Software", "x"), []byte("\x00jumb\x00c2pa\x00c2pa.claim\x00\x6fclaim_generatorx\x16ChatGPT/1.0 c2pa-rs/0.3")...), "gerada", "c2pa", "ChatGPT"},
+		{"mj.png", pngCom("Software", "Midjourney v7"), "gerada", "programa", "Midjourney"},
+	}
+	for _, c := range casos {
+		m := Analisar(c.nome, c.dados).IA
+		if m == nil || m.Tipo != c.tipo || m.Origem != c.origem || m.Gerador != c.gerado {
+			t.Errorf("%s: %+v", c.nome, m)
+		}
+	}
+	// Selo C2PA de câmera ou editor comum não é IA.
+	if m := Analisar("camera.jpg", []byte("\xff\xd8\xff c2pa.claim claim_generator Leica M11-P")).IA; m != nil {
+		t.Errorf("câmera virou IA: %+v", m)
+	}
+	if m := Analisar("print.png", pngCom("Software", "Android")).IA; m != nil {
+		t.Errorf("print comum virou IA: %+v", m)
 	}
 }
