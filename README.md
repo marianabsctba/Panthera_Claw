@@ -28,7 +28,10 @@ Quem falsifica quase nunca acerta esses detalhes. O Panthera Claw confere:
 | Data do código no futuro ou antes de o Pix existir | erro |
 | Chave Pix possível (dígitos verificadores de CPF e CNPJ, inclusive o CNPJ alfanumérico; DDD) | erro se falhar |
 | Mesmo código em outro comprovante com outro valor, já conferido neste aparelho | erro |
-| Arquivo gravado por editor de documento ou imagem; PDF salvo de novo; PDF que é só imagem | atenção |
+| PDF com outro valor escondido por baixo do valor (valor antigo coberto e reescrito) | erro |
+| PDF salvo de novo com o valor escrito na versão nova | erro |
+| Arquivo que declara ter sido gerado ou editado por IA (selo C2PA, etiqueta IPTC `trainedAlgorithmicMedia`, prompt de Stable Diffusion ou ComfyUI no PNG, programa gerador) | erro |
+| Arquivo gravado por editor de documento ou imagem; PDF alterado depois de criado; PDF que é só imagem; texto escondido por baixo de outro | atenção |
 
 **Resultado:** "falso" quando há erro de coerência; "suspeito" quando só há sinais de atenção; "não encontramos erros" quando passa em tudo. Nunca "verdadeiro": um falsificador cuidadoso pode acertar tudo, e só o extrato confirma que o dinheiro entrou.
 
@@ -81,6 +84,9 @@ go run ./ferramentas/bancos
 Veja a [arquitetura](docs/ARQUITETURA.md).
 
 ## Limites conhecidos
+
+- **Valor editado num print.** Se alguém faz um Pix verdadeiro de valor baixo e edita só o valor no print, o código, o banco e o horário continuam certos. Testamos a análise do nível de erro de compressão (ELA) palavra a palavra: depois que o WhatsApp reduz e recomprime a imagem, ela não separou prints editados de verdadeiros e ainda acusou um verdadeiro em modo escuro. Por isso ficou de fora. No PDF a edição é detectável (texto por baixo, versão salva por cima), e é lá que ela é conferida.
+- **IA sem marca.** Só conta o que o arquivo declara. O WhatsApp apaga metadados ao recomprimir, então uma imagem de IA enviada como foto chega sem marca. Não usamos classificador de "parece IA": erra demais para um resultado que diz "falso".
 
 - Os bancos não seguem um modelo único de comprovante. A leitura procura rótulos comuns ("Instituição", "Origem", "Destino", "Chave Pix"); campos não achados ficam para a pessoa completar.
 - Na leitura de imagem, o final do código (sequencial) às vezes sai com uma letra a mais ou a menos. A tela avisa e pede para conferir. As conferências de banco e horário não dependem dessa parte.

@@ -159,6 +159,9 @@ function Detalhes({ r }: { r: Resultado }) {
             {linha("Alterado em", r.arquivo.alterado)}
             {r.arquivo.tipo === "pdf" ? linha("Versões gravadas", r.arquivo.salvamentos) : null}
             {r.arquivo.assinado ? linha("Assinatura digital", "presente") : null}
+            {r.arquivo.alteracao ? linha("Objetos gravados depois", r.arquivo.alteracao.objetos) : null}
+            {r.arquivo.alteracao?.textos?.length ? linha("Texto escrito depois", r.arquivo.alteracao.textos.join(" | ")) : null}
+            {r.arquivo.ia ? linha("Marca de inteligência artificial", `${r.arquivo.ia.tipo === "editada" ? "editado" : "gerado"} (${r.arquivo.ia.origem}${r.arquivo.ia.gerador ? ", " + r.arquivo.ia.gerador : ""})`) : null}
           </tbody></table>
         </>
       )}

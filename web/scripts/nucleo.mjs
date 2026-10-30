@@ -2,7 +2,7 @@
 // arquivos da leitura de imagem, que são servidos pelo próprio site (nada
 // vem de outro endereço).
 import { execFileSync } from "node:child_process";
-import { copyFileSync, mkdirSync } from "node:fs";
+import { copyFileSync, cpSync, mkdirSync } from "node:fs";
 import { join } from "node:path";
 
 const raiz = join(import.meta.dirname, "..", "..");
@@ -24,4 +24,7 @@ for (const f of ["tesseract-core-lstm.wasm.js", "tesseract-core-simd-lstm.wasm.j
   copyFileSync(join(nm, "tesseract.js-core", f), join(ocr, f));
 }
 copyFileSync(join(nm, "@tesseract.js-data", "por", "4.0.0_best_int", "por.traineddata.gz"), join(ocr, "por.traineddata.gz"));
+// Fontes padrão do PDF (Helvetica e afins), para desenhar comprovantes que
+// não embutem a fonte.
+cpSync(join(nm, "pdfjs-dist", "standard_fonts"), join(web, "public", "pdf", "fontes"), { recursive: true });
 console.log("núcleo compilado");

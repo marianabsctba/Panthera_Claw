@@ -24,6 +24,8 @@ export interface InfoArquivo {
   salvamentos?: number;
   assinado?: boolean;
   editor?: string;
+  alteracao?: { objetos: number; pagina: boolean; textos?: string[] };
+  ia?: { tipo: "gerada" | "editada"; origem: string; gerador: string };
 }
 
 export type Peso = "falso" | "alerta" | "ok" | "info";
@@ -70,5 +72,6 @@ export interface Entrada {
   campos: Campos;
   arquivo?: InfoArquivo;
   pdfSemTexto: boolean;
+  sobrepostos?: { cima: string; baixo: string }[];
   vistos?: Visto[];
 }

@@ -87,6 +87,7 @@ button:disabled { opacity: 0.4; cursor: default; }
 /* Início */
 .inicio { display: flex; flex-direction: column; gap: 16px; }
 .inicio .botao-secundario { align-self: flex-start; }
+.inicio .botao-secundario.largo { align-self: stretch; min-height: 68px; font-size: 1.3rem; margin-top: -8px; }
 .privacidade { display: flex; align-items: center; gap: 10px; font-size: 1.15rem; margin-top: 8px; }
 .privacidade svg { color: var(--rosa); flex: none; }
 .link-grande { font-size: 1.2rem; margin-top: 12px; }

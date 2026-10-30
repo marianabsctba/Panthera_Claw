@@ -4,3 +4,4 @@ public/claw.wasm
 src/wasm_exec.js
 *.tsbuildinfo
 public/ocr/
+public/pdf/

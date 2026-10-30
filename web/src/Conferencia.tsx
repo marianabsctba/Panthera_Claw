@@ -22,15 +22,15 @@ export default function Conferencia({ leitura, campos, voltar, confirmar }: Prop
   return (
     <section className="conferencia">
       <h1>Confira o que a gente leu</h1>
-      <p className="grande">Compare com a imagem. Se algo estiver diferente, é só corrigir.</p>
+      <p className="grande">{leitura.previa ? "Compare com a imagem. Se algo estiver diferente, é só corrigir." : "Compare com o comprovante. Se algo estiver diferente, é só corrigir."}</p>
       {leitura.confianca < 70 && leitura.origem === "imagem" && (
         <p className="aviso-leve">A imagem não está muito nítida. Olhe com atenção, principalmente o código da transação.</p>
       )}
 
-      <button className={`previa ${ampliada ? "ampliada" : ""}`} onClick={() => setAmpliada(!ampliada)} aria-label={ampliada ? "Diminuir a imagem" : "Aumentar a imagem"}>
+      {leitura.previa && <button className={`previa ${ampliada ? "ampliada" : ""}`} onClick={() => setAmpliada(!ampliada)} aria-label={ampliada ? "Diminuir a imagem" : "Aumentar a imagem"}>
         <img src={leitura.previa} alt="Imagem do comprovante" />
         {!ampliada && <span className="lupa"><ZoomIn size={22} aria-hidden /> Toque para aumentar</span>}
-      </button>
+      </button>}
 
       <form className="campos" onSubmit={(e) => { e.preventDefault(); confirmar({ ...c, id }); }}>
         <label>

@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import { Download, FileUp, Github, Loader2, Lock, Minus, Plus } from "lucide-react";
+import { ClipboardPaste, Download, FileUp, Github, Loader2, Lock, Minus, Plus } from "lucide-react";
 import ComoFunciona from "./ComoFunciona";
 import Conferencia from "./Conferencia";
 import ResultadoTela from "./Resultado";
@@ -19,6 +19,27 @@ type Tela =
 interface EventoInstalar extends Event { prompt(): Promise<void> }
 
 const TAMANHOS = [1, 1.15, 1.3, 1.5];
+
+const podeColar = typeof navigator !== "undefined" && !!navigator.clipboard?.read;
+
+// Alguns programas só entregam a imagem pela lista de itens, não pela de
+// arquivos.
+function arquivoColado(d: DataTransfer): File | null {
+  const f = Array.from(d.files)[0];
+  if (f) return f;
+  for (const item of Array.from(d.items)) {
+    if (item.kind === "file") {
+      const g = item.getAsFile();
+      if (g) return g;
+    }
+  }
+  return null;
+}
+
+function pareceComprovante(texto: string): boolean {
+  const junto = texto.replace(/\s/g, "");
+  return /[EeDd][0-9OoIl]{20}/.test(junto) || (/R\$/.test(texto) && /\d{2}\/\d{2}\/\d{2,4}|\d{1,2} (de )?[a-zç]{3}/i.test(texto));
+}
 
 function tamanhoSalvo(): number {
   try {
@@ -52,7 +73,7 @@ export default function App() {
 
   const conferir = useCallback(async (leitura: Leitura, campos: Campos, info: InfoArquivo) => {
     const resultado = await nucleo.conferir({
-      campos, arquivo: info, pdfSemTexto: leitura.pdfSemTexto,
+      campos, arquivo: info, pdfSemTexto: leitura.pdfSemTexto, sobrepostos: leitura.sobrepostos,
       vistos: vistos().filter((v) => v.sha256 !== info.sha256),
     });
     guardar(resultado);
@@ -93,15 +114,51 @@ export default function App() {
     })();
   }, [processar]);
 
-  // Colar (Ctrl+V) um print copiado.
+  // Texto colado (copiado de um PDF ou digitado): vai direto para a
+  // conferência dos campos, sem imagem.
+  const processarTexto = useCallback(async (texto: string) => {
+    calar();
+    setComo(false);
+    setTela({ nome: "lendo", etapa: "Lendo o texto colado" });
+    const info = await nucleo.analisar("texto colado", new TextEncoder().encode(texto));
+    const campos = await nucleo.ler(texto);
+    setTela({ nome: "conferir", leitura: { texto, origem: "texto", pdfSemTexto: false, confianca: 100, previa: "" }, campos, info });
+  }, []);
+
+  // Colar (Ctrl+V) em qualquer tela: imagem, PDF ou texto do comprovante.
   useEffect(() => {
     const colar = (e: ClipboardEvent) => {
-      const f = Array.from(e.clipboardData?.files ?? [])[0];
-      if (f && (tela.nome === "inicio" || tela.nome === "erro")) { e.preventDefault(); void processar(f); }
+      if (tela.nome === "lendo" || !e.clipboardData) return;
+      const f = arquivoColado(e.clipboardData);
+      if (f) { e.preventDefault(); void processar(f); return; }
+      // Dentro de um campo, colar texto é só preencher o campo.
+      const alvo = e.target as HTMLElement | null;
+      if (alvo?.closest("input, textarea, [contenteditable]")) return;
+      const texto = e.clipboardData.getData("text/plain");
+      if (pareceComprovante(texto)) { e.preventDefault(); void processarTexto(texto); }
     };
-    window.addEventListener("paste", colar);
-    return () => window.removeEventListener("paste", colar);
-  }, [tela.nome, processar]);
+    document.addEventListener("paste", colar);
+    return () => document.removeEventListener("paste", colar);
+  }, [tela.nome, processar, processarTexto]);
+
+  // Botão "Colar comprovante", para quem não usa Ctrl+V.
+  const colarDoBotao = async () => {
+    try {
+      for (const item of await navigator.clipboard.read()) {
+        const tipo = item.types.find((t) => t.startsWith("image/") || t === "application/pdf");
+        if (tipo) {
+          const b = await item.getType(tipo);
+          await processar(new File([b], tipo === "application/pdf" ? "colado.pdf" : "colado." + tipo.split("/")[1], { type: tipo }));
+          return;
+        }
+      }
+      const texto = await navigator.clipboard.readText();
+      if (pareceComprovante(texto)) { await processarTexto(texto); return; }
+      setTela({ nome: "erro", mensagem: "Não achamos um comprovante copiado. Copie a imagem do comprovante e toque em Colar de novo." });
+    } catch {
+      setTela({ nome: "erro", mensagem: "O navegador não deixou colar por este botão. Use o botão Escolher comprovante ou as teclas Ctrl e V juntas." });
+    }
+  };
 
   const recomecar = () => { calar(); setTela({ nome: "inicio" }); window.scrollTo(0, 0); };
 
@@ -138,6 +195,11 @@ export default function App() {
             <button className={`botao-gigante ${arrastando ? "ativo" : ""}`} onClick={() => entrada.current?.click()}>
               <FileUp size={36} aria-hidden /> Escolher comprovante
             </button>
+            {podeColar && (
+              <button className="botao-secundario largo" onClick={() => void colarDoBotao()}>
+                <ClipboardPaste size={24} aria-hidden /> Colar comprovante copiado
+              </button>
+            )}
             <p className="dica">Pode ser o print da tela ou o PDF. No computador, você também pode arrastar o arquivo ou colar com Ctrl+V.</p>
             <p className="privacidade"><Lock size={20} aria-hidden /> O comprovante não sai do seu aparelho.</p>
             {instalar && (

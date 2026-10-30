@@ -13,7 +13,17 @@ export default function ComoFunciona({ voltar }: { voltar: () => void }) {
       </p>
       <p>
         O Panthera Claw compara o que está escrito no comprovante com o que o código revela. Se não bater, o
-        comprovante é falso. Também olhamos se o arquivo passou por algum programa de edição.
+        comprovante é falso.
+      </p>
+      <p>
+        Também olhamos o próprio arquivo: se passou por um programa de edição, se o PDF tem outro valor escondido
+        por baixo do valor que aparece, e se o arquivo declara que foi feito ou mexido por inteligência artificial.
+      </p>
+
+      <h2>O que a gente não consegue ver</h2>
+      <p>
+        Se alguém faz um Pix verdadeiro de valor pequeno e muda só o valor no print, o resto do comprovante continua
+        certo. Por isso, antes de entregar, confira sempre no extrato do seu banco.
       </p>
 
       <h2>O que o resultado quer dizer</h2>

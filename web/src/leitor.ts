@@ -9,12 +9,14 @@ pdfjs.GlobalWorkerOptions.workerSrc = workerPdf;
 
 export interface Leitura {
   texto: string;
-  origem: "pdf" | "imagem";
+  origem: "pdf" | "imagem" | "texto";
   pdfSemTexto: boolean;
   // Confiança da leitura de imagem, de 0 a 100. No PDF é sempre 100.
   confianca: number;
   // Imagem para mostrar ao lado dos campos lidos.
   previa: string;
+  // Textos do PDF desenhados um em cima do outro (o de cima veio depois).
+  sobrepostos?: { cima: string; baixo: string }[];
 }
 
 export type Etapa = (texto: string) => void;
@@ -33,21 +35,27 @@ export async function ler(arquivo: File, etapa: Etapa): Promise<Leitura> {
 
 async function lerPdf(dados: Uint8Array, etapa: Etapa): Promise<Leitura> {
   etapa("Abrindo o PDF");
-  const tarefa = pdfjs.getDocument({ data: dados.slice(), disableFontFace: true });
+  const tarefa = pdfjs.getDocument({
+    data: dados.slice(),
+    disableFontFace: true,
+    standardFontDataUrl: new URL(`${import.meta.env.BASE_URL}pdf/fontes/`, location.href).href,
+  });
   const doc = await tarefa.promise;
   try {
     const linhas: string[] = [];
+    const sobrepostos: { cima: string; baixo: string }[] = [];
     const paginas = Math.min(doc.numPages, 3);
     for (let n = 1; n <= paginas; n++) {
       const pagina = await doc.getPage(n);
       const conteudo = await pagina.getTextContent();
       linhas.push(...juntarEmLinhas(conteudo.items as ItemTexto[]));
+      sobrepostos.push(...acharSobrepostos(conteudo.items as ItemTexto[]));
     }
     const texto = linhas.join("\n");
     const primeira = await doc.getPage(1);
     const tela = await desenhar(primeira, 2);
     if (texto.replace(/\s/g, "").length >= 20) {
-      return { texto, origem: "pdf", pdfSemTexto: false, confianca: 100, previa: tela.toDataURL("image/jpeg", 0.85) };
+      return { texto, origem: "pdf", pdfSemTexto: false, confianca: 100, previa: tela.toDataURL("image/jpeg", 0.85), sobrepostos };
     }
     // PDF sem texto: é uma foto ou um print salvo como PDF.
     etapa("O PDF é uma imagem. Lendo a imagem");
@@ -82,6 +90,29 @@ function juntarEmLinhas(itens: ItemTexto[]): string[] {
     }
     return s.trim();
   });
+}
+
+// Dois textos diferentes ocupando o mesmo lugar: quem edita PDF costuma
+// cobrir o valor antigo com um retângulo e escrever o novo por cima. A ordem
+// dos itens é a ordem de desenho, então o posterior está por cima.
+function acharSobrepostos(itens: ItemTexto[]): { cima: string; baixo: string }[] {
+  const caixas = itens.filter((i) => i.str.trim().length >= 2).map((i) => {
+    const h = Math.abs(i.transform[3]) || i.height || 10;
+    return { s: i.str.trim(), x0: i.transform[4], x1: i.transform[4] + i.width, y0: i.transform[5] - h * 0.2, y1: i.transform[5] + h * 0.8 };
+  });
+  const achados: { cima: string; baixo: string }[] = [];
+  for (let a = 0; a < caixas.length; a++) {
+    for (let b = a + 1; b < caixas.length; b++) {
+      const p = caixas[a], q = caixas[b];
+      if (p.s === q.s) continue; // mesmo texto duas vezes é negrito simulado
+      const iw = Math.min(p.x1, q.x1) - Math.max(p.x0, q.x0);
+      const ih = Math.min(p.y1, q.y1) - Math.max(p.y0, q.y0);
+      if (iw <= 0 || ih <= 0) continue;
+      const menor = Math.min((p.x1 - p.x0) * (p.y1 - p.y0), (q.x1 - q.x0) * (q.y1 - q.y0));
+      if (menor > 0 && (iw * ih) / menor > 0.4) achados.push({ cima: q.s, baixo: p.s });
+    }
+  }
+  return achados.slice(0, 10);
 }
 
 async function desenhar(pagina: pdfjs.PDFPageProxy, escala: number): Promise<HTMLCanvasElement> {

@@ -15,7 +15,7 @@ print/PDF ──> leitura (pdf.js ou Tesseract.js) ──> campos ──> confir
 | `bancos` | Lista de participantes do Pix e do STR (gerada por `ferramentas/bancos`, embutida no binário) e marcas: liga "Nubank" aos ISPBs da Nu Pagamentos e da Nu Financeira. |
 | `pix` | Lê o EndToEndId (com correção de confusões de leitura só na parte numérica) e classifica chaves Pix (CPF, CNPJ inclusive alfanumérico, telefone, e-mail, aleatória). |
 | `leitura` | Tira os campos do texto: rótulos na mesma linha ou na seguinte, seções de origem e destino, datas numéricas e por extenso, correção do @ mal lido. |
-| `arquivo` | Metadados do arquivo: SHA-256, programas declarados (PDF Info, XMP, EXIF, PNG), versões gravadas no PDF, assinatura digital. |
+| `arquivo` | Metadados do arquivo: SHA-256, programas declarados (PDF Info, XMP, EXIF, PNG), versões gravadas no PDF e o texto escrito em cada versão posterior (fluxos Flate e ASCII85), assinatura digital, marcas de IA (C2PA, IPTC, prompt no PNG). |
 | `conferir` | Junta tudo e devolve achados com peso (`falso`, `alerta`, `ok`, `info`) e o veredito. |
 
 Decisões:
@@ -23,6 +23,10 @@ Decisões:
 - **Horário de Brasília fixo em UTC−3.** Não há horário de verão desde 2019, antes do Pix, então o deslocamento é exato para qualquer comprovante.
 - **Tolerância de horário:** até 5 minutos é coerente (o código guarda o minuto em que a transação começou). Diferença de 3 horas exatas é o erro típico de quem monta o código com o horário de Brasília. 1 ou 2 horas exatas podem ser outro fuso do Brasil (atenção). Até 2 horas é atenção; mais que isso é erro.
 - **Chave com forma estranha não é erro**, porque pode ser leitura ruim da imagem. Dígito verificador ou DDD impossível é erro.
+- **Texto sobreposto no PDF:** o site compara as caixas dos textos que o pdf.js extrai; dois textos diferentes ocupando mais de 40% da mesma área indicam algo escrito por cima. Se os dois são valores em reais e diferentes, é erro.
+- **Versão nova do PDF:** só conta como nova a frase que não existia na primeira versão, porque alguns programas regravam a página inteira ao salvar por cima.
+- **Marca de IA é erro, ausência de marca não diz nada.** Comprovante de banco nunca é gerado nem editado por IA.
+- **Sem análise de pixels no print.** A análise do nível de erro (ELA) foi medida em prints recomprimidos como no WhatsApp e não separou editados de verdadeiros; foi removida.
 - **Mesmo código com o mesmo valor em outro arquivo** é o mesmo Pix enviado como PDF e como print: informação, não fraude.
 
 ## Site (`web/`)
