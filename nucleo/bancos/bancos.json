@@ -1,0 +1,7654 @@
+[
+ {
+  "ispb": "00000000",
+  "nome": "BCO DO BRASIL S.A.",
+  "cnpj": "00.000.000/0001-91",
+  "tipo": "Banco Múltiplo",
+  "compe": "001",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "00000208",
+  "nome": "BRB - BCO DE BRASILIA S.A.",
+  "cnpj": "00.000.208/0001-00",
+  "tipo": "Banco Múltiplo",
+  "compe": "070",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "00068987",
+  "nome": "CC ARACREDI LTDA.",
+  "cnpj": "00.068.987/0001-86",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "00075847",
+  "nome": "CC UNICRED CENTRO-SUL LTDA - UNICRED CENTRO-SUL",
+  "cnpj": "00.075.847/0001-35",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "00106180",
+  "nome": "CCC DOS EST DE MT, MS E MUN DE CACOAL/RO",
+  "cnpj": "00.106.180/0001-90",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "00122327",
+  "nome": "SANTINVEST S.A. - CFI",
+  "compe": "539",
+  "situacao": "str"
+ },
+ {
+  "ispb": "00204963",
+  "nome": "CCR SEARA",
+  "cnpj": "00.204.963/0001-07",
+  "tipo": "Cooperativa de Crédito",
+  "compe": "430",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "00250699",
+  "nome": "AGK CC S.A.",
+  "compe": "272",
+  "situacao": "str"
+ },
+ {
+  "ispb": "00259231",
+  "nome": "CCLA SICOOB UNIMAIS METROPOLITANA",
+  "cnpj": "00.259.231/0001-14",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "00309024",
+  "nome": "CCC ESTADO MG - CECREMGE",
+  "cnpj": "00.309.024/0001-27",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "00315557",
+  "nome": "UNICRED DO BRASIL",
+  "cnpj": "00.315.557/0001-11",
+  "tipo": "Cooperativa de Crédito",
+  "compe": "136",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "00329598",
+  "nome": "SEFER INVESTIMENTOS DTVM LTDA - EM LIQUIDAÇÃO EXTRAJUDICIAL",
+  "compe": "407",
+  "situacao": "str"
+ },
+ {
+  "ispb": "00360305",
+  "nome": "CAIXA ECONOMICA FEDERAL",
+  "cnpj": "00.360.305/0001-04",
+  "tipo": "Caixa Econômica Federal",
+  "compe": "104",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "00394460",
+  "nome": "STN",
+  "cnpj": "00.394.460/0409-50",
+  "tipo": "Governo",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "00411939",
+  "nome": "FINAMAX S.A. CFI",
+  "compe": "714",
+  "situacao": "str"
+ },
+ {
+  "ispb": "00416968",
+  "nome": "BANCO INTER",
+  "cnpj": "00.416.968/0001-01",
+  "tipo": "Banco Múltiplo",
+  "compe": "077",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "00429890",
+  "nome": "CC CREDIAGRO",
+  "cnpj": "00.429.890/0001-51",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "00460065",
+  "nome": "COLUNA S.A. DTVM",
+  "compe": "423",
+  "situacao": "str"
+ },
+ {
+  "ispb": "00512839",
+  "nome": "CC SERV. MUN SANTO ANDRÉ SP - CECRESA",
+  "cnpj": "00.512.839/0001-09",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "00517645",
+  "nome": "BCO RIBEIRAO PRETO S.A.",
+  "cnpj": "00.517.645/0001-04",
+  "tipo": "Banco Múltiplo",
+  "compe": "741",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "00556603",
+  "nome": "BANCO BARI S.A.",
+  "cnpj": "00.556.603/0001-74",
+  "tipo": "Banco Múltiplo",
+  "compe": "330",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "00655522",
+  "nome": "APE POUPEX",
+  "cnpj": "00.655.522/0001-21",
+  "tipo": "Associação de Poupança e Empréstimo",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "00694389",
+  "nome": "CCLA SICOOB CREDICARU SC/RS",
+  "cnpj": "00.694.389/0001-12",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "00694877",
+  "nome": "COOP SICOOB EXECUTIVO LTDA.",
+  "cnpj": "00.694.877/0001-20",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "00707903",
+  "nome": "CC VALE DO CANOAS",
+  "cnpj": "00.707.903/0001-07",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "00714671",
+  "nome": "EWALLY IP S.A.",
+  "cnpj": "00.714.671/0001-14",
+  "tipo": "Instituição de Pagamento",
+  "compe": "534",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "00795423",
+  "nome": "BANCO SEMEAR",
+  "cnpj": "00.795.423/0001-45",
+  "tipo": "Banco Múltiplo",
+  "compe": "743",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "00803287",
+  "nome": "CC CREDIVAZ LTDA",
+  "cnpj": "00.803.287/0001-98",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "00804046",
+  "nome": "COOP CREDICAPI LTDA - SICOOB CREDICAPI",
+  "cnpj": "00.804.046/0001-63",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "00806535",
+  "nome": "PLANNER CV S.A.",
+  "compe": "100",
+  "situacao": "str"
+ },
+ {
+  "ispb": "00815319",
+  "nome": "SICOOB SUL-SERRANO",
+  "cnpj": "00.815.319/0001-75",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "00869687",
+  "nome": "CCLA BOA ESPERANÇA",
+  "cnpj": "00.869.687/0001-04",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "00952415",
+  "nome": "SICOOB CREDFAZ",
+  "cnpj": "00.952.415/0001-65",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "00954288",
+  "nome": "FDO GARANTIDOR CRÉDITOS",
+  "compe": "541",
+  "situacao": "str"
+ },
+ {
+  "ispb": "00966246",
+  "nome": "CC CREDICERIPA",
+  "cnpj": "00.966.246/0001-12",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "00968602",
+  "nome": "COOP SICOOB COOPERCRED LTDA.",
+  "cnpj": "00.968.602/0001-37",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "00971300",
+  "nome": "COOP CRESOL PIONEIRA",
+  "cnpj": "00.971.300/0001-18",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "00997185",
+  "nome": "BCO B3 S.A.",
+  "cnpj": "00.997.185/0001-50",
+  "tipo": "Banco Comercial",
+  "compe": "096",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "01009908",
+  "nome": "CCLA PARA DE MINAS",
+  "cnpj": "01.009.908/0001-29",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "01023570",
+  "nome": "BCO RABOBANK INTL BRASIL S.A.",
+  "compe": "747",
+  "situacao": "str"
+ },
+ {
+  "ispb": "01027058",
+  "nome": "CIELO IP S.A.",
+  "cnpj": "01.027.058/0001-91",
+  "tipo": "Instituição de Pagamento",
+  "compe": "362",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "01039011",
+  "nome": "CC UNICRED DESBRAVADORA LTDA - UNICRED DESBRAVADORA",
+  "cnpj": "01.039.011/0001-48",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "01060307",
+  "nome": "CCLA UNIÃO DOS VALES DO PIRANGA E MATIPÓ LTDA.",
+  "cnpj": "01.060.307/0001-40",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "01062439",
+  "nome": "CECM DOS FUNCIONARIOS DA COMIGO",
+  "cnpj": "01.062.439/0001-01",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "01073966",
+  "nome": "CCR DE ABELARDO LUZ",
+  "cnpj": "01.073.966/0001-11",
+  "tipo": "Cooperativa de Crédito",
+  "compe": "322",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "01152097",
+  "nome": "CC CREDIMATA",
+  "cnpj": "01.152.097/0001-10",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "01155801",
+  "nome": "COOP CRESOL CENTRO SERRA",
+  "cnpj": "01.155.801/0001-99",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "01181521",
+  "nome": "BANCO COOPERATIVO SICREDI",
+  "cnpj": "01.181.521/0001-55",
+  "tipo": "Banco Múltiplo Cooperativo",
+  "compe": "748",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "01187961",
+  "nome": "CC DISTRITO FEDERAL E ENTORNO",
+  "cnpj": "01.187.961/0001-10",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "01205736",
+  "nome": "COOP DE CRÉDITO SICOOB COSTA DO DESCOBRIMENTO LTDA.",
+  "cnpj": "01.205.736/0001-69",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "01259518",
+  "nome": "COOP SICOOB UNIMAIS CLP",
+  "cnpj": "01.259.518/0001-07",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "01286361",
+  "nome": "UNIPRIME PIONEIRA CC",
+  "cnpj": "01.286.361/0001-09",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "01330387",
+  "nome": "COOPERATIVA DE CRÉDITO POPULAR DO BRASIL",
+  "cnpj": "01.330.387/0001-07",
+  "tipo": "Cooperativa de Crédito",
+  "compe": "350",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "01374196",
+  "nome": "CC SÃO FRANCISCO DE SALES LTDA.",
+  "cnpj": "01.374.196/0001-47",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "01389651",
+  "nome": "CCLA DO PLANALTO CATARINENSE",
+  "cnpj": "01.389.651/0001-88",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "01522368",
+  "nome": "BCO BNP PARIBAS BRASIL S A",
+  "cnpj": "01.522.368/0001-82",
+  "tipo": "Banco Múltiplo",
+  "compe": "752",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "01526924",
+  "nome": "UNICRED HORIZONTES",
+  "cnpj": "01.526.924/0001-99",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "01559914",
+  "nome": "CCLA LESTE E NORDESTE MINEIRO",
+  "cnpj": "01.559.914/0001-50",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "01572667",
+  "nome": "COOP UNIPRIME SUL",
+  "cnpj": "01.572.667/0001-21",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "01604998",
+  "nome": "CCLA SUL MINAS-SICOOB CREDIVAS",
+  "cnpj": "01.604.998/0001-04",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "01608685",
+  "nome": "COOP DO ESTADO DO ACRE LTDA.",
+  "cnpj": "01.608.685/0001-16",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "01609345",
+  "nome": "CC CREDICAMPINA",
+  "cnpj": "01.609.345/0001-00",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "01635462",
+  "nome": "UNICRED PREMIUM CAPITAL",
+  "cnpj": "01.635.462/0001-48",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "01637949",
+  "nome": "CCLA VALE DO PARANAPANEMA",
+  "cnpj": "01.637.949/0001-60",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "01644264",
+  "nome": "CCLA SICOOB CREDIMEPI",
+  "cnpj": "01.644.264/0001-40",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "01648418",
+  "nome": "NSTECH IP S.A.",
+  "cnpj": "01.648.418/0001-72",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "01657678",
+  "nome": "CCLA SEBASTIAO PARAISO",
+  "cnpj": "01.657.678/0001-04",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "01658426",
+  "nome": "COOP COOPERFORTE LTDA.",
+  "cnpj": "01.658.426/0001-08",
+  "tipo": "Cooperativa de Crédito",
+  "compe": "379",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "01667352",
+  "nome": "CCLA SICOOB CREDMISSÃO LTDA.",
+  "cnpj": "01.667.352/0001-68",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "01667766",
+  "nome": "CCLA CREDINOVA LTDA. - SICOOB CREDINOVA",
+  "cnpj": "01.667.766/0001-97",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "01692448",
+  "nome": "CCLA DO PLANALTO SERRANO",
+  "cnpj": "01.692.448/0001-86",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "01699652",
+  "nome": "CCLA REGIÃO GUAXUPÉ",
+  "cnpj": "01.699.652/0001-29",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "01701201",
+  "nome": "Kirton Bank",
+  "compe": "399",
+  "situacao": "str"
+ },
+ {
+  "ispb": "01703620",
+  "nome": "CCLA UNIÃO CENTRO OESTE MINAS",
+  "cnpj": "01.703.620/0001-50",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "01705236",
+  "nome": "UNICRED PROSPERAR",
+  "cnpj": "01.705.236/0001-96",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "01709266",
+  "nome": "CCM PROF SAUDE E LIVRE ADMISSÃO TEOFILO OTONI LTDA",
+  "cnpj": "01.709.266/0001-70",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "01722480",
+  "nome": "QUERO-QUERO VERDECARD IP S.A.",
+  "cnpj": "01.722.480/0001-67",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "01727929",
+  "nome": "CC UNICRED EVOLUÇÃO LTDA.",
+  "cnpj": "01.727.929/0001-80",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "01736516",
+  "nome": "CCLA REG. CTR. E OESTE MINEIRO",
+  "cnpj": "01.736.516/0001-61",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "01739375",
+  "nome": "CCLA LAGOA DA PRATA",
+  "cnpj": "01.739.375/0001-30",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "01760242",
+  "nome": "CCLA DE BH E CIDADES POLO DE MG",
+  "cnpj": "01.760.242/0001-46",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "01848322",
+  "nome": "UNIPRIME DO IGUAÇU - CC POUP INV",
+  "cnpj": "01.848.322/0001-58",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "01852137",
+  "nome": "BCO BRASILEIRO DE CRÉDITO S.A.",
+  "cnpj": "01.852.137/0001-37",
+  "tipo": "Banco Múltiplo",
+  "compe": "378",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "01858774",
+  "nome": "BCO BV S.A.",
+  "cnpj": "01.858.774/0001-10",
+  "tipo": "Banco Múltiplo",
+  "compe": "413",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "01864151",
+  "nome": "CECM SERV E EMPREG PUBL MUN BH BETIM BRUMAD CONTAG IBI NL RN",
+  "cnpj": "01.864.151/0001-50",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "02000895",
+  "nome": "CECM SERV POD JUD TCE ORG PUBL MUN EST FED RJ",
+  "cnpj": "02.000.895/0001-90",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "02015588",
+  "nome": "COOP SICOOB CREDIP",
+  "cnpj": "02.015.588/0001-82",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "02031139",
+  "nome": "CCLA MONTES CLAROS",
+  "cnpj": "02.031.139/0001-28",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "02038232",
+  "nome": "BANCO SICOOB S.A.",
+  "cnpj": "02.038.232/0001-64",
+  "tipo": "Banco Múltiplo Cooperativo",
+  "compe": "756",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "02057584",
+  "nome": "CC SICOOB SERTÃO",
+  "cnpj": "02.057.584/0001-67",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "02090126",
+  "nome": "CCLA SICOOB VALCREDI SUL",
+  "cnpj": "02.090.126/0001-20",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "02144899",
+  "nome": "CCLA DA REGIÃO CENTRAL DE RONDÔNIA",
+  "cnpj": "02.144.899/0001-41",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "02173447",
+  "nome": "CCLA CENTRO NORDESTE MINEIRO",
+  "cnpj": "02.173.447/0001-98",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "02179673",
+  "nome": "COOPERATIVA DE CRÉDITO LIVRE ADMISSÃO SICOOB OURICRED",
+  "cnpj": "02.179.673/0001-86",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "02197569",
+  "nome": "CCLA CREDSAOPAULO",
+  "cnpj": "02.197.569/0001-14",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "02217068",
+  "nome": "CC CONTADORES, ADMINISTRADORES, ECONOMISTAS E CORRET SEGUROS",
+  "cnpj": "02.217.068/0001-52",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "02232383",
+  "nome": "CCLA CIRCUITO CAMPOS VERTENTES",
+  "cnpj": "02.232.383/0001-59",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "02254376",
+  "nome": "CCLA SICOOB COOPCREDI",
+  "cnpj": "02.254.376/0001-58",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "02275781",
+  "nome": "CCM SERV FEDERAIS NA PARAÍBA - SICOOB COOPERCRET",
+  "cnpj": "02.275.781/0001-52",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "02276653",
+  "nome": "TRINUS CAPITAL DTVM",
+  "compe": "360",
+  "situacao": "str"
+ },
+ {
+  "ispb": "02282165",
+  "nome": "CC SICOOB CREDICONQUISTA",
+  "cnpj": "02.282.165/0001-29",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "02282709",
+  "nome": "COOP CENTRO NORTE BRASILEIRO",
+  "cnpj": "02.282.709/0001-52",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "02309070",
+  "nome": "CCLA CREDISIS JICRED",
+  "cnpj": "02.309.070/0001-51",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "02318507",
+  "nome": "BCO KEB HANA DO BRASIL S.A.",
+  "cnpj": "02.318.507/0001-13",
+  "tipo": "Banco Comercial",
+  "compe": "757",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "02332886",
+  "nome": "XP INVESTIMENTOS CCTVM S/A",
+  "compe": "102",
+  "situacao": "str"
+ },
+ {
+  "ispb": "02335109",
+  "nome": "CCLA ZONA DA MATA LTDA",
+  "cnpj": "02.335.109/0001-05",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "02338666",
+  "nome": "CCLA CREDIEMBRAPA",
+  "cnpj": "02.338.666/0001-80",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "02347114",
+  "nome": "GREENCRED CC",
+  "cnpj": "02.347.114/0001-38",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "02382755",
+  "nome": "SICOOB POTIGUAR",
+  "cnpj": "02.382.755/0001-23",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "02398976",
+  "nome": "SISPRIME DO BRASIL - COOP",
+  "cnpj": "02.398.976/0001-90",
+  "tipo": "Cooperativa de Crédito",
+  "compe": "084",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "02405189",
+  "nome": "COOP ÚNILOS",
+  "cnpj": "02.405.189/0001-28",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "02446089",
+  "nome": "COOP CRESOL UNIAO",
+  "cnpj": "02.446.089/0001-40",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "02447120",
+  "nome": "CC SICOOB EXTREMO SUL LTDA.",
+  "cnpj": "02.447.120/0001-67",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "02448310",
+  "nome": "COOP CRESOL PROGRESSO",
+  "cnpj": "02.448.310/0001-07",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "02448839",
+  "nome": "SICOOB CREDIUNIÃO",
+  "cnpj": "02.448.839/0001-12",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "02466552",
+  "nome": "CC SICOOB VALE SUL",
+  "cnpj": "02.466.552/0001-15",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "02480577",
+  "nome": "CCLA E DOS ADV",
+  "cnpj": "02.480.577/0001-73",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "02493000",
+  "nome": "SICOOB LESTE",
+  "cnpj": "02.493.000/0001-04",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "02528151",
+  "nome": "CC SICOOB CREDCOOP",
+  "cnpj": "02.528.151/0001-42",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "02587492",
+  "nome": "CCLA URUBICI",
+  "cnpj": "02.587.492/0001-99",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "02641969",
+  "nome": "CCLAA NOVA TRENTO",
+  "cnpj": "02.641.969/0001-77",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "02663426",
+  "nome": "COOP CRESOL NOROESTE",
+  "cnpj": "02.663.426/0001-50",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "02671743",
+  "nome": "BANVOX DTVM - EM LIQUIDAÇÃO EXTRAJUDICIAL",
+  "compe": "591",
+  "situacao": "str"
+ },
+ {
+  "ispb": "02682287",
+  "nome": "PAN FINAN",
+  "cnpj": "02.682.287/0001-02",
+  "tipo": "Sociedade de Crédito, Financiamento e Investimento",
+  "compe": "555",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "02685483",
+  "nome": "CM CAPITAL MARKETS CCTVM LTDA",
+  "compe": "180",
+  "situacao": "str"
+ },
+ {
+  "ispb": "02766672",
+  "nome": "COOP CRESOL EXCELÊNCIA",
+  "cnpj": "02.766.672/0001-38",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "02794761",
+  "nome": "SICOOB UFVCREDI",
+  "cnpj": "02.794.761/0001-98",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "02801938",
+  "nome": "BCO MORGAN STANLEY S.A.",
+  "compe": "066",
+  "situacao": "str"
+ },
+ {
+  "ispb": "02819125",
+  "nome": "UBS BB CCTVM S.A.",
+  "compe": "015",
+  "situacao": "str"
+ },
+ {
+  "ispb": "02833202",
+  "nome": "UNICRED SUDOESTE DA BAHIA",
+  "cnpj": "02.833.202/0001-40",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "02843443",
+  "nome": "COOP SICREDI NORTE SC",
+  "cnpj": "02.843.443/0001-70",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "02844024",
+  "nome": "COOP CRESOL EVOLUÇAO",
+  "cnpj": "02.844.024/0001-52",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "02876918",
+  "nome": "CC SICOOB NORTE SUL",
+  "cnpj": "02.876.918/0001-24",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "02883398",
+  "nome": "CC VALE ITAJAÍ E ITAPOCÚ",
+  "cnpj": "02.883.398/0001-87",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "02904125",
+  "nome": "COOP CRESOL JACUTINGA",
+  "cnpj": "02.904.125/0001-71",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "02910987",
+  "nome": "COOP CRESOL CENTRO SUL",
+  "cnpj": "02.910.987/0001-07",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "02923389",
+  "nome": "COOP SICREDI SERIGY SE/BA",
+  "cnpj": "02.923.389/0001-72",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "02924977",
+  "nome": "COOP SICREDI MEDICRED",
+  "cnpj": "02.924.977/0001-20",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "02931668",
+  "nome": "SICOOB FLUMINENSE",
+  "cnpj": "02.931.668/0001-88",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "02934201",
+  "nome": "COOP CRESOL LIDERANCA",
+  "cnpj": "02.934.201/0001-91",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "02935307",
+  "nome": "CC SICOOB CREDSEGURO LTDA.",
+  "cnpj": "02.935.307/0001-00",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "02992317",
+  "nome": "INTEX BANK BCO DE CÂMBIO S.A.",
+  "compe": "143",
+  "situacao": "str"
+ },
+ {
+  "ispb": "03000142",
+  "nome": "COOP POL FED - SICREDI POL",
+  "cnpj": "03.000.142/0001-47",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "03015152",
+  "nome": "COOP CRESOL SÃO VALENTIM",
+  "cnpj": "03.015.152/0001-56",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "03017677",
+  "nome": "BCO. J.SAFRA S.A.",
+  "compe": "074",
+  "situacao": "str"
+ },
+ {
+  "ispb": "03033469",
+  "nome": "CC DO PLANALTO SUL",
+  "cnpj": "03.033.469/0001-15",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "03042597",
+  "nome": "COOP SICREDI CAMPO GRANDE MS/GO",
+  "cnpj": "03.042.597/0001-25",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "03046391",
+  "nome": "UNIPRIME COOPCENTRAL LTDA.",
+  "cnpj": "03.046.391/0001-73",
+  "tipo": "Cooperativa de Crédito",
+  "compe": "099",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "03047549",
+  "nome": "CC CAP UNICIDADES",
+  "cnpj": "03.047.549/0001-20",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "03065046",
+  "nome": "COOP SICREDI NOROESTE SP",
+  "cnpj": "03.065.046/0001-87",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "03102185",
+  "nome": "CCLA CENTRO NORDESTE - SICOOB CENTRO NORDESTE",
+  "cnpj": "03.102.185/0001-33",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "03130170",
+  "nome": "BRASIL CARD IP LTDA",
+  "cnpj": "03.130.170/0001-89",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "03212823",
+  "nome": "COOP SICREDI TRADIÇÃO RS",
+  "cnpj": "03.212.823/0001-79",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "03215790",
+  "nome": "BCO TOYOTA DO BRASIL S.A.",
+  "compe": "387",
+  "situacao": "str"
+ },
+ {
+  "ispb": "03222753",
+  "nome": "CREDISIS CREDIARI COOP LTDA.",
+  "cnpj": "03.222.753/0001-30",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "03269540",
+  "nome": "CC SERV MIL POL CIVIL SEC ED",
+  "cnpj": "03.269.540/0001-63",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "03311443",
+  "nome": "MEUTUDO SCFI",
+  "cnpj": "03.311.443/0001-91",
+  "tipo": "Sociedade de Crédito, Financiamento e Investimento",
+  "compe": "326",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "03320525",
+  "nome": "COOP ARACOOP LTDA. - SICOOB ARACOOP",
+  "cnpj": "03.320.525/0001-00",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "03323840",
+  "nome": "BCO ALFA S.A.",
+  "compe": "025",
+  "situacao": "str"
+ },
+ {
+  "ispb": "03358914",
+  "nome": "SICOOB CREDIROCHAS",
+  "cnpj": "03.358.914/0001-17",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "03412878",
+  "nome": "CC CREDIRAMA",
+  "cnpj": "03.412.878/0001-22",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "03419786",
+  "nome": "CC NOSSA SENHORA DO DESTERRO",
+  "cnpj": "03.419.786/0001-74",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "03427097",
+  "nome": "CCLA DO SUL CATARINENSE",
+  "cnpj": "03.427.097/0001-01",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "03428338",
+  "nome": "COOP SICOOB CREDUNI",
+  "cnpj": "03.428.338/0001-37",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "03459850",
+  "nome": "CC SICOOB METROPOLITANO",
+  "cnpj": "03.459.850/0001-40",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "03461243",
+  "nome": "CC DO NORTE CATARINENSE",
+  "cnpj": "03.461.243/0001-15",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "03485130",
+  "nome": "COOP CRESOL ENCOSTAS DA SERRA GERAL",
+  "cnpj": "03.485.130/0001-50",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "03502131",
+  "nome": "CCC DO NORTE DO BRASIL",
+  "cnpj": "03.502.131/0001-65",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "03519240",
+  "nome": "CC PODER JUD E MP MG",
+  "cnpj": "03.519.240/0001-95",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "03532415",
+  "nome": "BANCO ABN AMRO CLEARING S.A.",
+  "compe": "075",
+  "situacao": "str"
+ },
+ {
+  "ispb": "03535065",
+  "nome": "CC SICOOB CREDMETAL",
+  "cnpj": "03.535.065/0001-20",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "03566655",
+  "nome": "COOP SICREDI CELEIRO OESTE",
+  "cnpj": "03.566.655/0001-10",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "03603683",
+  "nome": "COOP SICOOB COOPERPLAN CREDSEF",
+  "cnpj": "03.603.683/0001-60",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "03609817",
+  "nome": "BCO CARGILL S.A.",
+  "compe": "040",
+  "situacao": "str"
+ },
+ {
+  "ispb": "03612679",
+  "nome": "CCM SERV PUBLICOS - CREDI SP",
+  "cnpj": "03.612.679/0001-68",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "03612764",
+  "nome": "COOP FRONTEIRAS",
+  "cnpj": "03.612.764/0001-26",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "03620772",
+  "nome": "CCM DO CEARÁ - SICOOB CEARÁ",
+  "cnpj": "03.620.772/0001-14",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "03632872",
+  "nome": "SICOOB CREDISUL",
+  "cnpj": "03.632.872/0001-60",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "03645752",
+  "nome": "CC CREDISG",
+  "cnpj": "03.645.752/0001-06",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "03662047",
+  "nome": "COOP SICREDI MP",
+  "cnpj": "03.662.047/0001-09",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "03674133",
+  "nome": "CECM EMP INST SF SÃO PAULO CAM",
+  "cnpj": "03.674.133/0001-31",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "03732359",
+  "nome": "CCLA DE PERNAMBUCO - SICOOB PERNAMBUCO",
+  "cnpj": "03.732.359/0001-41",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "03750034",
+  "nome": "COOP SICREDI AJURIS",
+  "cnpj": "03.750.034/0001-91",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "03751794",
+  "nome": "TERRA INVESTIMENTOS DTVM",
+  "compe": "307",
+  "situacao": "str"
+ },
+ {
+  "ispb": "03793242",
+  "nome": "COOP SICREDI SUL SC",
+  "cnpj": "03.793.242/0001-78",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "03816413",
+  "nome": "PAGUEVELOZ IP LTDA.",
+  "cnpj": "03.816.413/0001-37",
+  "tipo": "Instituição de Pagamento",
+  "compe": "517",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "03817702",
+  "nome": "VOLUS IP LTDA.",
+  "cnpj": "03.817.702/0001-50",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "03844699",
+  "nome": "CECM DOS TRAB.PORT. DA G.VITOR",
+  "cnpj": "03.844.699/0001-64",
+  "tipo": "Cooperativa de Crédito",
+  "compe": "385",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "03862898",
+  "nome": "CCLA EMPREG DOS CORREIOS - SICOOB COOPERCORREIOS",
+  "cnpj": "03.862.898/0001-03",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "03881423",
+  "nome": "SOCINAL S.A. CFI",
+  "cnpj": "03.881.423/0001-56",
+  "tipo": "Sociedade de Crédito, Financiamento e Investimento",
+  "compe": "425",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "03941182",
+  "nome": "CCLA CIRCUITO DAS ÁGUAS",
+  "cnpj": "03.941.182/0001-93",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "03965737",
+  "nome": "COOP CRESOL VANGUARDA",
+  "cnpj": "03.965.737/0001-37",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "03973814",
+  "nome": "SERVICOOP",
+  "cnpj": "03.973.814/0001-09",
+  "tipo": "Cooperativa de Crédito",
+  "compe": "190",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "03985375",
+  "nome": "CREDISIS SUDOESTE/RO",
+  "cnpj": "03.985.375/0001-46",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "04013172",
+  "nome": "CC SICOOB 3 COLINAS",
+  "cnpj": "04.013.172/0001-50",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "04062902",
+  "nome": "OZ CORRETORA DE CÂMBIO S.A.",
+  "compe": "296",
+  "situacao": "str"
+ },
+ {
+  "ispb": "04079285",
+  "nome": "CCLA DE ITAJUBÁ - SICOOB SUDESTE MAIS",
+  "cnpj": "04.079.285/0001-59",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "04088208",
+  "nome": "SEM PARAR IP",
+  "cnpj": "04.088.208/0001-65",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "adesao"
+ },
+ {
+  "ispb": "04120633",
+  "nome": "SICOOB EMPRESAS RJ",
+  "cnpj": "04.120.633/0001-94",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "04174720",
+  "nome": "CC SICOOB COOPEMAR",
+  "cnpj": "04.174.720/0001-24",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "04181542",
+  "nome": "CCLA DE PITANGUI E REGIAO LTDA",
+  "cnpj": "04.181.542/0001-69",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "04184779",
+  "nome": "BANCO BRADESCARD",
+  "compe": "063",
+  "situacao": "str"
+ },
+ {
+  "ispb": "04237413",
+  "nome": "COOP SICREDI NATIVA PE/BA",
+  "cnpj": "04.237.413/0001-45",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "04243780",
+  "nome": "CENTRAL SICOOB UNI DE CC",
+  "cnpj": "04.243.780/0001-51",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "04247370",
+  "nome": "CC DE EMPRESÁRIOS",
+  "cnpj": "04.247.370/0001-89",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "04257795",
+  "nome": "NOVA FUTURA CTVM LTDA.",
+  "compe": "191",
+  "situacao": "str"
+ },
+ {
+  "ispb": "04261151",
+  "nome": "COOP CRESOL TRANSFORMAÇÃO",
+  "cnpj": "04.261.151/0001-54",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "04306351",
+  "nome": "INDEPENDÊNCIA CC",
+  "cnpj": "04.306.351/0001-86",
+  "tipo": "Cooperativa de Crédito",
+  "compe": "764",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "04307598",
+  "nome": "FIDUCIA SCMEPP LTDA",
+  "cnpj": "04.307.598/0001-17",
+  "tipo": "Sociedade de Crédito ao Microempreendedor",
+  "compe": "382",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "04321309",
+  "nome": "CC SICOOB INOVA",
+  "cnpj": "04.321.309/0001-34",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "04332281",
+  "nome": "GOLDMAN SACHS DO BRASIL BM S.A",
+  "compe": "064",
+  "situacao": "str"
+ },
+ {
+  "ispb": "04350225",
+  "nome": "COOP CRESOL TRADICAO",
+  "cnpj": "04.350.225/0001-29",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "04355489",
+  "nome": "CC UNICRED COOMARCA",
+  "cnpj": "04.355.489/0001-75",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "04388688",
+  "nome": "CC SICOOB ENGECRED",
+  "cnpj": "04.388.688/0001-80",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "04406371",
+  "nome": "COOP DO ESTADO DE GOIÁS",
+  "cnpj": "04.406.371/0001-29",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "04414354",
+  "nome": "CCM DO ABC - COOPER 7",
+  "cnpj": "04.414.354/0001-33",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "04445917",
+  "nome": "UNICRED COALIZÃO",
+  "cnpj": "04.445.917/0001-50",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "04463602",
+  "nome": "COOP SICREDI CEN OEST PAULISTA",
+  "cnpj": "04.463.602/0001-36",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "04484490",
+  "nome": "COOP SICREDI ALTA NOROESTE SP",
+  "cnpj": "04.484.490/0001-08",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "04490531",
+  "nome": "COOP CRESOL GOIAS",
+  "cnpj": "04.490.531/0001-60",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "04525997",
+  "nome": "COOP SICREDI EDUCAÇÃO RS",
+  "cnpj": "04.525.997/0001-54",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "04529074",
+  "nome": "COOP SICOOB CREDICAPITAL",
+  "cnpj": "04.529.074/0001-70",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "04565791",
+  "nome": "COOP CRESOL ARATIBA",
+  "cnpj": "04.565.791/0001-58",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "04572960",
+  "nome": "CECM MILITARES ESTADUAIS DE SC",
+  "cnpj": "04.572.960/0001-87",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "04608925",
+  "nome": "CREDJUST - CCM INTEGRANTES DA",
+  "cnpj": "04.608.925/0001-70",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "04632856",
+  "nome": "CREDISIS - CENTRAL DE COOPERATIVAS DE CRÉDITO",
+  "cnpj": "04.632.856/0001-30",
+  "tipo": "Cooperativa de Crédito",
+  "compe": "097",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "04649337",
+  "nome": "COOP SICOOB BRMIL LTDA.",
+  "cnpj": "04.649.337/0001-85",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "04663561",
+  "nome": "COOP INVEST INT SOL VALE DAS ÁGUAS PR/MG",
+  "cnpj": "04.663.561/0001-21",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "04694278",
+  "nome": "CECM INTEG. MF DP ESTADO RJ",
+  "cnpj": "04.694.278/0001-67",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "04715685",
+  "nome": "CCM DESP TRÂNS SC E RS",
+  "cnpj": "04.715.685/0001-03",
+  "tipo": "Cooperativa de Crédito",
+  "compe": "016",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "04751713",
+  "nome": "CC INV DE RONDÔNIA - SICOOB CREDJURD",
+  "cnpj": "04.751.713/0001-48",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "04814563",
+  "nome": "BCO AFINZ S.A. - BM",
+  "cnpj": "04.814.563/0001-74",
+  "tipo": "Banco Múltiplo",
+  "compe": "299",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "04831810",
+  "nome": "COOP CRESERV CREDISIS",
+  "cnpj": "04.831.810/0001-40",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "04833655",
+  "nome": "CECM SICOOB METALCRED",
+  "cnpj": "04.833.655/0001-00",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "04838403",
+  "nome": "AVIV INSTITUICAO DE PAGAMENTO",
+  "cnpj": "04.838.403/0001-65",
+  "tipo": "Instituição de Pagamento não sujeita à autorização pelo BCB",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "04849745",
+  "nome": "HBI SCD",
+  "cnpj": "04.849.745/0001-80",
+  "tipo": "Sociedade de Crédito Direto",
+  "compe": "540",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "04853988",
+  "nome": "COOP SICREDI BANDEIRANTES",
+  "cnpj": "04.853.988/0001-92",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "04862600",
+  "nome": "PORTOSEG S.A. CFI",
+  "compe": "468",
+  "situacao": "str"
+ },
+ {
+  "ispb": "04866275",
+  "nome": "BANCO INBURSA",
+  "compe": "012",
+  "situacao": "str"
+ },
+ {
+  "ispb": "04876393",
+  "nome": "CCLA TRÊS FRONTEIRAS",
+  "cnpj": "04.876.393/0001-52",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "04886317",
+  "nome": "COOP SICREDI CREDJURIS",
+  "cnpj": "04.886.317/0001-28",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "04902979",
+  "nome": "BCO DA AMAZONIA S.A.",
+  "cnpj": "04.902.979/0001-44",
+  "tipo": "Banco Comercial",
+  "compe": "003",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "04913129",
+  "nome": "CONFIDENCE CC S.A.",
+  "compe": "060",
+  "situacao": "str"
+ },
+ {
+  "ispb": "04913711",
+  "nome": "BCO DO EST. DO PA S.A.",
+  "cnpj": "04.913.711/0001-08",
+  "tipo": "Banco Múltiplo",
+  "compe": "037",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "04962772",
+  "nome": "FISERV DO BRASIL IP",
+  "cnpj": "04.962.772/0001-65",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "04985665",
+  "nome": "CREDISIS OESTE - CCI DO OESTE",
+  "cnpj": "04.985.665/0001-52",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "05036532",
+  "nome": "CCC UNICOOB-SICOOB CENTR UNIC",
+  "cnpj": "05.036.532/0001-00",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "05070112",
+  "nome": "COOP CRESOL INOVAÇAO",
+  "cnpj": "05.070.112/0001-32",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "05097757",
+  "nome": "CC SERV FIN CTBA E REG",
+  "cnpj": "05.097.757/0001-69",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "05158093",
+  "nome": "CCLA REG LESTE BACIA RIO DOCE",
+  "cnpj": "05.158.093/0001-09",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "05192316",
+  "nome": "VIA CERTA FINANCIADORA S.A. - CFI",
+  "compe": "411",
+  "situacao": "str"
+ },
+ {
+  "ispb": "05203605",
+  "nome": "SICOOB AMAZÔNIA",
+  "cnpj": "05.203.605/0001-01",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "05220243",
+  "nome": "COOP CRESOL ORIGENS",
+  "cnpj": "05.220.243/0001-59",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "05222094",
+  "nome": "COOP SICOOB CERRADO",
+  "cnpj": "05.222.094/0001-67",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "05231945",
+  "nome": "COOP CRESOL UNIAO DOS VALES",
+  "cnpj": "05.231.945/0001-38",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "05241145",
+  "nome": "COOP CRESOL CAMINHOS",
+  "cnpj": "05.241.145/0001-06",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "05241619",
+  "nome": "COOP SICOOB PRIMAVERA",
+  "cnpj": "05.241.619/0001-01",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "05247312",
+  "nome": "COOP SICOOB BURITIS",
+  "cnpj": "05.247.312/0001-18",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "05269976",
+  "nome": "COOP CRESOL MAIS",
+  "cnpj": "05.269.976/0001-88",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "05276770",
+  "nome": "COOP CRESOL FRONTEIRAS PR/SC/SP/ES",
+  "cnpj": "05.276.770/0001-85",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "05277312",
+  "nome": "COOP CRESOL HORIZONTE",
+  "cnpj": "05.277.312/0001-60",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "05351887",
+  "nome": "ZEMA CFI S/A",
+  "cnpj": "05.351.887/0001-86",
+  "tipo": "Sociedade de Crédito, Financiamento e Investimento",
+  "compe": "359",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "05392810",
+  "nome": "COOP DA REGIÃO MERIDIONAL DO BRASIL - SICOOB MERIDIONAL",
+  "cnpj": "05.392.810/0001-54",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "05410056",
+  "nome": "COOP CRESOL LITORAL",
+  "cnpj": "05.410.056/0001-38",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "05425526",
+  "nome": "COOP CRESOL DESENVOLVIMENTO",
+  "cnpj": "05.425.526/0001-37",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "05439425",
+  "nome": "CREDISIS CAPITALCREDI - CCLA DO ACRE LTDA.",
+  "cnpj": "05.439.425/0001-15",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "05442029",
+  "nome": "CASA CREDITO S.A. SCM",
+  "compe": "159",
+  "situacao": "str"
+ },
+ {
+  "ispb": "05463212",
+  "nome": "COOPCENTRAL AILOS",
+  "cnpj": "05.463.212/0001-29",
+  "tipo": "Cooperativa de Crédito",
+  "compe": "085",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "05463934",
+  "nome": "CC CREDLIDER",
+  "cnpj": "05.463.934/0001-83",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "05477038",
+  "nome": "CC NO PIAUÍ - SICOOB PIAUÍ",
+  "cnpj": "05.477.038/0001-73",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "05491616",
+  "nome": "COOP CREDITAG - EM LIQUIDAÇÃO EXTRAJUDICIAL",
+  "compe": "400",
+  "situacao": "str"
+ },
+ {
+  "ispb": "05494591",
+  "nome": "COOP CRESOL NASCENTE",
+  "cnpj": "05.494.591/0001-14",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "05545390",
+  "nome": "COOP SICREDI LENÇÓIS MA",
+  "cnpj": "05.545.390/0001-07",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "05582619",
+  "nome": "CC SICOOB OURO VERDE",
+  "cnpj": "05.582.619/0001-75",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "05597773",
+  "nome": "CC INVESTIMENTO LIVRE ADMISSÃO DO OESTE DE RONDÔNIA",
+  "cnpj": "05.597.773/0001-10",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "05667301",
+  "nome": "CECM COOPERSERV",
+  "cnpj": "05.667.301/0001-97",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "05684234",
+  "nome": "PLANNER SOCIEDADE DE CRÉDITO DIRETO",
+  "cnpj": "05.684.234/0001-19",
+  "tipo": "Sociedade de Crédito Direto",
+  "compe": "410",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "05856736",
+  "nome": "SICOOB EMPRESARIAL",
+  "cnpj": "05.856.736/0001-80",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "05861932",
+  "nome": "CCM DA ADVOCACIA",
+  "cnpj": "05.861.932/0001-42",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "05863726",
+  "nome": "COOP CRESOL PLANALTO SERRA SUL",
+  "cnpj": "05.863.726/0001-71",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "05888589",
+  "nome": "COOP SUL",
+  "cnpj": "05.888.589/0001-20",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "05938780",
+  "nome": "COOPER CARD IP",
+  "cnpj": "05.938.780/0003-09",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "05969937",
+  "nome": "CCMS MUNICIPAIS DE BEBEDOURO",
+  "cnpj": "05.969.937/0001-93",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "05979692",
+  "nome": "CREDCREA",
+  "cnpj": "05.979.692/0001-85",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "05983995",
+  "nome": "COOP CRESOL COOPERAR",
+  "cnpj": "05.983.995/0001-71",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "06031727",
+  "nome": "COOP CRESOL ESSENCIA",
+  "cnpj": "06.031.727/0001-12",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "06078926",
+  "nome": "COOP SICREDI CREDENOREG",
+  "cnpj": "06.078.926/0001-86",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "06126780",
+  "nome": "COOP CRESOL GRANDES LAGOS PR/SP",
+  "cnpj": "06.126.780/0001-05",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "06139650",
+  "nome": "COOP CRESOL RIO GRANDE DO SUL",
+  "cnpj": "06.139.650/0001-07",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "06174009",
+  "nome": "CC SICOOB ALIANÇA",
+  "cnpj": "06.174.009/0001-03",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "06249129",
+  "nome": "RPW S.A. SCFI",
+  "compe": "548",
+  "situacao": "str"
+ },
+ {
+  "ispb": "06255692",
+  "nome": "NDD",
+  "cnpj": "06.255.692/0001-03",
+  "tipo": "Instituição de Pagamento não sujeita à autorização pelo BCB",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "06271464",
+  "nome": "BCO BBI S.A.",
+  "compe": "036",
+  "situacao": "str"
+ },
+ {
+  "ispb": "06324872",
+  "nome": "CC CREDINOSSO",
+  "cnpj": "06.324.872/0001-91",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "06332931",
+  "nome": "COOP SICREDI CERRADO GO",
+  "cnpj": "06.332.931/0001-73",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "06910457",
+  "nome": "CCLA SANTA CRUZ PALMEIRAS",
+  "cnpj": "06.910.457/0001-10",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "06975532",
+  "nome": "CREDISIS COOPESA",
+  "cnpj": "06.975.532/0001-20",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "07026923",
+  "nome": "CCLA SICOOB ARENITO PARANÁ / SÃO PAULO",
+  "cnpj": "07.026.923/0001-61",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "07070495",
+  "nome": "COOP SICREDI EMPREENDEDORES",
+  "cnpj": "07.070.495/0001-74",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "07097064",
+  "nome": "COOP SICOOB CONFIANÇA",
+  "cnpj": "07.097.064/0001-00",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "07115294",
+  "nome": "BOKU NETWORK BRASIL IP",
+  "cnpj": "07.115.294/0001-46",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "07122321",
+  "nome": "CC INTEGRADO - SICOOB INTEGRADO",
+  "cnpj": "07.122.321/0001-08",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "07136847",
+  "nome": "HYPER WALLET IP LTDA",
+  "cnpj": "07.136.847/0001-47",
+  "tipo": "Instituição de Pagamento não sujeita à autorização pelo BCB",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "07138049",
+  "nome": "PICPAY INVEST",
+  "compe": "469",
+  "situacao": "str"
+ },
+ {
+  "ispb": "07194313",
+  "nome": "CC SICOOB HORIZONTE",
+  "cnpj": "07.194.313/0001-77",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "07206072",
+  "nome": "COOP SICREDI NOVOS HORIZONTES PR/SP/RJ",
+  "cnpj": "07.206.072/0001-39",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "07207996",
+  "nome": "BCO BRADESCO FINANC. S.A.",
+  "compe": "394",
+  "situacao": "str"
+ },
+ {
+  "ispb": "07237373",
+  "nome": "BCO DO NORDESTE DO BRASIL S.A.",
+  "cnpj": "07.237.373/0001-20",
+  "tipo": "Banco Múltiplo",
+  "compe": "004",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "07252614",
+  "nome": "COOP CRESOL CONFIANÇA",
+  "cnpj": "07.252.614/0001-00",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "07253654",
+  "nome": "HEDGE INVESTMENTS DTVM LTDA.",
+  "compe": "458",
+  "situacao": "str"
+ },
+ {
+  "ispb": "07268499",
+  "nome": "COOP CRESOL INTEGRACAO",
+  "cnpj": "07.268.499/0001-61",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "07318874",
+  "nome": "COOP  SICOOB MÉDIO OESTE",
+  "cnpj": "07.318.874/0001-30",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "07320890",
+  "nome": "COOP CRESOL VALE",
+  "cnpj": "07.320.890/0001-68",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "07398335",
+  "nome": "AUTHPAY INSTITUICAO DE PAGAMENTO LTDA",
+  "cnpj": "07.398.335/0001-59",
+  "tipo": "Instituição de Pagamento não sujeita à autorização pelo BCB",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "07412987",
+  "nome": "COOP CRESOL ALIANÇA",
+  "cnpj": "07.412.987/0001-09",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "07450604",
+  "nome": "BOC BRASIL",
+  "compe": "320",
+  "situacao": "str"
+ },
+ {
+  "ispb": "07465539",
+  "nome": "COOP CRESOL ALTO VALE",
+  "cnpj": "07.465.539/0001-65",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "07469260",
+  "nome": "CC CREDIFIEMG",
+  "cnpj": "07.469.260/0001-50",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "07494300",
+  "nome": "CREDISIS/CREDISUL COOPERATIVA DE CRÉDITO",
+  "cnpj": "07.494.300/0001-13",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "07502031",
+  "nome": "COOP EMPRECRED LTDA.",
+  "cnpj": "07.502.031/0001-90",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "07512441",
+  "nome": "HS FINANCEIRA",
+  "compe": "189",
+  "situacao": "str"
+ },
+ {
+  "ispb": "07512780",
+  "nome": "COOP CRESOL VALE EUROPEU",
+  "cnpj": "07.512.780/0001-06",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "07599206",
+  "nome": "CCLA DA REGIÃO METROPOLITANA DE GOIÂNIA LTDA.",
+  "cnpj": "07.599.206/0001-29",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "07652226",
+  "nome": "LECCA CFI S.A.",
+  "compe": "105",
+  "situacao": "str"
+ },
+ {
+  "ispb": "07656500",
+  "nome": "BCO KDB BRASIL S.A.",
+  "compe": "076",
+  "situacao": "str"
+ },
+ {
+  "ispb": "07669921",
+  "nome": "CCM SICOOB CREDIACISC",
+  "cnpj": "07.669.921/0001-90",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "07679404",
+  "nome": "BANCO TOPÁZIO S.A.",
+  "cnpj": "07.679.404/0001-00",
+  "tipo": "Banco Múltiplo",
+  "compe": "082",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "07693858",
+  "nome": "HSCM SCMEPP LTDA.",
+  "compe": "312",
+  "situacao": "str"
+ },
+ {
+  "ispb": "07714057",
+  "nome": "CECM PROF ÁREA NOTARIAL REGISTRAL",
+  "cnpj": "07.714.057/0001-00",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "07789195",
+  "nome": "CCLA TRANSPORT RODOV VEICULOS",
+  "cnpj": "07.789.195/0001-40",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "07799277",
+  "nome": "VALOR S/A SCFI",
+  "compe": "195",
+  "situacao": "str"
+ },
+ {
+  "ispb": "07925729",
+  "nome": "COOP CRESOL NORTE PARANAENSE",
+  "cnpj": "07.925.729/0001-18",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "07945233",
+  "nome": "POLOCRED SCMEPP LTDA.",
+  "compe": "093",
+  "situacao": "str"
+ },
+ {
+  "ispb": "07946216",
+  "nome": "CCLA SICOOB UNIÃO SUDESTE",
+  "cnpj": "07.946.216/0001-93",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "07946451",
+  "nome": "COOP CRESOL ATIVA",
+  "cnpj": "07.946.451/0001-65",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "07958405",
+  "nome": "COOP CRESOL SERRA MAR",
+  "cnpj": "07.958.405/0001-86",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "08030602",
+  "nome": "CCM CORRET SEG EST SAO PAULO",
+  "cnpj": "08.030.602/0001-01",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "08041950",
+  "nome": "COOP SICREDI COOPERJURIS",
+  "cnpj": "08.041.950/0001-76",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "08044854",
+  "nome": "COOP SICOOB CENTRO",
+  "cnpj": "08.044.854/0001-81",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "08055016",
+  "nome": "COOP CRESOL INTERAÇÃO",
+  "cnpj": "08.055.016/0001-03",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "08071414",
+  "nome": "CECM SICOOB COOPERAC",
+  "cnpj": "08.071.414/0001-13",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "08075352",
+  "nome": "COOP TRANSPOCRED",
+  "cnpj": "08.075.352/0001-18",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "08240446",
+  "nome": "CCR DE IBIAM",
+  "cnpj": "08.240.446/0001-03",
+  "tipo": "Cooperativa de Crédito",
+  "compe": "391",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "08253539",
+  "nome": "COOP SULCREDI AMPLEA",
+  "cnpj": "08.253.539/0001-64",
+  "tipo": "Cooperativa de Crédito",
+  "compe": "273",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "08357240",
+  "nome": "BCO CSF S.A.",
+  "cnpj": "08.357.240/0001-50",
+  "tipo": "Banco Múltiplo",
+  "compe": "368",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "08422119",
+  "nome": "BULLLA IP S.A.",
+  "cnpj": "08.422.119/0001-64",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "08482873",
+  "nome": "CCR DO AGRESTE ALAGOANO",
+  "cnpj": "08.482.873/0001-90",
+  "tipo": "Cooperativa de Crédito",
+  "compe": "673",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "08488377",
+  "nome": "COOP CRESOL MISSÕES FRONTEIRA RS",
+  "cnpj": "08.488.377/0001-43",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "08560508",
+  "nome": "COOP CRESOL TRIUNFO",
+  "cnpj": "08.560.508/0001-56",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "08561701",
+  "nome": "PAGSEGURO INTERNET IP S.A.",
+  "cnpj": "08.561.701/0001-01",
+  "tipo": "Instituição de Pagamento",
+  "compe": "290",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "08609934",
+  "nome": "MONEYCORP BCO DE CÂMBIO S.A.",
+  "compe": "259",
+  "situacao": "str"
+ },
+ {
+  "ispb": "08624548",
+  "nome": "COOP CRESOL MINAS GERAIS",
+  "cnpj": "08.624.548/0001-14",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "08673569",
+  "nome": "F D GOLD DTVM LTDA",
+  "cnpj": "08.673.569/0001-20",
+  "tipo": "Sociedade Distribuidora de TVM",
+  "compe": "395",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "08742188",
+  "nome": "CCLA UNIÃO E NEGÓCIOS  - SICOOB INTEGRAÇÃO",
+  "cnpj": "08.742.188/0001-55",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "08795285",
+  "nome": "CCLA SICOOB CREDIACIL",
+  "cnpj": "08.795.285/0001-06",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "08844074",
+  "nome": "CC DE ITAPETININGA - SICOOB CRED-ACI",
+  "cnpj": "08.844.074/0001-16",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "08850613",
+  "nome": "CECM EMPR CENT ELÉTRICAS/SC",
+  "cnpj": "08.850.613/0001-20",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "09004796",
+  "nome": "CECM SICOOB CRED-ACILPA",
+  "cnpj": "09.004.796/0001-25",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "09033698",
+  "nome": "CCLA DE RIO VERDE E REGIÃO",
+  "cnpj": "09.033.698/0001-16",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "09089356",
+  "nome": "EFÍ S.A. - IP",
+  "cnpj": "09.089.356/0001-18",
+  "tipo": "Instituição de Pagamento",
+  "compe": "364",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "09105360",
+  "nome": "ICAP DO BRASIL CTVM LTDA.",
+  "compe": "157",
+  "situacao": "str"
+ },
+ {
+  "ispb": "09210106",
+  "nome": "SOCRED SA - SCMEPP",
+  "cnpj": "09.210.106/0001-94",
+  "tipo": "Sociedade de Crédito ao Microempreendedor",
+  "compe": "183",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "09274232",
+  "nome": "STATE STREET BR S.A. BCO COMERCIAL",
+  "compe": "014",
+  "situacao": "str"
+ },
+ {
+  "ispb": "09313766",
+  "nome": "CARUANA SCFI",
+  "cnpj": "09.313.766/0001-09",
+  "tipo": "Sociedade de Crédito, Financiamento e Investimento",
+  "compe": "130",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "09330158",
+  "nome": "COOP CRESOL TREZE DE MAIO",
+  "cnpj": "09.330.158/0001-02",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "09343038",
+  "nome": "COOP SICREDI ALTSERTÃO PARAIBANO",
+  "cnpj": "09.343.038/0001-31",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "09403026",
+  "nome": "CC CENTRO LESTE NORTE MARANHENSE - SICOOB CENTROLESTE",
+  "cnpj": "09.403.026/0001-55",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "09424988",
+  "nome": "CCLA DO OESTE MARANHENSE - SICOOB OESTE MARANHENSE",
+  "cnpj": "09.424.988/0001-90",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "09437293",
+  "nome": "BRINKS PAY IP LTDA.",
+  "cnpj": "09.437.293/0001-43",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "09463721",
+  "nome": "COOP CRESOL JACINTO MACHADO",
+  "cnpj": "09.463.721/0001-02",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "09464032",
+  "nome": "MIDWAY S.A. - SCFI",
+  "cnpj": "09.464.032/0001-12",
+  "tipo": "Sociedade de Crédito, Financiamento e Investimento",
+  "compe": "358",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "09488496",
+  "nome": "COOP CRESOL COOPERACRED",
+  "cnpj": "09.488.496/0001-69",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "09512539",
+  "nome": "CC DA FOZ DO RIO ITAJAÍ AÇU",
+  "cnpj": "09.512.539/0001-02",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "09512542",
+  "nome": "CODEPE CVC S.A.",
+  "compe": "127",
+  "situacao": "str"
+ },
+ {
+  "ispb": "09516419",
+  "nome": "PICPAY BANK - BANCO MÚLTIPLO S.A",
+  "cnpj": "09.516.419/0001-75",
+  "tipo": "Banco Múltiplo",
+  "compe": "079",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "09526594",
+  "nome": "MASTER BI S.A. - EM LIQUIDAÇÃO EXTRAJUDICIAL",
+  "compe": "141",
+  "situacao": "str"
+ },
+ {
+  "ispb": "09552111",
+  "nome": "COOP PROF DA JUST, SERV PÚBL E ENERGIA LTDA",
+  "cnpj": "09.552.111/0001-85",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "09576849",
+  "nome": "CCLA CERES E RIALMA LTDA",
+  "cnpj": "09.576.849/0001-82",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "09590601",
+  "nome": "COOP CREDICOMIN",
+  "cnpj": "09.590.601/0001-76",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "10143499",
+  "nome": "CCLA JATAÍ E REGIÃO",
+  "cnpj": "10.143.499/0001-40",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "10143743",
+  "nome": "CREVISC",
+  "cnpj": "10.143.743/0001-74",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "10175348",
+  "nome": "CCMLA REGIãO ADMINISTRATIVA DE SOROCABA",
+  "cnpj": "10.175.348/0001-73",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "10209619",
+  "nome": "CCLA DA GRANDE GOIÂNIA LTDA.",
+  "cnpj": "10.209.619/0001-64",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "10218474",
+  "nome": "CIVIA COOP CRED",
+  "cnpj": "10.218.474/0001-68",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "10262276",
+  "nome": "CCLA DO ESTADO DE SÃO PAULO - SICOOB PAULISTA",
+  "cnpj": "10.262.276/0001-00",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "10264663",
+  "nome": "BANCOSEGURO S.A.",
+  "compe": "081",
+  "situacao": "str"
+ },
+ {
+  "ispb": "10311218",
+  "nome": "COOP EVOLUA",
+  "cnpj": "10.311.218/0001-10",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "10314753",
+  "nome": "STRADA PAY IP LTDA.",
+  "cnpj": "10.314.753/0001-25",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "10319386",
+  "nome": "CCLA DO CENTRO SUL DE MS",
+  "cnpj": "10.319.386/0001-52",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "10348181",
+  "nome": "COOP SICREDI VALE LITORAL SC",
+  "cnpj": "10.348.181/0001-03",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "10371492",
+  "nome": "BCO YAMAHA MOTOR S.A.",
+  "compe": "475",
+  "situacao": "str"
+ },
+ {
+  "ispb": "10398952",
+  "nome": "CRESOL CONFEDERAÇÃO",
+  "cnpj": "10.398.952/0001-69",
+  "tipo": "Cooperativa de Crédito",
+  "compe": "133",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "10440482",
+  "nome": "GETNET IP",
+  "cnpj": "10.440.482/0001-54",
+  "tipo": "Instituição de Pagamento",
+  "compe": "703",
+  "situacao": "adesao"
+ },
+ {
+  "ispb": "10506341",
+  "nome": "BLU IP LTDA.",
+  "cnpj": "10.506.341/0001-97",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "10520232",
+  "nome": "COOP CRESOL AMAZONIA",
+  "cnpj": "10.520.232/0001-24",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "10573521",
+  "nome": "MERCADO PAGO IP LTDA.",
+  "cnpj": "10.573.521/0001-91",
+  "tipo": "Instituição de Pagamento",
+  "compe": "323",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "10663610",
+  "nome": "AF DESENVOLVE SP S.A.",
+  "compe": "577",
+  "situacao": "str"
+ },
+ {
+  "ispb": "10664513",
+  "nome": "BCO AGIBANK S.A.",
+  "cnpj": "10.664.513/0001-50",
+  "tipo": "Banco Comercial",
+  "compe": "121",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "10690848",
+  "nome": "BCO DA CHINA BRASIL S.A.",
+  "compe": "083",
+  "situacao": "str"
+ },
+ {
+  "ispb": "10736214",
+  "nome": "COOP SICREDI PLAN CENTRAL",
+  "cnpj": "10.736.214/0001-84",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "10789035",
+  "nome": "ATTRUS IP S/A",
+  "cnpj": "10.789.035/0001-05",
+  "tipo": "Instituição de Pagamento",
+  "compe": "787",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "10808037",
+  "nome": "CC EMPRESÁRIOS DE MANAUS",
+  "cnpj": "10.808.037/0001-02",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "10853017",
+  "nome": "GET MONEY CC LTDA.",
+  "compe": "138",
+  "situacao": "str"
+ },
+ {
+  "ispb": "10866788",
+  "nome": "BCO BANDEPE S.A.",
+  "compe": "024",
+  "situacao": "str"
+ },
+ {
+  "ispb": "10868663",
+  "nome": "ACG IP S.A.",
+  "cnpj": "10.868.663/0001-86",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "11165756",
+  "nome": "GLOBAL SCM LTDA",
+  "cnpj": "11.165.756/0001-07",
+  "tipo": "Sociedade de Crédito ao Microempreendedor",
+  "compe": "384",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "11275560",
+  "nome": "RECARGAPAY IP LTDA.",
+  "cnpj": "11.275.560/0001-75",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "11285104",
+  "nome": "NEON FINANCEIRA - SCFI S.A.",
+  "compe": "426",
+  "situacao": "str"
+ },
+ {
+  "ispb": "11351086",
+  "nome": "MERCADO BITCOIN IP LTDA",
+  "cnpj": "11.351.086/0001-13",
+  "tipo": "Instituição de Pagamento",
+  "compe": "576",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "11491029",
+  "nome": "BSN",
+  "cnpj": "11.491.029/0001-30",
+  "tipo": "Instituição de Pagamento",
+  "compe": "670",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "11495073",
+  "nome": "OM DTVM LTDA",
+  "compe": "319",
+  "situacao": "str"
+ },
+ {
+  "ispb": "11581339",
+  "nome": "BMP SCMEPP LTDA",
+  "cnpj": "11.581.339/0001-45",
+  "tipo": "Sociedade de Crédito ao Microempreendedor",
+  "compe": "274",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "11703662",
+  "nome": "BANCO TRAVELEX S.A.",
+  "cnpj": "11.703.662/0001-44",
+  "tipo": "Banco Múltiplo",
+  "compe": "095",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "11758741",
+  "nome": "BANCO FINAXIS",
+  "compe": "094",
+  "situacao": "str"
+ },
+ {
+  "ispb": "11760553",
+  "nome": "GAZINCRED S.A. SCFI",
+  "cnpj": "11.760.553/0001-69",
+  "tipo": "Sociedade de Crédito, Financiamento e Investimento",
+  "compe": "478",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "11907520",
+  "nome": "CCLA DA PARAÍBA - SICOOB PARAÍBA",
+  "cnpj": "11.907.520/0001-07",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "11969853",
+  "nome": "COOP CRESOL CONEXÃO",
+  "cnpj": "11.969.853/0001-52",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "11970623",
+  "nome": "BCO SENFF S.A.",
+  "cnpj": "11.970.623/0001-03",
+  "tipo": "Banco Múltiplo",
+  "compe": "276",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "12102128",
+  "nome": "SAFETYPAY BRASIL IP LTDA",
+  "cnpj": "12.102.128/0001-45",
+  "tipo": "Instituição de Pagamento",
+  "compe": "780",
+  "situacao": "adesao"
+ },
+ {
+  "ispb": "12392983",
+  "nome": "MIRAE ASSET (BRASIL) CCTVM LTDA.",
+  "compe": "447",
+  "situacao": "str"
+ },
+ {
+  "ispb": "12473687",
+  "nome": "CONTA PRONTA IP",
+  "cnpj": "12.473.687/0001-61",
+  "tipo": "Instituição de Pagamento",
+  "compe": "569",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "12481100",
+  "nome": "BIZ IP LTDA.",
+  "cnpj": "12.481.100/0001-66",
+  "tipo": "Instituição de Pagamento",
+  "compe": "686",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "12815827",
+  "nome": "ROADCARD IP S.A.",
+  "cnpj": "12.815.827/0001-32",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "13009717",
+  "nome": "BCO DO EST. DE SE S.A.",
+  "cnpj": "13.009.717/0001-46",
+  "tipo": "Banco Múltiplo",
+  "compe": "047",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "13059145",
+  "nome": "EBURY BCO DE CÂMBIO S.A.",
+  "cnpj": "13.059.145/0001-00",
+  "tipo": "Banco de Câmbio",
+  "compe": "144",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "13140088",
+  "nome": "ACESSO SOLUÇÕES DE PAGAMENTO S.A. - INSTITUIÇÃO DE PAGAMENTO",
+  "cnpj": "13.140.088/0001-99",
+  "tipo": "Instituição de Pagamento",
+  "compe": "332",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "13203354",
+  "nome": "FITS IP",
+  "cnpj": "13.203.354/0001-85",
+  "tipo": "Instituição de Pagamento",
+  "compe": "450",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "13220493",
+  "nome": "BR PARTNERS BI",
+  "compe": "126",
+  "situacao": "str"
+ },
+ {
+  "ispb": "13370835",
+  "nome": "DOCK IP S.A.",
+  "cnpj": "13.370.835/0001-85",
+  "tipo": "Instituição de Pagamento",
+  "compe": "301",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "13486793",
+  "nome": "APEX GROUP DTVM",
+  "compe": "173",
+  "situacao": "str"
+ },
+ {
+  "ispb": "13673855",
+  "nome": "OSLO CAPITAL DTVM SA",
+  "compe": "331",
+  "situacao": "str"
+ },
+ {
+  "ispb": "13720915",
+  "nome": "BCO WESTERN UNION",
+  "cnpj": "13.720.915/0001-13",
+  "tipo": "Banco Comercial",
+  "compe": "119",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "13776742",
+  "nome": "RENDIMENTOPAY IP S.A",
+  "cnpj": "13.776.742/0001-55",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "13884775",
+  "nome": "MAGALUPAY",
+  "cnpj": "13.884.775/0001-19",
+  "tipo": "Instituição de Pagamento",
+  "compe": "396",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "13935893",
+  "nome": "CELCOIN IP S.A.",
+  "cnpj": "13.935.893/0001-09",
+  "tipo": "Instituição de Pagamento",
+  "compe": "509",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "13966572",
+  "nome": "CAPPTA IP S.A.",
+  "cnpj": "13.966.572/0001-71",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "14046512",
+  "nome": "CCLA MARGEM ESQUERDA DO URUCUI",
+  "cnpj": "14.046.512/0001-01",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "14388334",
+  "nome": "PARANA BCO S.A.",
+  "cnpj": "14.388.334/0001-99",
+  "tipo": "Banco Múltiplo",
+  "compe": "254",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "14511781",
+  "nome": "BARI CIA HIPOTECÁRIA",
+  "compe": "268",
+  "situacao": "str"
+ },
+ {
+  "ispb": "14568725",
+  "nome": "COOPCENTRAL DE ECON. E CRÉDITO SICOOB UNIMAIS RIO LTDA.",
+  "cnpj": "14.568.725/0001-95",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "14615234",
+  "nome": "TERPAN IP LTDA",
+  "cnpj": "14.615.234/0001-58",
+  "tipo": "Instituição de Pagamento não sujeita à autorização pelo BCB",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "14796606",
+  "nome": "ADYEN DO BRASIL IP LTDA.",
+  "cnpj": "14.796.606/0001-90",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "14821124",
+  "nome": "TARGET BANK",
+  "cnpj": "14.821.124/0001-42",
+  "tipo": "Instituição de Pagamento não sujeita à autorização pelo BCB",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "14913919",
+  "nome": "CC MERCADO IMOBILIÁRIO - SICOOB IMOB.VC",
+  "cnpj": "14.913.919/0001-80",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "15111975",
+  "nome": "IUGU IP S.A.",
+  "cnpj": "15.111.975/0001-64",
+  "tipo": "Instituição de Pagamento",
+  "compe": "401",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "15114366",
+  "nome": "BCO BOCOM BBM S.A.",
+  "compe": "107",
+  "situacao": "str"
+ },
+ {
+  "ispb": "15124464",
+  "nome": "BANCO BESA S.A.",
+  "compe": "334",
+  "situacao": "str"
+ },
+ {
+  "ispb": "15173776",
+  "nome": "SOCIAL BANK S/A",
+  "cnpj": "15.173.776/0001-80",
+  "tipo": "Banco Múltiplo",
+  "compe": "412",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "15357060",
+  "nome": "BCO WOORI BANK DO BRASIL S.A.",
+  "compe": "124",
+  "situacao": "str"
+ },
+ {
+  "ispb": "15581638",
+  "nome": "FACTA S.A. CFI",
+  "compe": "149",
+  "situacao": "str"
+ },
+ {
+  "ispb": "16501555",
+  "nome": "STONE IP S.A.",
+  "cnpj": "16.501.555/0001-57",
+  "tipo": "Instituição de Pagamento",
+  "compe": "197",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "16564240",
+  "nome": "CECM APOS PENS E IDOSOS - SICOOB COOPERNAPI",
+  "cnpj": "16.564.240/0001-59",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "16651002",
+  "nome": "CECM SERV MUN ITABIRA",
+  "cnpj": "16.651.002/0001-80",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "16695922",
+  "nome": "ID CTVM",
+  "cnpj": "16.695.922/0001-09",
+  "tipo": "Sociedade Corretora de TVM",
+  "compe": "439",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "16721078",
+  "nome": "CECMF SECRETARIA DA FAZENDA MG E LIVRE ADMISSÃO",
+  "cnpj": "16.721.078/0001-35",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "16779741",
+  "nome": "COOP V. ALTO VALE",
+  "cnpj": "16.779.741/0001-52",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "16814330",
+  "nome": "BK IP S.A.",
+  "compe": "690",
+  "situacao": "str"
+ },
+ {
+  "ispb": "16876258",
+  "nome": "APTARE IP",
+  "cnpj": "16.876.258/0001-96",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "16944141",
+  "nome": "BROKER BRASIL CC LTDA.",
+  "compe": "142",
+  "situacao": "str"
+ },
+ {
+  "ispb": "17028875",
+  "nome": "MAGEN IP LTDA.",
+  "cnpj": "17.028.875/0001-02",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "17079937",
+  "nome": "PINBANK IP",
+  "cnpj": "17.079.937/0001-05",
+  "tipo": "Instituição de Pagamento",
+  "compe": "529",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "17157777",
+  "nome": "BCO NACIONAL",
+  "compe": "415",
+  "situacao": "str"
+ },
+ {
+  "ispb": "17184037",
+  "nome": "BCO MERCANTIL DO BRASIL S.A.",
+  "cnpj": "17.184.037/0001-10",
+  "tipo": "Banco Múltiplo",
+  "compe": "389",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "17343510",
+  "nome": "COOP CRESOL RAIZ",
+  "cnpj": "17.343.510/0001-64",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "17351180",
+  "nome": "BCO TRIANGULO S.A.",
+  "cnpj": "17.351.180/0001-59",
+  "tipo": "Banco Múltiplo",
+  "compe": "634",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "17361536",
+  "nome": "CC REG. COLAR METROPOLITANO VALE DO AÇO LTDA",
+  "cnpj": "17.361.536/0001-35",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "17453575",
+  "nome": "ICBC DO BRASIL BM S.A.",
+  "compe": "132",
+  "situacao": "str"
+ },
+ {
+  "ispb": "17502881",
+  "nome": "CECM EMPR CEMIG IND METAL E SERV PUB MUN",
+  "cnpj": "17.502.881/0001-41",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "17768068",
+  "nome": "PINPAG IP S.A.",
+  "cnpj": "17.768.068/0001-18",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "17772370",
+  "nome": "VIPS CC S.A.",
+  "compe": "298",
+  "situacao": "str"
+ },
+ {
+  "ispb": "17819084",
+  "nome": "PAGCERTO IP LTDA.",
+  "cnpj": "17.819.084/0001-92",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "17826860",
+  "nome": "BMS SCD S.A.",
+  "cnpj": "17.826.860/0001-81",
+  "tipo": "Sociedade de Crédito Direto",
+  "compe": "377",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "18188384",
+  "nome": "CREFAZ SCMEPP SA",
+  "compe": "321",
+  "situacao": "str"
+ },
+ {
+  "ispb": "18189547",
+  "nome": "CLOUDWALK IP LTDA",
+  "cnpj": "18.189.547/0001-42",
+  "tipo": "Instituição de Pagamento",
+  "compe": "542",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "18236120",
+  "nome": "NU PAGAMENTOS - IP",
+  "cnpj": "18.236.120/0001-58",
+  "tipo": "Instituição de Pagamento",
+  "compe": "260",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "18282093",
+  "nome": "OXY CH",
+  "compe": "573",
+  "situacao": "str"
+ },
+ {
+  "ispb": "18394228",
+  "nome": "CDC SCD S.A.",
+  "cnpj": "18.394.228/0001-79",
+  "tipo": "Sociedade de Crédito Direto",
+  "compe": "470",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "18520834",
+  "nome": "UBS BB BI S.A.",
+  "compe": "129",
+  "situacao": "str"
+ },
+ {
+  "ispb": "18639407",
+  "nome": "E2E PAY INSTITUICAO DE PAGAMEN",
+  "cnpj": "18.639.407/0001-29",
+  "tipo": "Instituição de Pagamento não sujeita à autorização pelo BCB",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "18684408",
+  "nome": "AZIMUT BRASIL DTVM LTDA",
+  "cnpj": "18.684.408/0001-95",
+  "tipo": "Sociedade Distribuidora de TVM",
+  "compe": "562",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "18966739",
+  "nome": "CC COPERSUL LTDA",
+  "cnpj": "18.966.739/0001-18",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "19307785",
+  "nome": "BRAZA BANK S.A. BCO DE CÂMBIO",
+  "cnpj": "19.307.785/0001-78",
+  "tipo": "Banco de Câmbio",
+  "compe": "128",
+  "situacao": "adesao"
+ },
+ {
+  "ispb": "19324634",
+  "nome": "LAMARA SCD S.A.",
+  "compe": "416",
+  "situacao": "str"
+ },
+ {
+  "ispb": "19402130",
+  "nome": "CECM EMPR EST HOSP BH RM ZM",
+  "cnpj": "19.402.130/0001-89",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "19449602",
+  "nome": "CC CREDCOOPER LTDA",
+  "cnpj": "19.449.602/0001-59",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "19468242",
+  "nome": "IFOOD PAGO IP",
+  "cnpj": "19.468.242/0001-32",
+  "tipo": "Instituição de Pagamento",
+  "compe": "595",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "19540550",
+  "nome": "ASAAS IP S.A.",
+  "cnpj": "19.540.550/0001-21",
+  "tipo": "Instituição de Pagamento",
+  "compe": "461",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "19869338",
+  "nome": "CCLA VALE DO AÇO",
+  "cnpj": "19.869.338/0001-02",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "19875244",
+  "nome": "CCLA SICOOB COPESITA",
+  "cnpj": "19.875.244/0001-46",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "19962468",
+  "nome": "COOP SICREDI COOABCRED RS",
+  "cnpj": "19.962.468/0001-95",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "20018183",
+  "nome": "STARK BANK S.A. - IP",
+  "cnpj": "20.018.183/0001-80",
+  "tipo": "Instituição de Pagamento",
+  "compe": "665",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "20062766",
+  "nome": "COOP UNIPRIME PIF PAF",
+  "cnpj": "20.062.766/0001-08",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "20110153",
+  "nome": "PAGHIPER IP LTDA.",
+  "cnpj": "20.110.153/0001-07",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "20155248",
+  "nome": "UNIDA DTVM LTDA",
+  "cnpj": "20.155.248/0001-39",
+  "tipo": "Sociedade Distribuidora de TVM",
+  "compe": "194",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "20251847",
+  "nome": "SUDACRED SCD S.A.",
+  "compe": "538",
+  "situacao": "str"
+ },
+ {
+  "ispb": "20308187",
+  "nome": "AVANCARD PROVER IP LTDA",
+  "cnpj": "20.308.187/0001-00",
+  "tipo": "Instituição de Pagamento",
+  "compe": "588",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "20443996",
+  "nome": "BECKER FINANCEIRA SA - CFI",
+  "compe": "768",
+  "situacao": "str"
+ },
+ {
+  "ispb": "20520298",
+  "nome": "BS2 PAYMENTS IP S.A.",
+  "cnpj": "20.520.298/0001-78",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "20757199",
+  "nome": "PAY4FUN IP S.A.",
+  "cnpj": "20.757.199/0001-04",
+  "tipo": "Instituição de Pagamento",
+  "compe": "561",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "20833992",
+  "nome": "CC MECUNP - EM LIQUIDAÇÃO EXTRAJUDICIAL",
+  "compe": "772",
+  "situacao": "str"
+ },
+ {
+  "ispb": "20855875",
+  "nome": "NEON PAGAMENTOS S.A. IP",
+  "cnpj": "20.855.875/0001-82",
+  "tipo": "Instituição de Pagamento",
+  "compe": "536",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "21018182",
+  "nome": "EBANX IP LTDA.",
+  "cnpj": "21.018.182/0001-06",
+  "tipo": "Instituição de Pagamento",
+  "compe": "383",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "21332862",
+  "nome": "CARTOS SCD S.A.",
+  "cnpj": "21.332.862/0001-91",
+  "tipo": "Sociedade de Crédito Direto",
+  "compe": "324",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "21661202",
+  "nome": "CC CREDICAMPO LTDA",
+  "cnpj": "21.661.202/0001-54",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "21670187",
+  "nome": "CC CREDIBOM",
+  "cnpj": "21.670.187/0001-00",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "21797311",
+  "nome": "CCLA SERV POD LEG MG - SICOOB COFAL",
+  "cnpj": "21.797.311/0001-01",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "21866694",
+  "nome": "CC CREDINOR",
+  "cnpj": "21.866.694/0001-14",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "21995256",
+  "nome": "MAG IP LTDA.",
+  "cnpj": "21.995.256/0001-56",
+  "tipo": "Instituição de Pagamento",
+  "compe": "560",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "22181404",
+  "nome": "EASY PAGO",
+  "cnpj": "22.181.404/0001-61",
+  "tipo": "Instituição de Pagamento não sujeita à autorização pelo BCB",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "22575466",
+  "nome": "SRM BANK",
+  "cnpj": "22.575.466/0001-58",
+  "tipo": "Instituição de Pagamento",
+  "compe": "533",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "22610500",
+  "nome": "VORTX DTVM LTDA.",
+  "cnpj": "22.610.500/0001-88",
+  "tipo": "Sociedade Distribuidora de TVM",
+  "compe": "310",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "22656789",
+  "nome": "CC CREDISUDESTE LTDA",
+  "cnpj": "22.656.789/0001-76",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "22724710",
+  "nome": "CC CREDIVERTENTES",
+  "cnpj": "22.724.710/0001-05",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "22749014",
+  "nome": "CC REGIÃO CENTRAL MG",
+  "cnpj": "22.749.014/0001-45",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "22753982",
+  "nome": "CC CREDISETE LTDA",
+  "cnpj": "22.753.982/0001-25",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "22760839",
+  "nome": "CC NOSSOCREDITO",
+  "cnpj": "22.760.839/0001-60",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "22896431",
+  "nome": "PICPAY",
+  "cnpj": "22.896.431/0001-10",
+  "tipo": "Instituição de Pagamento",
+  "compe": "380",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "23114447",
+  "nome": "FLAGSHIP IP LTDA",
+  "cnpj": "23.114.447/0001-97",
+  "tipo": "Instituição de Pagamento",
+  "compe": "566",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "23623636",
+  "nome": "CCLA NORTE DE MATO GROSSO - SICOOB NORTE MT",
+  "cnpj": "23.623.636/0001-95",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "23862762",
+  "nome": "WILL FINANCEIRA S.A.CFI - EM LIQUIDAÇÃO EXTRAJUDICIAL",
+  "cnpj": "23.862.762/0001-00",
+  "tipo": "Sociedade de Crédito, Financiamento e Investimento",
+  "compe": "280",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "23949522",
+  "nome": "CC CREDICARPA",
+  "cnpj": "23.949.522/0001-30",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "24048910",
+  "nome": "CC CREDINTER",
+  "cnpj": "24.048.910/0001-02",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "24074692",
+  "nome": "GUITTA CC LTDA",
+  "compe": "146",
+  "situacao": "str"
+ },
+ {
+  "ispb": "24313102",
+  "nome": "99PAY IP S.A.",
+  "cnpj": "24.313.102/0001-25",
+  "tipo": "Instituição de Pagamento",
+  "compe": "769",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "24431221",
+  "nome": "COOP CRESOL TRANSAMAZÔNICA",
+  "cnpj": "24.431.221/0001-82",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "24610065",
+  "nome": "CC SICOOB IPÊ",
+  "cnpj": "24.610.065/0001-17",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "24654881",
+  "nome": "COOP SICREDI UNIÃO MS/TO E OESTE DA BA",
+  "cnpj": "24.654.881/0001-22",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "24795049",
+  "nome": "CCLA SUDOESTE GOIANO",
+  "cnpj": "24.795.049/0001-46",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "24799033",
+  "nome": "CCLA VALE DO PARANAÍBA",
+  "cnpj": "24.799.033/0001-01",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "24830879",
+  "nome": "CCLA VALE DO ARAGUAIA",
+  "cnpj": "24.830.879/0001-67",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "25021356",
+  "nome": "DLOCAL BRASIL IP S.A.",
+  "cnpj": "25.021.356/0001-32",
+  "tipo": "Instituição de Pagamento",
+  "compe": "803",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "25104230",
+  "nome": "PAGARE IP S.A.",
+  "cnpj": "25.104.230/0001-21",
+  "tipo": "Instituição de Pagamento",
+  "compe": "651",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "25238191",
+  "nome": "BELLUNO IP LTDA.",
+  "cnpj": "25.238.191/0001-55",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "25353939",
+  "nome": "CC CREDIALP",
+  "cnpj": "25.353.939/0001-60",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "25363615",
+  "nome": "CCLA SICOOB COOPJUS",
+  "cnpj": "25.363.615/0001-03",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "25387655",
+  "nome": "CC CREDIVALE LTDA. - SICOOB CREDIVALE",
+  "cnpj": "25.387.655/0001-95",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "25387713",
+  "nome": "CCLA DA REGIÃO DE  PARÁ DE MINAS",
+  "cnpj": "25.387.713/0001-80",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "25395435",
+  "nome": "CC CREDICAF LTDA",
+  "cnpj": "25.395.435/0001-03",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "25404542",
+  "nome": "CC CREDIVAG",
+  "cnpj": "25.404.542/0001-50",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "25420696",
+  "nome": "CC CREDINACIONAL LTDA - SICOOB CREDINACIONAL",
+  "cnpj": "25.420.696/0001-36",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "25528753",
+  "nome": "C.C CREDIVERDE",
+  "cnpj": "25.528.753/0001-03",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "25536764",
+  "nome": "CC CREDPLUS",
+  "cnpj": "25.536.764/0001-27",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "25606237",
+  "nome": "CPC VALE DO RIO DOCE",
+  "cnpj": "25.606.237/0001-41",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "25683434",
+  "nome": "CCC MINAS GERAIS - CREDIMINAS",
+  "cnpj": "25.683.434/0001-64",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "25683475",
+  "nome": "CCLA VALE DO RIO GRANDE",
+  "cnpj": "25.683.475/0001-50",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "25743311",
+  "nome": "CCLA CARMO DO RIO CLARO",
+  "cnpj": "25.743.311/0001-71",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "25798596",
+  "nome": "CC CREDIVAR",
+  "cnpj": "25.798.596/0001-48",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "26014175",
+  "nome": "CC GUARANICREDI",
+  "cnpj": "26.014.175/0001-41",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "26178111",
+  "nome": "CC UNIÃO CENTRO OESTE LTDA",
+  "cnpj": "26.178.111/0001-86",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "26178533",
+  "nome": "CCLA PONTAL DO TRIANGULO",
+  "cnpj": "26.178.533/0001-51",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "26191078",
+  "nome": "COOP SICREDI SUL DO MARANHÃO",
+  "cnpj": "26.191.078/0001-24",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "26264220",
+  "nome": "ZERO IP",
+  "cnpj": "26.264.220/0001-16",
+  "tipo": "Instituição de Pagamento",
+  "compe": "671",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "26408161",
+  "nome": "COOP SICREDI CENTRO-SUL MS/BA",
+  "cnpj": "26.408.161/0001-02",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "26526166",
+  "nome": "CCLA SUL MARANHENSE - SICOOB SUL MARANHENSE",
+  "cnpj": "26.526.166/0001-30",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "26529420",
+  "nome": "COOP SICREDI OURO VERDE MT/PA",
+  "cnpj": "26.529.420/0001-53",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "26549311",
+  "nome": "COOP SICREDI INTEGRAÇÃO MT/AP/PA",
+  "cnpj": "26.549.311/0001-06",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "26555235",
+  "nome": "COOP SICREDI CELEIRO CENTRO NORTE",
+  "cnpj": "26.555.235/0001-33",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "26563270",
+  "nome": "CREDISIS PRIMACREDI CC",
+  "cnpj": "26.563.270/0001-02",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "26615279",
+  "nome": "TYCOON TECHNOLOGY IIP S.A",
+  "compe": "685",
+  "situacao": "str"
+ },
+ {
+  "ispb": "26960328",
+  "nome": "CCLA DO TOCANTINS",
+  "cnpj": "26.960.328/0001-43",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "27084098",
+  "nome": "TRANSFEERA IP S.A.",
+  "cnpj": "27.084.098/0001-69",
+  "tipo": "Instituição de Pagamento",
+  "compe": "593",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "27098060",
+  "nome": "BANCO DIGIO",
+  "cnpj": "27.098.060/0001-45",
+  "tipo": "Banco Múltiplo",
+  "compe": "335",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "27126513",
+  "nome": "ARQ IP LTDA",
+  "cnpj": "27.126.513/0001-08",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "27214112",
+  "nome": "AL5 S.A. SCFI",
+  "cnpj": "27.214.112/0001-00",
+  "tipo": "Sociedade de Crédito, Financiamento e Investimento",
+  "compe": "349",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "27302181",
+  "nome": "CRED.UFES",
+  "cnpj": "27.302.181/0001-67",
+  "tipo": "Cooperativa de Crédito",
+  "compe": "427",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "27351731",
+  "nome": "REALIZE SCFI S.A.",
+  "compe": "374",
+  "situacao": "str"
+ },
+ {
+  "ispb": "27810157",
+  "nome": "IPAG PAGAMENTOS DIGITAIS",
+  "cnpj": "27.810.157/0001-39",
+  "tipo": "Instituição de Pagamento não sujeita à autorização pelo BCB",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "27842177",
+  "nome": "BPY CCTVM S.A.",
+  "cnpj": "27.842.177/0001-91",
+  "tipo": "Sociedade Corretora de TVM",
+  "compe": "271",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "27970567",
+  "nome": "HINOVA PAY IP S.A.",
+  "cnpj": "27.970.567/0001-47",
+  "tipo": "Instituição de Pagamento",
+  "compe": "674",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "28127603",
+  "nome": "BCO BANESTES S.A.",
+  "cnpj": "28.127.603/0001-78",
+  "tipo": "Banco Múltiplo",
+  "compe": "021",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "28195667",
+  "nome": "BCO ABC BRASIL S.A.",
+  "cnpj": "28.195.667/0001-06",
+  "tipo": "Banco Múltiplo",
+  "compe": "246",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "28220872",
+  "nome": "VALEPAY BRASIL IP",
+  "cnpj": "28.220.872/0001-84",
+  "tipo": "Instituição de Pagamento não sujeita à autorização pelo BCB",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "28650236",
+  "nome": "GALAPAGOS DTVM S.A.",
+  "compe": "292",
+  "situacao": "str"
+ },
+ {
+  "ispb": "28683892",
+  "nome": "PAYMEE BRASIL IP S.A.",
+  "cnpj": "28.683.892/0001-91",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "28719664",
+  "nome": "Balcão B3",
+  "compe": "0",
+  "situacao": "str"
+ },
+ {
+  "ispb": "28811341",
+  "nome": "BCO STONEX S.A.",
+  "compe": "554",
+  "situacao": "str"
+ },
+ {
+  "ispb": "29030467",
+  "nome": "Scotiabank Brasil",
+  "compe": "751",
+  "situacao": "str"
+ },
+ {
+  "ispb": "29162769",
+  "nome": "SANTANDER CTVM S.A.",
+  "compe": "352",
+  "situacao": "str"
+ },
+ {
+  "ispb": "29408213",
+  "nome": "WORK 8 INSTITUIÇÃO DE PAGAMENT",
+  "cnpj": "29.408.213/0001-39",
+  "tipo": "Instituição de Pagamento não sujeita à autorização pelo BCB",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "29477089",
+  "nome": "ONLY UP",
+  "cnpj": "29.477.089/0001-63",
+  "tipo": "Instituição de Pagamento não sujeita à autorização pelo BCB",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "29759316",
+  "nome": "SERVNET IP LTDA.",
+  "cnpj": "29.759.316/0001-43",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "30306294",
+  "nome": "BANCO BTG PACTUAL S.A.",
+  "cnpj": "30.306.294/0001-45",
+  "tipo": "Banco Múltiplo",
+  "compe": "208",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "30507541",
+  "nome": "BRASIL CASH IP S.A.",
+  "cnpj": "30.507.541/0001-71",
+  "tipo": "Instituição de Pagamento",
+  "compe": "683",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "30680829",
+  "nome": "NU FINANCEIRA S.A. CFI",
+  "compe": "386",
+  "situacao": "str"
+ },
+ {
+  "ispb": "30723871",
+  "nome": "CASAS BAHIA PAY IP LTDA.",
+  "cnpj": "30.723.871/0001-02",
+  "tipo": "Instituição de Pagamento",
+  "compe": "675",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "30944783",
+  "nome": "PAGPRIME IP",
+  "cnpj": "30.944.783/0001-22",
+  "tipo": "Instituição de Pagamento",
+  "compe": "557",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "30980539",
+  "nome": "OKTO IP",
+  "cnpj": "30.980.539/0001-15",
+  "tipo": "Instituição de Pagamento",
+  "compe": "546",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "31166683",
+  "nome": "MOUNT PAY",
+  "cnpj": "31.166.683/0001-85",
+  "tipo": "Instituição de Pagamento não sujeita à autorização pelo BCB",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "31531997",
+  "nome": "CONPAY IP S.A.",
+  "cnpj": "31.531.997/0001-30",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "31597552",
+  "nome": "BCO CLASSICO S.A.",
+  "compe": "241",
+  "situacao": "str"
+ },
+ {
+  "ispb": "31680151",
+  "nome": "SWAP IP S.A.",
+  "cnpj": "31.680.151/0001-61",
+  "tipo": "Instituição de Pagamento",
+  "compe": "783",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "31749596",
+  "nome": "IDEAL CTVM S.A.",
+  "compe": "398",
+  "situacao": "str"
+ },
+ {
+  "ispb": "31804966",
+  "nome": "SICOOB COOPERMAIS",
+  "cnpj": "31.804.966/0001-05",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "31841474",
+  "nome": "ADOPAY INSTITUICAO DE PAGAMENT",
+  "cnpj": "31.841.474/0001-90",
+  "tipo": "Instituição de Pagamento não sujeita à autorização pelo BCB",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "31872495",
+  "nome": "BCO C6 S.A.",
+  "cnpj": "31.872.495/0001-72",
+  "tipo": "Banco Múltiplo",
+  "compe": "336",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "31880826",
+  "nome": "BCO GUANABARA S.A.",
+  "cnpj": "31.880.826/0001-16",
+  "tipo": "Banco Múltiplo",
+  "compe": "612",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "31895683",
+  "nome": "BCO INDUSTRIAL DO BRASIL S.A.",
+  "cnpj": "31.895.683/0001-16",
+  "tipo": "Banco Múltiplo",
+  "compe": "604",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "32062580",
+  "nome": "BCO UBS BRASIL",
+  "compe": "505",
+  "situacao": "str"
+ },
+ {
+  "ispb": "32074986",
+  "nome": "BEETELLER IP LTDA.",
+  "cnpj": "32.074.986/0001-30",
+  "tipo": "Instituição de Pagamento",
+  "compe": "550",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "32192325",
+  "nome": "UZZIPAY IP S.A.",
+  "cnpj": "32.192.325/0001-00",
+  "tipo": "Instituição de Pagamento",
+  "compe": "552",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "32223020",
+  "nome": "FLASH IP LTDA.",
+  "cnpj": "32.223.020/0001-18",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "adesao"
+ },
+ {
+  "ispb": "32246162",
+  "nome": "AIBR IP LTDA.",
+  "cnpj": "32.246.162/0001-09",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "32343119",
+  "nome": "MÊNTORE IP S.A.",
+  "cnpj": "32.343.119/0001-53",
+  "tipo": "Instituição de Pagamento",
+  "compe": "804",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "32345784",
+  "nome": "C6 CTVM LTDA.",
+  "cnpj": "32.345.784/0001-86",
+  "tipo": "Sociedade Corretora de TVM",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "32402502",
+  "nome": "QI SCD S.A.",
+  "cnpj": "32.402.502/0001-35",
+  "tipo": "Sociedade de Crédito Direto",
+  "compe": "329",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "32428294",
+  "nome": "CCC DO ESP.SANTO - SICOOB ES",
+  "cnpj": "32.428.294/0001-43",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "32430233",
+  "nome": "SICOOB CONEXÃO",
+  "cnpj": "32.430.233/0001-10",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "32467086",
+  "nome": "SICOOB SUL",
+  "cnpj": "32.467.086/0001-53",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "32474884",
+  "nome": "SICOOB SUL-LITORÂNEO",
+  "cnpj": "32.474.884/0001-02",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "32615247",
+  "nome": "CC SICOOB COOPEC LTDA.",
+  "cnpj": "32.615.247/0001-09",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "32648370",
+  "nome": "FAIR SOCIEDADE CC",
+  "compe": "196",
+  "situacao": "str"
+ },
+ {
+  "ispb": "32708748",
+  "nome": "WE PAY OUT IP LTDA.",
+  "compe": "662",
+  "situacao": "str"
+ },
+ {
+  "ispb": "32820711",
+  "nome": "EFEX IP",
+  "compe": "693",
+  "situacao": "str"
+ },
+ {
+  "ispb": "32906701",
+  "nome": "EXPAG SOLUÇÕES EM PAGAMENTOS",
+  "cnpj": "32.906.701/0001-80",
+  "tipo": "Instituição de Pagamento não sujeita à autorização pelo BCB",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "32995755",
+  "nome": "COOP SICREDI SUDOESTE MT/PA",
+  "cnpj": "32.995.755/0001-60",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "32997490",
+  "nome": "CREDITAS SCD",
+  "compe": "342",
+  "situacao": "str"
+ },
+ {
+  "ispb": "33021064",
+  "nome": "COOP SICREDI ARAXINGU",
+  "cnpj": "33.021.064/0001-28",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "33022690",
+  "nome": "COOP SICREDI BIOMAS",
+  "cnpj": "33.022.690/0001-39",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "33040601",
+  "nome": "MERCANTIL FINANCEIRA",
+  "compe": "567",
+  "situacao": "str"
+ },
+ {
+  "ispb": "33042151",
+  "nome": "BCO LA NACION ARGENTINA",
+  "compe": "300",
+  "situacao": "str"
+ },
+ {
+  "ispb": "33042953",
+  "nome": "CITIBANK N.A.",
+  "compe": "477",
+  "situacao": "str"
+ },
+ {
+  "ispb": "33132044",
+  "nome": "BCO CEDULA S.A.",
+  "compe": "266",
+  "situacao": "str"
+ },
+ {
+  "ispb": "33147315",
+  "nome": "BCO BRADESCO BERJ S.A.",
+  "compe": "122",
+  "situacao": "str"
+ },
+ {
+  "ispb": "33172537",
+  "nome": "BCO J.P. MORGAN S.A.",
+  "cnpj": "33.172.537/0001-98",
+  "tipo": "Banco Múltiplo",
+  "compe": "376",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "33207641",
+  "nome": "CARTWAVE IP",
+  "cnpj": "33.207.641/0001-70",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "33264668",
+  "nome": "BCO XP S.A.",
+  "cnpj": "33.264.668/0001-03",
+  "tipo": "Banco Múltiplo",
+  "compe": "348",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "33370115",
+  "nome": "FURNAS",
+  "cnpj": "33.370.115/0001-27",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "33416108",
+  "nome": "COOPCENTRAL SICOOB NOVA CENTRAL LTDA.",
+  "cnpj": "33.416.108/0001-19",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "33423888",
+  "nome": "VILLELA IP S.A.",
+  "cnpj": "33.423.888/0001-24",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "33449007",
+  "nome": "EMPRESA DE BENEFÍCIOS IP LTDA.",
+  "cnpj": "33.449.007/0001-44",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "33466988",
+  "nome": "BCO CAIXA GERAL BRASIL S.A.",
+  "compe": "473",
+  "situacao": "str"
+ },
+ {
+  "ispb": "33479023",
+  "nome": "BCO CITIBANK S.A.",
+  "cnpj": "33.479.023/0001-80",
+  "tipo": "Banco Múltiplo",
+  "compe": "745",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "33579731",
+  "nome": "CCLA CENTRO-SUL GOIANO",
+  "cnpj": "33.579.731/0001-92",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "33588252",
+  "nome": "BCO INDUSCRED DE INVESTIM. S/A",
+  "compe": "708",
+  "situacao": "str"
+ },
+ {
+  "ispb": "33603457",
+  "nome": "BCO RODOBENS S.A.",
+  "compe": "120",
+  "situacao": "str"
+ },
+ {
+  "ispb": "33615055",
+  "nome": "CCLA ANÁPOLIS E REGIÃO",
+  "cnpj": "33.615.055/0001-65",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "33630661",
+  "nome": "GOWD IP LTDA.",
+  "cnpj": "33.630.661/0001-50",
+  "tipo": "Instituição de Pagamento",
+  "compe": "677",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "33644196",
+  "nome": "BCO FATOR S.A.",
+  "compe": "265",
+  "situacao": "str"
+ },
+ {
+  "ispb": "33657248",
+  "nome": "BNDES",
+  "compe": "007",
+  "situacao": "str"
+ },
+ {
+  "ispb": "33735811",
+  "nome": "B91",
+  "cnpj": "33.735.811/0001-90",
+  "tipo": "Instituição de Pagamento não sujeita à autorização pelo BCB",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "33775974",
+  "nome": "ATIVA S.A. INVESTIMENTOS CCTVM",
+  "compe": "188",
+  "situacao": "str"
+ },
+ {
+  "ispb": "33862244",
+  "nome": "BGC LIQUIDEZ DTVM LTDA",
+  "compe": "134",
+  "situacao": "str"
+ },
+ {
+  "ispb": "33884941",
+  "nome": "BANCO MASTER MÚLTIPLO - EM LIQUIDAÇÃO EXTRAJUDICIAL",
+  "compe": "719",
+  "situacao": "str"
+ },
+ {
+  "ispb": "33886862",
+  "nome": "MASTER S/A CCTVM - EM LIQUIDAÇÃO EXTRAJUDICIAL",
+  "compe": "467",
+  "situacao": "str"
+ },
+ {
+  "ispb": "33923798",
+  "nome": "BANCO MASTER - EM LIQUIDAÇÃO EXTRAJUDICIAL",
+  "compe": "243",
+  "situacao": "str"
+ },
+ {
+  "ispb": "33959738",
+  "nome": "MOVA SEP S.A.",
+  "compe": "774",
+  "situacao": "str"
+ },
+ {
+  "ispb": "33982918",
+  "nome": "SIMPAY IP",
+  "cnpj": "33.982.918/0001-32",
+  "tipo": "Instituição de Pagamento não sujeita à autorização pelo BCB",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "34006497",
+  "nome": "ASTROPAY",
+  "cnpj": "34.006.497/0001-77",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "34088029",
+  "nome": "LISTO SCD S.A.",
+  "cnpj": "34.088.029/0001-99",
+  "tipo": "Sociedade de Crédito Direto",
+  "compe": "397",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "34111187",
+  "nome": "HAITONG BI DO BRASIL S.A.",
+  "compe": "078",
+  "situacao": "str"
+ },
+ {
+  "ispb": "34139916",
+  "nome": "EMCASH SERV FINANC SEP S.A.",
+  "compe": "760",
+  "situacao": "str"
+ },
+ {
+  "ispb": "34148882",
+  "nome": "CC SICOOB CENTRAL BA",
+  "cnpj": "34.148.882/0001-59",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "34335592",
+  "nome": "ÓTIMO SCD S.A.",
+  "compe": "355",
+  "situacao": "str"
+ },
+ {
+  "ispb": "34337707",
+  "nome": "BMP SCD S.A.",
+  "cnpj": "34.337.707/0001-00",
+  "tipo": "Sociedade de Crédito Direto",
+  "compe": "531",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "34471744",
+  "nome": "PAGME IP LTDA",
+  "cnpj": "34.471.744/0001-06",
+  "tipo": "Instituição de Pagamento",
+  "compe": "660",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "34678263",
+  "nome": "KREDIT IP S/A",
+  "cnpj": "34.678.263/0001-76",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "34747388",
+  "nome": "ISSUER IP LTDA.",
+  "cnpj": "34.747.388/0001-00",
+  "tipo": "Instituição de Pagamento",
+  "compe": "597",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "34829992",
+  "nome": "CBSF DTVM -EM LIQUIDAÇÃO EXTRAJUDICIAL",
+  "compe": "528",
+  "situacao": "str"
+ },
+ {
+  "ispb": "35136120",
+  "nome": "BITSO IP LTDA",
+  "cnpj": "35.136.120/0001-03",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "35210410",
+  "nome": "ONEKEY PAYMENTS IP S.A.",
+  "cnpj": "35.210.410/0001-41",
+  "tipo": "Instituição de Pagamento",
+  "compe": "659",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "35340796",
+  "nome": "INCO SEP S.A.",
+  "cnpj": "35.340.796/0001-06",
+  "tipo": "Sociedade de Empréstimo entre Pessoas",
+  "compe": "687",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "35479592",
+  "nome": "DUFRIO CFI S.A.",
+  "compe": "676",
+  "situacao": "str"
+ },
+ {
+  "ispb": "35523352",
+  "nome": "BEES IP LTDA.",
+  "cnpj": "35.523.352/0001-06",
+  "tipo": "Instituição de Pagamento",
+  "compe": "695",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "35534511",
+  "nome": "A27 IP S/A",
+  "cnpj": "35.534.511/0001-78",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "35535240",
+  "nome": "SAQ IP LTDA.",
+  "cnpj": "35.535.240/0001-75",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "35542555",
+  "nome": "UNLIMIT IP LTDA.",
+  "cnpj": "35.542.555/0001-40",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "35551187",
+  "nome": "PLANTAE CFI",
+  "compe": "445",
+  "situacao": "str"
+ },
+ {
+  "ispb": "35571249",
+  "nome": "COOP SICREDI EVOLUÇÃO",
+  "cnpj": "35.571.249/0001-31",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "35713491",
+  "nome": "PROTOTYPE IP S.A.",
+  "cnpj": "35.713.491/0001-00",
+  "tipo": "Instituição de Pagamento",
+  "compe": "788",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "35810871",
+  "nome": "Z1 IP LTDA.",
+  "cnpj": "35.810.871/0001-55",
+  "tipo": "Instituição de Pagamento",
+  "compe": "586",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "35977097",
+  "nome": "UP.P SEP S.A.",
+  "cnpj": "35.977.097/0001-71",
+  "tipo": "Sociedade de Empréstimo entre Pessoas",
+  "compe": "373",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "35990763",
+  "nome": "ENOQ PAY",
+  "cnpj": "35.990.763/0001-01",
+  "tipo": "Instituição de Pagamento não sujeita à autorização pelo BCB",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "36000836",
+  "nome": "EXTRATTA IP",
+  "cnpj": "36.000.836/0001-33",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "adesao"
+ },
+ {
+  "ispb": "36113876",
+  "nome": "OLIVEIRA TRUST DTVM S.A.",
+  "compe": "111",
+  "situacao": "str"
+ },
+ {
+  "ispb": "36266751",
+  "nome": "FINVEST DTVM",
+  "cnpj": "36.266.751/0001-00",
+  "tipo": "Sociedade Distribuidora de TVM",
+  "compe": "512",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "36321990",
+  "nome": "AGORACRED S/A SCFI",
+  "compe": "599",
+  "situacao": "str"
+ },
+ {
+  "ispb": "36583700",
+  "nome": "PLACARPAY S.A - SCFI",
+  "compe": "516",
+  "situacao": "str"
+ },
+ {
+  "ispb": "36586946",
+  "nome": "BONUSPAGO SCD S.A.",
+  "cnpj": "36.586.946/0001-29",
+  "tipo": "Sociedade de Crédito Direto",
+  "compe": "408",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "36690516",
+  "nome": "PAY IP S.A.",
+  "cnpj": "36.690.516/0001-52",
+  "tipo": "Instituição de Pagamento",
+  "compe": "679",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "36864992",
+  "nome": "APEX DTVM",
+  "compe": "484",
+  "situacao": "str"
+ },
+ {
+  "ispb": "36900256",
+  "nome": "UNICRED RAÍZES",
+  "cnpj": "36.900.256/0001-00",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "36947229",
+  "nome": "COBUCCIO S.A. SCFI",
+  "cnpj": "36.947.229/0001-85",
+  "tipo": "Sociedade de Crédito, Financiamento e Investimento",
+  "compe": "402",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "37076205",
+  "nome": "SICOOB JUDICIÁRIO",
+  "cnpj": "37.076.205/0001-60",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "37079720",
+  "nome": "COOP SICOOB CREDIJUSTRA",
+  "cnpj": "37.079.720/0001-02",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "37168145",
+  "nome": "APROMS NET IP LTDA.",
+  "cnpj": "37.168.145/0001-06",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "37229413",
+  "nome": "SCFI EFÍ S.A.",
+  "compe": "507",
+  "situacao": "str"
+ },
+ {
+  "ispb": "37241230",
+  "nome": "SUMUP SCFI S.A",
+  "cnpj": "37.241.230/0001-52",
+  "tipo": "Sociedade de Crédito, Financiamento e Investimento",
+  "compe": "404",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "37255049",
+  "nome": "SICOOB CREDIGOIÁS CC",
+  "cnpj": "37.255.049/0001-03",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "37293930",
+  "nome": "BASS PAGO",
+  "cnpj": "37.293.930/0001-90",
+  "tipo": "Instituição de Pagamento não sujeita à autorização pelo BCB",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "37395399",
+  "nome": "CCLA CENTRO BRASILEIRA LTDA.",
+  "cnpj": "37.395.399/0001-67",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "37414009",
+  "nome": "ZIPDIN SCD S.A.",
+  "compe": "418",
+  "situacao": "str"
+ },
+ {
+  "ispb": "37442605",
+  "nome": "COOP SICREDI GRANDES RIOS",
+  "cnpj": "37.442.605/0001-42",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "37470405",
+  "nome": "SMART SOLUTIONS GROUP IP LTDA",
+  "compe": "615",
+  "situacao": "str"
+ },
+ {
+  "ispb": "37511258",
+  "nome": "INOVANTI IP S.A.",
+  "cnpj": "37.511.258/0001-62",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "37526080",
+  "nome": "LEND SCD S.A.",
+  "cnpj": "37.526.080/0001-23",
+  "tipo": "Sociedade de Crédito Direto",
+  "compe": "414",
+  "situacao": "adesao"
+ },
+ {
+  "ispb": "37554441",
+  "nome": "COOP SICOOB UNI SUL MS",
+  "cnpj": "37.554.441/0001-45",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "37555231",
+  "nome": "DM",
+  "compe": "449",
+  "situacao": "str"
+ },
+ {
+  "ispb": "37631058",
+  "nome": "CCLA DE PALMEIRAS E REGIÃO",
+  "cnpj": "37.631.058/0001-43",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "37678915",
+  "nome": "FIDD DTVM LTDA.",
+  "compe": "587",
+  "situacao": "str"
+ },
+ {
+  "ispb": "37679449",
+  "nome": "MERCADO CRÉDITO SCFI S.A.",
+  "compe": "518",
+  "situacao": "str"
+ },
+ {
+  "ispb": "37715993",
+  "nome": "ACCREDITO SCD S.A.",
+  "cnpj": "37.715.993/0001-98",
+  "tipo": "Sociedade de Crédito Direto",
+  "compe": "406",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "37753531",
+  "nome": "PAGSMILE IP LTDA.",
+  "cnpj": "37.753.531/0001-65",
+  "tipo": "Instituição de Pagamento",
+  "compe": "765",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "37763847",
+  "nome": "GERU SCD S.A.",
+  "cnpj": "37.763.847/0001-38",
+  "tipo": "Sociedade de Crédito Direto",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "37839059",
+  "nome": "OWEM PAY",
+  "cnpj": "37.839.059/0001-88",
+  "tipo": "Instituição de Pagamento não sujeita à autorização pelo BCB",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "37880206",
+  "nome": "CORA SCFI",
+  "cnpj": "37.880.206/0001-63",
+  "tipo": "Sociedade de Crédito, Financiamento e Investimento",
+  "compe": "403",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "38129006",
+  "nome": "NUMBRS SCD S.A.",
+  "cnpj": "38.129.006/0001-36",
+  "tipo": "Sociedade de Crédito Direto",
+  "compe": "419",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "38224857",
+  "nome": "DELFINANCE SCD S.A.",
+  "cnpj": "38.224.857/0001-68",
+  "tipo": "Sociedade de Crédito Direto",
+  "compe": "435",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "38297374",
+  "nome": "NUVENDE",
+  "cnpj": "38.297.374/0001-93",
+  "tipo": "Instituição de Pagamento não sujeita à autorização pelo BCB",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "38320462",
+  "nome": "V3 IP S.A.",
+  "cnpj": "38.320.462/0001-69",
+  "tipo": "Instituição de Pagamento",
+  "compe": "770",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "38372267",
+  "nome": "MAREE IP LTDA.",
+  "cnpj": "38.372.267/0001-82",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "38486817",
+  "nome": "BCO DES. DE MG S.A.",
+  "compe": "805",
+  "situacao": "str"
+ },
+ {
+  "ispb": "38588174",
+  "nome": "CC CREDICOPE",
+  "cnpj": "38.588.174/0001-90",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "38593706",
+  "nome": "MULTICRED SCD S.A.",
+  "compe": "544",
+  "situacao": "str"
+ },
+ {
+  "ispb": "39343350",
+  "nome": "CC LAR CREDI",
+  "cnpj": "39.343.350/0001-96",
+  "tipo": "Cooperativa de Crédito",
+  "compe": "421",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "39416705",
+  "nome": "OCTA SCD S.A. - EM LIQUIDAÇÃO EXTRAJUDICIAL",
+  "compe": "443",
+  "situacao": "str"
+ },
+ {
+  "ispb": "39519944",
+  "nome": "OPEA SCD",
+  "cnpj": "39.519.944/0001-05",
+  "tipo": "Sociedade de Crédito Direto",
+  "compe": "535",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "39587424",
+  "nome": "UY3 SCD S/A",
+  "cnpj": "39.587.424/0001-30",
+  "tipo": "Sociedade de Crédito Direto",
+  "compe": "457",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "39664698",
+  "nome": "CREDSYSTEM SCD S.A.",
+  "cnpj": "39.664.698/0001-85",
+  "tipo": "Sociedade de Crédito Direto",
+  "compe": "428",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "39669186",
+  "nome": "HEMERA DTVM LTDA.",
+  "cnpj": "39.669.186/0001-01",
+  "tipo": "Sociedade Distribuidora de TVM",
+  "compe": "448",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "39676772",
+  "nome": "CREDIFIT SCD S.A.",
+  "cnpj": "39.676.772/0001-83",
+  "tipo": "Sociedade de Crédito Direto",
+  "compe": "452",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "39696395",
+  "nome": "CACTVS IP S.A.",
+  "cnpj": "39.696.395/0001-44",
+  "tipo": "Instituição de Pagamento",
+  "compe": "596",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "39715262",
+  "nome": "MASTERBARTER",
+  "cnpj": "39.715.262/0001-78",
+  "tipo": "Instituição de Pagamento não sujeita à autorização pelo BCB",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "39738065",
+  "nome": "FFCRED SCD S.A.",
+  "cnpj": "39.738.065/0001-74",
+  "tipo": "Sociedade de Crédito Direto",
+  "compe": "510",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "39908427",
+  "nome": "STARK SCD S.A.",
+  "cnpj": "39.908.427/0001-28",
+  "tipo": "Sociedade de Crédito Direto",
+  "compe": "462",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "39929224",
+  "nome": "MINHA KONTA",
+  "cnpj": "39.929.224/0001-18",
+  "tipo": "Instituição de Pagamento não sujeita à autorização pelo BCB",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "40083667",
+  "nome": "CAPITAL CONSIG SCD S.A.",
+  "cnpj": "40.083.667/0001-10",
+  "tipo": "Sociedade de Crédito Direto",
+  "compe": "465",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "40112555",
+  "nome": "GIRO - SCD S/A",
+  "compe": "636",
+  "situacao": "str"
+ },
+ {
+  "ispb": "40276692",
+  "nome": "PROTEGE CASH",
+  "cnpj": "40.276.692/0001-10",
+  "tipo": "Instituição de Pagamento",
+  "compe": "563",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "40333582",
+  "nome": "SAYGO CC S.A.",
+  "compe": "556",
+  "situacao": "str"
+ },
+ {
+  "ispb": "40353377",
+  "nome": "FOURTRADE COR. DE CAMBIO LTDA",
+  "compe": "305",
+  "situacao": "str"
+ },
+ {
+  "ispb": "40434681",
+  "nome": "AZUMI DTVM",
+  "compe": "463",
+  "situacao": "str"
+ },
+ {
+  "ispb": "40473435",
+  "nome": "REPASSES FINANCEIROS E SOLUCOES TECNOLOGICAS IP S.A.",
+  "cnpj": "40.473.435/0001-78",
+  "tipo": "Instituição de Pagamento",
+  "compe": "590",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "40475846",
+  "nome": "J17 - SCD S/A",
+  "cnpj": "40.475.846/0001-00",
+  "tipo": "Sociedade de Crédito Direto",
+  "compe": "451",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "40557732",
+  "nome": "BNS CAPITAL PAGAMENTOS LTDA",
+  "cnpj": "40.557.732/0001-00",
+  "tipo": "Instituição de Pagamento não sujeita à autorização pelo BCB",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "40571694",
+  "nome": "WISE BRASIL IP LTDA.",
+  "cnpj": "40.571.694/0001-31",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "40654622",
+  "nome": "TRINUS SCD S.A.",
+  "cnpj": "40.654.622/0001-58",
+  "tipo": "Sociedade de Crédito Direto",
+  "compe": "444",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "40710595",
+  "nome": "NG CASH IP",
+  "cnpj": "40.710.595/0001-93",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "40735713",
+  "nome": "JRM2",
+  "cnpj": "40.735.713/0001-18",
+  "tipo": "Instituição de Pagamento não sujeita à autorização pelo BCB",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "40768766",
+  "nome": "LIONS TRUST DTVM",
+  "compe": "519",
+  "situacao": "str"
+ },
+ {
+  "ispb": "40820176",
+  "nome": "PAY BROKERS IP",
+  "cnpj": "40.820.176/0001-04",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "40910463",
+  "nome": "BIPA IP",
+  "cnpj": "40.910.463/0001-05",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "41180092",
+  "nome": "COOP SICREDI EXPANSÃO",
+  "cnpj": "41.180.092/0001-16",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "41255225",
+  "nome": "COOP SICREDI CENTRO PERNAMBUCANA PE",
+  "cnpj": "41.255.225/0001-76",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "41538335",
+  "nome": "CLARA IP",
+  "cnpj": "41.538.335/0001-45",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "41592532",
+  "nome": "MÉRITO DTVM LTDA.",
+  "compe": "454",
+  "situacao": "str"
+ },
+ {
+  "ispb": "41669227",
+  "nome": "CCLA PROD RURAIS TRIÂNGULO",
+  "cnpj": "41.669.227/0001-01",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "41697103",
+  "nome": "CC CREDILIVRE LTDA. - SICOOB CREDILIVRE",
+  "cnpj": "41.697.103/0001-30",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "41707258",
+  "nome": "CCLA SANTO ANTONIO DO MONTE",
+  "cnpj": "41.707.258/0001-00",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "41753500",
+  "nome": "CC CARLOS CHAGAS",
+  "cnpj": "41.753.500/0001-81",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "41791005",
+  "nome": "CECM SERV MUN POÇOS DE CALDAS",
+  "cnpj": "41.791.005/0001-67",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "41805003",
+  "nome": "CCLA ALTO SÃO FRANCISCO",
+  "cnpj": "41.805.003/0001-80",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "41931221",
+  "nome": "SICOOB CREDICOOP",
+  "cnpj": "41.931.221/0001-60",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "41931445",
+  "nome": "CC CREDIFOR LTDA",
+  "cnpj": "41.931.445/0001-72",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "42047025",
+  "nome": "UNAVANTI SCD S/A",
+  "cnpj": "42.047.025/0001-90",
+  "tipo": "Sociedade de Crédito Direto",
+  "compe": "460",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "42066258",
+  "nome": "RJI",
+  "compe": "506",
+  "situacao": "str"
+ },
+ {
+  "ispb": "42259084",
+  "nome": "ARTTA SCD",
+  "cnpj": "42.259.084/0001-22",
+  "tipo": "Sociedade de Crédito Direto",
+  "compe": "482",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "42272526",
+  "nome": "BNY MELLON BCO S.A.",
+  "compe": "017",
+  "situacao": "str"
+ },
+ {
+  "ispb": "42547503",
+  "nome": "QYON IP LTDA.",
+  "cnpj": "42.547.503/0001-21",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "adesao"
+ },
+ {
+  "ispb": "42873828",
+  "nome": "CC AGROCREDI LTDA",
+  "cnpj": "42.873.828/0001-02",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "42880617",
+  "nome": "CC SICOOB CREDITIROS",
+  "cnpj": "42.880.617/0001-99",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "42887133",
+  "nome": "CC CREDISUCESSO LTDA. - SICOOB CREDISUCESSO",
+  "cnpj": "42.887.133/0001-71",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "42898825",
+  "nome": "CECM MEDICOS E PROFISSIONAIS AREA SAUDE DO BRASIL",
+  "cnpj": "42.898.825/0001-15",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "42934794",
+  "nome": "CC CREDIPIMENTA",
+  "cnpj": "42.934.794/0001-00",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "42963742",
+  "nome": "BANSUR JM SCD S.A.",
+  "compe": "759",
+  "situacao": "str"
+ },
+ {
+  "ispb": "43180355",
+  "nome": "PEFISA S.A. - C.F.I.",
+  "cnpj": "43.180.355/0001-12",
+  "tipo": "Sociedade de Crédito, Financiamento e Investimento",
+  "compe": "174",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "43394419",
+  "nome": "GOOGLE PAY BRASIL IP LTDA.",
+  "cnpj": "43.394.419/0001-88",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "43599047",
+  "nome": "SUPERLÓGICA SCD S.A.",
+  "cnpj": "43.599.047/0001-26",
+  "tipo": "Sociedade de Crédito Direto",
+  "compe": "481",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "43978697",
+  "nome": "KIKAI SCD S.A.",
+  "cnpj": "43.978.697/0001-82",
+  "tipo": "Sociedade de Crédito Direto",
+  "compe": "688",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "44019481",
+  "nome": "PEAK SEP S.A.",
+  "compe": "521",
+  "situacao": "str"
+ },
+ {
+  "ispb": "44077014",
+  "nome": "BR-CAPITAL DTVM S.A.",
+  "compe": "433",
+  "situacao": "str"
+ },
+ {
+  "ispb": "44189447",
+  "nome": "BCO LA PROVINCIA B AIRES BCE",
+  "compe": "495",
+  "situacao": "str"
+ },
+ {
+  "ispb": "44292580",
+  "nome": "HR DIGITAL SCD",
+  "cnpj": "44.292.580/0001-03",
+  "tipo": "Sociedade de Crédito Direto",
+  "compe": "523",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "44323831",
+  "nome": "ATUAL CC LTDA",
+  "compe": "794",
+  "situacao": "str"
+ },
+ {
+  "ispb": "44373041",
+  "nome": "COOP UNIPRIME CREDICANA",
+  "cnpj": "44.373.041/0001-07",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "44469161",
+  "nome": "COOP SICOOB PRO",
+  "cnpj": "44.469.161/0001-02",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "44478623",
+  "nome": "ATICCA SCD S.A.",
+  "cnpj": "44.478.623/0001-40",
+  "tipo": "Sociedade de Crédito Direto",
+  "compe": "527",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "44663846",
+  "nome": "FESTOR IP LTDA.",
+  "compe": "704",
+  "situacao": "str"
+ },
+ {
+  "ispb": "44683140",
+  "nome": "MAGNUM SCD",
+  "cnpj": "44.683.140/0001-87",
+  "tipo": "Sociedade de Crédito Direto",
+  "compe": "511",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "44704839",
+  "nome": "ZIMPLER BRASIL IP LTDA.",
+  "cnpj": "44.704.839/0001-86",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "44705774",
+  "nome": "SOMAPAY SCD S.A.",
+  "cnpj": "44.705.774/0001-93",
+  "tipo": "Sociedade de Crédito Direto",
+  "compe": "520",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "44728700",
+  "nome": "ATF SCD S.A.",
+  "cnpj": "44.728.700/0001-72",
+  "tipo": "Sociedade de Crédito Direto",
+  "compe": "513",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "44782130",
+  "nome": "ACTUAL DTVM S.A.",
+  "compe": "663",
+  "situacao": "str"
+ },
+ {
+  "ispb": "44815065",
+  "nome": "PAY2ALL IP LTDA.",
+  "cnpj": "44.815.065/0001-60",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "44921281",
+  "nome": "NIXFIN SCD",
+  "cnpj": "44.921.281/0001-90",
+  "tipo": "Sociedade de Crédito Direto",
+  "compe": "792",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "45056494",
+  "nome": "JM CORRETORA DE CÂMBIO",
+  "compe": "697",
+  "situacao": "str"
+ },
+ {
+  "ispb": "45246410",
+  "nome": "BANCO GENIAL",
+  "cnpj": "45.246.410/0001-55",
+  "tipo": "Banco Múltiplo",
+  "compe": "125",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "45283173",
+  "nome": "BBVA BRASIL BI S.A.",
+  "compe": "496",
+  "situacao": "str"
+ },
+ {
+  "ispb": "45331622",
+  "nome": "BNK DIGITAL SCD S.A.",
+  "cnpj": "45.331.622/0001-30",
+  "tipo": "Sociedade de Crédito Direto",
+  "compe": "547",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "45341994",
+  "nome": "CREDIMÓVEL SCD S.A.",
+  "cnpj": "45.341.994/0001-48",
+  "tipo": "Sociedade de Crédito Direto",
+  "situacao": "adesao"
+ },
+ {
+  "ispb": "45548763",
+  "nome": "MAPS IP LTDA.",
+  "cnpj": "45.548.763/0001-00",
+  "tipo": "Instituição de Pagamento",
+  "compe": "592",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "45716916",
+  "nome": "FIDEM SCD S/A",
+  "compe": "678",
+  "situacao": "str"
+ },
+ {
+  "ispb": "45745537",
+  "nome": "FUTURO SCD",
+  "compe": "532",
+  "situacao": "str"
+ },
+ {
+  "ispb": "45756448",
+  "nome": "SELECT CREDIT SCMEPP LTDA.",
+  "cnpj": "45.756.448/0001-78",
+  "tipo": "Sociedade de Crédito ao Microempreendedor",
+  "compe": "537",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "45854066",
+  "nome": "WNT CAPITAL DTVM",
+  "cnpj": "45.854.066/0001-87",
+  "tipo": "Sociedade Distribuidora de TVM",
+  "compe": "524",
+  "situacao": "adesao"
+ },
+ {
+  "ispb": "45860531",
+  "nome": "IDEA MAKER IP LTDA",
+  "cnpj": "45.860.531/0001-92",
+  "tipo": "Instituição de Pagamento",
+  "compe": "476",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "46026562",
+  "nome": "MONETARIE SCD",
+  "cnpj": "46.026.562/0001-05",
+  "tipo": "Sociedade de Crédito Direto",
+  "compe": "526",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "46505612",
+  "nome": "MONERY IP S.A.",
+  "cnpj": "46.505.612/0001-37",
+  "tipo": "Instituição de Pagamento",
+  "compe": "682",
+  "situacao": "adesao"
+ },
+ {
+  "ispb": "46518205",
+  "nome": "JPMORGAN CHASE BANK",
+  "compe": "488",
+  "situacao": "str"
+ },
+ {
+  "ispb": "46642294",
+  "nome": "COOP SICOOB COOPEREMB",
+  "cnpj": "46.642.294/0001-56",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "47074323",
+  "nome": "SICOOB CREDICONSUMO CC",
+  "cnpj": "47.074.323/0001-93",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "47133056",
+  "nome": "TRANSFERO IP LTDA.",
+  "cnpj": "47.133.056/0001-88",
+  "tipo": "Instituição de Pagamento",
+  "compe": "669",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "47377613",
+  "nome": "SOLVER IP",
+  "cnpj": "47.377.613/0001-06",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "adesao"
+ },
+ {
+  "ispb": "47381104",
+  "nome": "CONTAAZUL IP LTDA.",
+  "cnpj": "47.381.104/0001-57",
+  "tipo": "Instituição de Pagamento",
+  "compe": "775",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "47593544",
+  "nome": "RED SCD S.A.",
+  "compe": "522",
+  "situacao": "str"
+ },
+ {
+  "ispb": "47873449",
+  "nome": "SER FINANCE SCD S.A.",
+  "cnpj": "47.873.449/0001-28",
+  "tipo": "Sociedade de Crédito Direto",
+  "compe": "530",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "48176336",
+  "nome": "PAGOL SCD",
+  "cnpj": "48.176.336/0001-36",
+  "tipo": "Sociedade de Crédito Direto",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "48584954",
+  "nome": "DGBK CREDIT S.A. - SOCIEDADE DE CRÉDITO DIRETO.",
+  "cnpj": "48.584.954/0001-15",
+  "tipo": "Sociedade de Crédito Direto",
+  "compe": "575",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "48632754",
+  "nome": "CELCOIN SCD",
+  "compe": "668",
+  "situacao": "str"
+ },
+ {
+  "ispb": "48703388",
+  "nome": "ASA SCFI S.A.",
+  "cnpj": "48.703.388/0001-13",
+  "tipo": "Sociedade de Crédito, Financiamento e Investimento",
+  "compe": "594",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "48707451",
+  "nome": "PERCAPITAL SCD S.A.",
+  "compe": "553",
+  "situacao": "str"
+ },
+ {
+  "ispb": "48756121",
+  "nome": "A55 SCD S.A.",
+  "cnpj": "48.756.121/0001-94",
+  "tipo": "Sociedade de Crédito Direto",
+  "compe": "574",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "48795256",
+  "nome": "BCO ANDBANK S.A.",
+  "compe": "065",
+  "situacao": "str"
+ },
+ {
+  "ispb": "48967968",
+  "nome": "VERT DTVM LTDA.",
+  "compe": "551",
+  "situacao": "str"
+ },
+ {
+  "ispb": "49288113",
+  "nome": "KANASTRA CFI",
+  "cnpj": "49.288.113/0001-23",
+  "tipo": "Sociedade de Crédito, Financiamento e Investimento",
+  "compe": "559",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "49389307",
+  "nome": "CC COOPLIVRE",
+  "cnpj": "49.389.307/0001-15",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "49555647",
+  "nome": "QUADRA SCD",
+  "compe": "579",
+  "situacao": "str"
+ },
+ {
+  "ispb": "49931906",
+  "nome": "TRIO IP LTDA.",
+  "cnpj": "49.931.906/0001-19",
+  "tipo": "Instituição de Pagamento",
+  "compe": "619",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "50032584",
+  "nome": "LOAN BRASIL SCD S.A.",
+  "compe": "696",
+  "situacao": "str"
+ },
+ {
+  "ispb": "50489148",
+  "nome": "MONTE BRAVO CTVM S.A.",
+  "compe": "571",
+  "situacao": "str"
+ },
+ {
+  "ispb": "50579044",
+  "nome": "LEVYCAM CCV LTDA",
+  "compe": "145",
+  "situacao": "str"
+ },
+ {
+  "ispb": "50585090",
+  "nome": "BANCO BMG CONSIGNADO S.A.",
+  "compe": "250",
+  "situacao": "str"
+ },
+ {
+  "ispb": "50626276",
+  "nome": "KONECT SCD S/A",
+  "compe": "598",
+  "situacao": "str"
+ },
+ {
+  "ispb": "50735161",
+  "nome": "COOP CRESOL MATO GROSSO",
+  "cnpj": "50.735.161/0001-00",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "50871921",
+  "nome": "MT IP S.A.",
+  "cnpj": "50.871.921/0001-06",
+  "tipo": "Instituição de Pagamento",
+  "compe": "681",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "50946592",
+  "nome": "SETHI SCD SA",
+  "compe": "585",
+  "situacao": "str"
+ },
+ {
+  "ispb": "51118615",
+  "nome": "INTEGRAÇÃO DE CRÉDITO E COBRANÇA SCD",
+  "cnpj": "51.118.615/0001-58",
+  "tipo": "Sociedade de Crédito Direto",
+  "compe": "701",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "51212088",
+  "nome": "G5 SCD SA",
+  "cnpj": "51.212.088/0001-46",
+  "tipo": "Sociedade de Crédito Direto",
+  "compe": "589",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "51342763",
+  "nome": "REVOLUT SCD S.A.",
+  "cnpj": "51.342.763/0001-51",
+  "tipo": "Sociedade de Crédito Direto",
+  "compe": "620",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "51414521",
+  "nome": "ALL IN CRED SCD S.A.",
+  "cnpj": "51.414.521/0001-26",
+  "tipo": "Sociedade de Crédito Direto",
+  "compe": "572",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "51489318",
+  "nome": "CECM MAGISTRADOS DE SÃO PAULO",
+  "cnpj": "51.489.318/0001-19",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "52067630",
+  "nome": "BANCO TRATON BRASIL S.A.",
+  "compe": "795",
+  "situacao": "str"
+ },
+ {
+  "ispb": "52076716",
+  "nome": "AWX BRASIL IP LTDA.",
+  "cnpj": "52.076.716/0001-76",
+  "tipo": "Instituição de Pagamento",
+  "compe": "786",
+  "situacao": "adesao"
+ },
+ {
+  "ispb": "52440987",
+  "nome": "SANTS SCD S.A.",
+  "cnpj": "52.440.987/0001-69",
+  "tipo": "Sociedade de Crédito Direto",
+  "compe": "614",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "52586293",
+  "nome": "Z-ON SCD S.A.",
+  "cnpj": "52.586.293/0001-34",
+  "tipo": "Sociedade de Crédito Direto",
+  "compe": "632",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "52833288",
+  "nome": "LB PAY IP LTDA",
+  "cnpj": "52.833.288/0001-89",
+  "tipo": "Instituição de Pagamento",
+  "compe": "766",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "53058329",
+  "nome": "LA FINTECA IP LTDA",
+  "compe": "785",
+  "situacao": "str"
+ },
+ {
+  "ispb": "53505601",
+  "nome": "STONE CFI S.A.",
+  "compe": "672",
+  "situacao": "str"
+ },
+ {
+  "ispb": "53518684",
+  "nome": "BCO HSBC S.A.",
+  "cnpj": "53.518.684/0001-84",
+  "tipo": "Banco Múltiplo",
+  "compe": "269",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "53575491",
+  "nome": "COOP CRESOL PRIMATO CREDI",
+  "cnpj": "53.575.491/0001-65",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "53623781",
+  "nome": "CC COOPCRED",
+  "cnpj": "53.623.781/0001-37",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "53720128",
+  "nome": "CONTA SIMPLES SCD S.A.",
+  "cnpj": "53.720.128/0001-96",
+  "tipo": "Sociedade de Crédito Direto",
+  "compe": "023",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "53776852",
+  "nome": "COOP CREDICENTRO",
+  "cnpj": "53.776.852/0001-31",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "53822116",
+  "nome": "MW IP LTDA.",
+  "compe": "700",
+  "situacao": "str"
+ },
+ {
+  "ispb": "53841911",
+  "nome": "CCI UNINDÚSTRIA",
+  "cnpj": "53.841.911/0001-08",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "53842122",
+  "nome": "URBANO S.A. SCFI",
+  "cnpj": "53.842.122/0001-91",
+  "tipo": "Sociedade de Crédito, Financiamento e Investimento",
+  "compe": "761",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "53908413",
+  "nome": "KIWIFY IP",
+  "cnpj": "53.908.413/0001-35",
+  "tipo": "Instituição de Pagamento",
+  "compe": "773",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "53935029",
+  "nome": "CCLA SICOOB COOCRELIVRE",
+  "cnpj": "53.935.029/0001-21",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "54024532",
+  "nome": "MAX IP",
+  "cnpj": "54.024.532/0001-98",
+  "tipo": "Instituição de Pagamento",
+  "compe": "790",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "54037916",
+  "nome": "CC CREDICITRUS",
+  "cnpj": "54.037.916/0001-45",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "54190525",
+  "nome": "SICOOB CRESSEM",
+  "cnpj": "54.190.525/0001-66",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "54264235",
+  "nome": "VBS SCD S.A.",
+  "cnpj": "54.264.235/0001-10",
+  "tipo": "Sociedade de Crédito Direto",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "54401286",
+  "nome": "CC COCRE",
+  "cnpj": "54.401.286/0001-46",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "54403563",
+  "nome": "BCO ARBI S.A.",
+  "cnpj": "54.403.563/0001-50",
+  "tipo": "Banco Comercial",
+  "compe": "213",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "54641030",
+  "nome": "Câmara B3",
+  "compe": "0",
+  "situacao": "str"
+ },
+ {
+  "ispb": "54647259",
+  "nome": "321 SCD S.A.",
+  "compe": "644",
+  "situacao": "str"
+ },
+ {
+  "ispb": "54811417",
+  "nome": "WOOVI IP LTDA.",
+  "cnpj": "54.811.417/0001-63",
+  "tipo": "Instituição de Pagamento",
+  "compe": "694",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "55230916",
+  "nome": "INTESA SANPAOLO BRASIL S.A. BM",
+  "compe": "139",
+  "situacao": "str"
+ },
+ {
+  "ispb": "55428859",
+  "nome": "FREEX SCC S.A.",
+  "compe": "661",
+  "situacao": "str"
+ },
+ {
+  "ispb": "55823094",
+  "nome": "DELTA GLOBAL SCD S.A.",
+  "cnpj": "55.823.094/0001-90",
+  "tipo": "Sociedade de Crédito Direto",
+  "compe": "680",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "56106523",
+  "nome": "VUE IP S.A.",
+  "cnpj": "56.106.523/0001-71",
+  "tipo": "Instituição de Pagamento",
+  "compe": "763",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "56198117",
+  "nome": "ZYDI",
+  "cnpj": "56.198.117/0001-86",
+  "tipo": "Sociedade de Crédito Direto",
+  "compe": "692",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "56392166",
+  "nome": "HARMOS S.A. - SCFI",
+  "compe": "684",
+  "situacao": "str"
+ },
+ {
+  "ispb": "57030391",
+  "nome": "NDD PAY",
+  "cnpj": "57.030.391/0001-04",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "57487987",
+  "nome": "VIVO PAY SCD S.A.",
+  "cnpj": "57.487.987/0001-38",
+  "tipo": "Sociedade de Crédito Direto",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "57654096",
+  "nome": "APUSDIGITAL IP LTDA.",
+  "compe": "789",
+  "situacao": "str"
+ },
+ {
+  "ispb": "57824223",
+  "nome": "WX IP LTDA.",
+  "cnpj": "57.824.223/0001-90",
+  "tipo": "Instituição de Pagamento",
+  "compe": "771",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "57839805",
+  "nome": "BCO TRICURY S.A.",
+  "compe": "018",
+  "situacao": "str"
+ },
+ {
+  "ispb": "58006471",
+  "nome": "BASE DTVM",
+  "compe": "781",
+  "situacao": "str"
+ },
+ {
+  "ispb": "58160789",
+  "nome": "BCO SAFRA S.A.",
+  "cnpj": "58.160.789/0001-28",
+  "tipo": "Banco Múltiplo",
+  "compe": "422",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "58367961",
+  "nome": "BIT SCD S.A.",
+  "compe": "698",
+  "situacao": "str"
+ },
+ {
+  "ispb": "58497702",
+  "nome": "BANCO LETSBANK S.A. - EM LIQUIDAÇÃO EXTRAJUDICIAL",
+  "compe": "630",
+  "situacao": "str"
+ },
+ {
+  "ispb": "58616418",
+  "nome": "BCO FIBRA S.A.",
+  "cnpj": "58.616.418/0001-08",
+  "tipo": "Banco Múltiplo",
+  "compe": "224",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "58674454",
+  "nome": "PB SCD",
+  "compe": "778",
+  "situacao": "str"
+ },
+ {
+  "ispb": "59109165",
+  "nome": "BCO VOLKSWAGEN S.A",
+  "compe": "393",
+  "situacao": "str"
+ },
+ {
+  "ispb": "59118133",
+  "nome": "BCO LUSO BRASILEIRO S.A.",
+  "cnpj": "59.118.133/0001-00",
+  "tipo": "Banco Múltiplo",
+  "compe": "600",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "59274605",
+  "nome": "BCO GM S.A.",
+  "compe": "390",
+  "situacao": "str"
+ },
+ {
+  "ispb": "59285411",
+  "nome": "BANCO PAN",
+  "cnpj": "59.285.411/0001-13",
+  "tipo": "Banco Múltiplo",
+  "compe": "623",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "59396084",
+  "nome": "BFC SCD S.A.",
+  "cnpj": "59.396.084/0001-77",
+  "tipo": "Sociedade de Crédito Direto",
+  "compe": "699",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "59588111",
+  "nome": "BCO VOTORANTIM S.A.",
+  "cnpj": "59.588.111/0001-03",
+  "tipo": "Banco Múltiplo",
+  "compe": "655",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "59869560",
+  "nome": "CC NOSSO - SICOOB NOSSO",
+  "cnpj": "59.869.560/0001-20",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "60394079",
+  "nome": "BCO ITAUBANK S.A.",
+  "compe": "479",
+  "situacao": "str"
+ },
+ {
+  "ispb": "60498557",
+  "nome": "BCO MUFG BRASIL S.A.",
+  "compe": "456",
+  "situacao": "str"
+ },
+ {
+  "ispb": "60518222",
+  "nome": "BCO SUMITOMO MITSUI BRASIL S.A.",
+  "compe": "464",
+  "situacao": "str"
+ },
+ {
+  "ispb": "60701190",
+  "nome": "ITAÚ UNIBANCO S.A.",
+  "cnpj": "60.701.190/0001-04",
+  "tipo": "Banco Múltiplo",
+  "compe": "341",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "60746948",
+  "nome": "BCO BRADESCO S.A.",
+  "cnpj": "60.746.948/0001-12",
+  "tipo": "Banco Múltiplo",
+  "compe": "237",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "60779196",
+  "nome": "CREFISA S.A. CFI",
+  "cnpj": "60.779.196/0001-96",
+  "tipo": "Sociedade de Crédito, Financiamento e Investimento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "60814191",
+  "nome": "BCO MERCEDES-BENZ S.A.",
+  "compe": "381",
+  "situacao": "str"
+ },
+ {
+  "ispb": "60849822",
+  "nome": "COOP CREDI COOPERALFA",
+  "cnpj": "60.849.822/0001-73",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "60850229",
+  "nome": "OMNI BANCO S.A.",
+  "cnpj": "60.850.229/0001-47",
+  "tipo": "Banco Múltiplo",
+  "compe": "613",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "60889128",
+  "nome": "BCO SOFISA S.A.",
+  "cnpj": "60.889.128/0001-80",
+  "tipo": "Banco Múltiplo",
+  "compe": "637",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "60934221",
+  "nome": "Câmbio B3",
+  "compe": "0",
+  "situacao": "str"
+ },
+ {
+  "ispb": "61021673",
+  "nome": "MAGALUPAY SCFI S.A.",
+  "compe": "793",
+  "situacao": "str"
+ },
+ {
+  "ispb": "61024352",
+  "nome": "BM PLENO S.A. - EM LIQUIDAÇÃO EXTRAJUDICIAL",
+  "compe": "653",
+  "situacao": "str"
+ },
+ {
+  "ispb": "61033106",
+  "nome": "BCO CREFISA S.A.",
+  "cnpj": "61.033.106/0001-86",
+  "tipo": "Banco Comercial",
+  "compe": "069",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "61088183",
+  "nome": "BCO MIZUHO S.A.",
+  "compe": "370",
+  "situacao": "str"
+ },
+ {
+  "ispb": "61182408",
+  "nome": "BANCO INVESTCRED UNIBANCO S.A.",
+  "compe": "249",
+  "situacao": "str"
+ },
+ {
+  "ispb": "61186680",
+  "nome": "BCO BMG S.A.",
+  "cnpj": "61.186.680/0001-74",
+  "tipo": "Banco Múltiplo",
+  "compe": "318",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "61348538",
+  "nome": "BCO C6 CONSIG",
+  "compe": "626",
+  "situacao": "str"
+ },
+ {
+  "ispb": "61384004",
+  "nome": "AVENUE SECURITIES BI S.A.",
+  "compe": "508",
+  "situacao": "str"
+ },
+ {
+  "ispb": "61533584",
+  "nome": "BCO SOCIETE GENERALE BRASIL",
+  "compe": "366",
+  "situacao": "str"
+ },
+ {
+  "ispb": "61637240",
+  "nome": "GO SCD S.A.",
+  "cnpj": "61.637.240/0001-96",
+  "tipo": "Sociedade de Crédito Direto",
+  "situacao": "adesao"
+ },
+ {
+  "ispb": "61723847",
+  "nome": "NEON CTVM S.A.",
+  "compe": "113",
+  "situacao": "str"
+ },
+ {
+  "ispb": "61747085",
+  "nome": "TULLETT PREBON BRASIL CVC LTDA",
+  "compe": "131",
+  "situacao": "str"
+ },
+ {
+  "ispb": "61809182",
+  "nome": "UBS (BRASIL) CORRETORA DE VALORES S.A.",
+  "compe": "011",
+  "situacao": "str"
+ },
+ {
+  "ispb": "61820817",
+  "nome": "BCO PAULISTA S.A.",
+  "cnpj": "61.820.817/0001-09",
+  "tipo": "Banco Múltiplo",
+  "compe": "611",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "62073200",
+  "nome": "BOFA MERRILL LYNCH BM S.A.",
+  "cnpj": "62.073.200/0001-21",
+  "tipo": "Banco Múltiplo",
+  "compe": "755",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "62109566",
+  "nome": "CREDISAN CC",
+  "cnpj": "62.109.566/0001-03",
+  "tipo": "Cooperativa de Crédito",
+  "compe": "089",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "62144175",
+  "nome": "BCO PINE S.A.",
+  "cnpj": "62.144.175/0001-20",
+  "tipo": "Banco Múltiplo",
+  "compe": "643",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "62169875",
+  "nome": "NU INVESTIMENTOS S.A. - CTVM",
+  "compe": "140",
+  "situacao": "str"
+ },
+ {
+  "ispb": "62232889",
+  "nome": "BCO DAYCOVAL S.A",
+  "cnpj": "62.232.889/0001-90",
+  "tipo": "Banco Múltiplo",
+  "compe": "707",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "62237649",
+  "nome": "CAROL DTVM LTDA.",
+  "compe": "288",
+  "situacao": "str"
+ },
+ {
+  "ispb": "62264924",
+  "nome": "QORE",
+  "compe": "767",
+  "situacao": "str"
+ },
+ {
+  "ispb": "62285390",
+  "nome": "QI CTVM S.A.",
+  "cnpj": "62.285.390/0001-40",
+  "tipo": "Sociedade Corretora de TVM",
+  "compe": "363",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "62287735",
+  "nome": "WARREN RENA DTVM",
+  "compe": "101",
+  "situacao": "str"
+ },
+ {
+  "ispb": "62331228",
+  "nome": "DEUTSCHE BANK S.A.BCO ALEMAO",
+  "compe": "487",
+  "situacao": "str"
+ },
+ {
+  "ispb": "62421979",
+  "nome": "BANCO BMG SOLUÇÕES FINANCEIRAS S.A.",
+  "compe": "233",
+  "situacao": "str"
+ },
+ {
+  "ispb": "62448932",
+  "nome": "MULTIPLIKE FINANCEIRA S.A. SCFI",
+  "cnpj": "62.448.932/0001-59",
+  "tipo": "Sociedade de Crédito, Financiamento e Investimento",
+  "compe": "791",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "62673470",
+  "nome": "CC SICOOB COOPMIL",
+  "cnpj": "62.673.470/0001-73",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "62931522",
+  "nome": "CCC ESTADO SP - CECRESP",
+  "cnpj": "62.931.522/0001-64",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "63019146",
+  "nome": "ANKOR CFI S.A.",
+  "compe": "564",
+  "situacao": "str"
+ },
+ {
+  "ispb": "63917579",
+  "nome": "CCC DO ESTADO DE SÃO PAULO",
+  "cnpj": "63.917.579/0001-71",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "64237530",
+  "nome": "CC CREDIUNA LTDA",
+  "cnpj": "64.237.530/0001-30",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "64276058",
+  "nome": "CC CREDINORTE - SICOOB CREDINORTE",
+  "cnpj": "64.276.058/0001-45",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "64480833",
+  "nome": "CC CREDIMAC LTDA - SICOOB CREDIMAC",
+  "cnpj": "64.480.833/0001-80",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "64739121",
+  "nome": "SICOOB CRED COPERCANA",
+  "cnpj": "64.739.121/0001-32",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "65229254",
+  "nome": "CC COOPACREDI",
+  "cnpj": "65.229.254/0001-21",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "65239402",
+  "nome": "CC UNIÃO DO CENTRO OESTE DE MINAS",
+  "cnpj": "65.239.402/0001-99",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "65697260",
+  "nome": "REPOM",
+  "cnpj": "65.697.260/0001-03",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "66259110",
+  "nome": "CC CREDIBAM LTDA.",
+  "cnpj": "66.259.110/0001-80",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "66262643",
+  "nome": "CCLA DE POMPEU LTDA.",
+  "cnpj": "66.262.643/0001-11",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "66398496",
+  "nome": "CC CREDIARA LTDA.",
+  "cnpj": "66.398.496/0001-01",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "66402207",
+  "nome": "COOPERATIVA DE CRÉDITO SAROM",
+  "cnpj": "66.402.207/0001-09",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "66463407",
+  "nome": "CCLA DE ITAÚNA E REGIÃO LTDA",
+  "cnpj": "66.463.407/0001-63",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "67030395",
+  "nome": "TRUSTEE DTVM LTDA. - EM LIQUIDAÇÃO EXTRAJUDICIAL",
+  "compe": "438",
+  "situacao": "str"
+ },
+ {
+  "ispb": "67096909",
+  "nome": "CC CREDICOCAPEC",
+  "cnpj": "67.096.909/0001-66",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "67915868",
+  "nome": "SICOOB CREDIPRODESP",
+  "cnpj": "67.915.868/0001-92",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "67960229",
+  "nome": "CC CREDIGUAÇU",
+  "cnpj": "67.960.229/0001-49",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "68512748",
+  "nome": "CC CREDIESMERALDAS LTDA.",
+  "cnpj": "68.512.748/0001-07",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "68757681",
+  "nome": "BINANCE BRASIL",
+  "cnpj": "68.757.681/0001-70",
+  "tipo": "Sociedade Corretora de TVM",
+  "compe": "365",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "68900810",
+  "nome": "BCO RENDIMENTO S.A.",
+  "cnpj": "68.900.810/0001-38",
+  "tipo": "Banco Comercial",
+  "compe": "633",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "68969625",
+  "nome": "CECM EMP USAGRO",
+  "cnpj": "68.969.625/0001-08",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "69346856",
+  "nome": "COOP SICOOB CREDIMOGIANA",
+  "cnpj": "69.346.856/0001-10",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "70038237",
+  "nome": "COOP SICREDI RIO GRANDE DO NORTE",
+  "cnpj": "70.038.237/0001-47",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "70116611",
+  "nome": "SICOOB CENTRAL NE",
+  "cnpj": "70.116.611/0001-85",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "70241658",
+  "nome": "SICREDI RECIFE",
+  "cnpj": "70.241.658/0001-70",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "70431630",
+  "nome": "COOP SICREDI UNIVALES MT/RO",
+  "cnpj": "70.431.630/0001-04",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "70937271",
+  "nome": "CCLA PROF SAÚDE UNICRED ALIANÇA",
+  "cnpj": "70.937.271/0001-53",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "71027866",
+  "nome": "BCO BS2 S.A.",
+  "cnpj": "71.027.866/0001-34",
+  "tipo": "Banco Múltiplo",
+  "compe": "218",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "71146450",
+  "nome": "CCLA CAMPOS GERAIS E CAMPO DO",
+  "cnpj": "71.146.450/0001-35",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "71154256",
+  "nome": "CC SACRAMENTO",
+  "cnpj": "71.154.256/0001-00",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "71154876",
+  "nome": "COOP CREDIPINHO LTDA - SICOOB CREDIPINHO",
+  "cnpj": "71.154.876/0001-30",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "71163315",
+  "nome": "UNICRED AMPLA",
+  "cnpj": "71.163.315/0001-06",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "71207740",
+  "nome": "CCR IRAI - SICOOB CREDIMIL",
+  "cnpj": "71.207.740/0001-41",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "71230338",
+  "nome": "CCLA ARCOS",
+  "cnpj": "71.230.338/0001-88",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "71237184",
+  "nome": "CC CREDIBELO LTDA. - SICOOB CREDIBELO",
+  "cnpj": "71.237.184/0001-56",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "71238232",
+  "nome": "CC CENTRO SUL MINEIRO",
+  "cnpj": "71.238.232/0001-20",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "71243034",
+  "nome": "COOPERATIVA DE CRÉDITO CREDIJEQUITINHONHA LTDA.",
+  "cnpj": "71.243.034/0001-55",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "71297899",
+  "nome": "CCLA OESTE MINEIRO LTDA-SICOOB",
+  "cnpj": "71.297.899/0001-02",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "71328769",
+  "nome": "SICOOB COCRED CC",
+  "cnpj": "71.328.769/0001-81",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "71336432",
+  "nome": "SICOOB CREDIMED - CCLA DE UBERABA LTDA",
+  "cnpj": "71.336.432/0001-16",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "71392047",
+  "nome": "CC MONTECREDI LTDA.",
+  "cnpj": "71.392.047/0001-96",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "71418784",
+  "nome": "UNICRED SUL DE MINAS",
+  "cnpj": "71.418.784/0001-10",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "71419600",
+  "nome": "CCLA DA REGIÃO DE FRUTAL",
+  "cnpj": "71.419.600/0001-37",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "71432926",
+  "nome": "CCPS E LA DO TRIANG MINEIRO E SUL DE MG LTDA",
+  "cnpj": "71.432.926/0001-02",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "71441406",
+  "nome": "CCLA PEDRO LEOPOLDO",
+  "cnpj": "71.441.406/0001-58",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "71506513",
+  "nome": "CC SICOOB ITAPAGIPE",
+  "cnpj": "71.506.513/0001-17",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "71590442",
+  "nome": "LASTRO RDV DTVM LTDA",
+  "compe": "293",
+  "situacao": "str"
+ },
+ {
+  "ispb": "71698674",
+  "nome": "COOP SICOOB MANTIQUEIRA",
+  "cnpj": "71.698.674/0001-50",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "71884498",
+  "nome": "UNICRED DO ESTADO DE SÃO PAULO",
+  "cnpj": "71.884.498/0001-40",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "72128440",
+  "nome": "COOP SICREDI RIO RJ",
+  "cnpj": "72.128.440/0001-30",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "72257793",
+  "nome": "COOP SICREDI VEREDAS",
+  "cnpj": "72.257.793/0001-30",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "73092827",
+  "nome": "CCM SERV MIN EDUC SÃO PAULO",
+  "cnpj": "73.092.827/0001-46",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "73113243",
+  "nome": "COOP SICREDI MORADA DO SOL SP",
+  "cnpj": "73.113.243/0001-00",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "73302408",
+  "nome": "EXIM SCC",
+  "compe": "514",
+  "situacao": "str"
+ },
+ {
+  "ispb": "73326449",
+  "nome": "COOP LIVRE ADMISSÃO DE ASSOCIADOS SICOOB CRUZ ALTA LTDA",
+  "cnpj": "73.326.449/0001-18",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "73398646",
+  "nome": "SOC CC SICOOB COOPERE",
+  "cnpj": "73.398.646/0001-42",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "73422792",
+  "nome": "CCLA RUBIATABA REGIAO",
+  "cnpj": "73.422.792/0001-66",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "73443863",
+  "nome": "COOP UNICRED VALE LTDA.",
+  "cnpj": "73.443.863/0001-07",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "73622748",
+  "nome": "BT CC LTDA.",
+  "compe": "080",
+  "situacao": "str"
+ },
+ {
+  "ispb": "73647935",
+  "nome": "COOP UNIQUE BR LTDA.",
+  "cnpj": "73.647.935/0001-38",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "73750424",
+  "nome": "CECM UNICRED INTEGRAÇÃO",
+  "cnpj": "73.750.424/0001-47",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "74014747",
+  "nome": "ÁGORA CTVM S.A.",
+  "compe": "565",
+  "situacao": "str"
+ },
+ {
+  "ispb": "74064502",
+  "nome": "CC UNICRED VALOR CAPITAL LTDA - UNICRED VALOR CAPITAL",
+  "cnpj": "74.064.502/0001-12",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "74114042",
+  "nome": "CC UNICRED UNIÃO LTDA - UNICRED UNIÃO",
+  "cnpj": "74.114.042/0001-90",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "74248949",
+  "nome": "CCM SERV MUN S JOAO BOA VISTA",
+  "cnpj": "74.248.949/0001-41",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "74828799",
+  "nome": "NOVO BCO CONTINENTAL S.A. - BM",
+  "cnpj": "74.828.799/0001-45",
+  "tipo": "Banco Múltiplo",
+  "compe": "753",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "75647891",
+  "nome": "BCO CRÉDIT AGRICOLE BR S.A.",
+  "compe": "222",
+  "situacao": "str"
+ },
+ {
+  "ispb": "76059997",
+  "nome": "COOP SICREDI PROGRESSO PR/SP",
+  "cnpj": "76.059.997/0001-17",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "76461557",
+  "nome": "CCR COOPAVEL",
+  "cnpj": "76.461.557/0001-91",
+  "tipo": "Cooperativa de Crédito",
+  "compe": "281",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "76543115",
+  "nome": "BANCO SISTEMA",
+  "compe": "754",
+  "situacao": "str"
+ },
+ {
+  "ispb": "77984870",
+  "nome": "COOP SICREDI PLANALT DAS ÁGUAS",
+  "cnpj": "77.984.870/0001-77",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "78414067",
+  "nome": "COOP SICREDI VANGUARDA PR/SP/RJ",
+  "cnpj": "78.414.067/0001-60",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "78483310",
+  "nome": "CCLA ITAPIRANGA",
+  "cnpj": "78.483.310/0001-00",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "78626983",
+  "nome": "BCO VR S.A.",
+  "cnpj": "78.626.983/0001-63",
+  "tipo": "Banco Múltiplo",
+  "compe": "610",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "78632767",
+  "nome": "OURIBANK S.A.",
+  "cnpj": "78.632.767/0001-20",
+  "tipo": "Banco Múltiplo",
+  "compe": "712",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "78825023",
+  "nome": "CCLAA OESTE CATARINENSE",
+  "cnpj": "78.825.023/0001-22",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "78825270",
+  "nome": "CCLAA SICOOB MAXICRÉDITO",
+  "cnpj": "78.825.270/0001-29",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "78834975",
+  "nome": "CCLA DO VALE DO CANOINHAS",
+  "cnpj": "78.834.975/0001-02",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "78840071",
+  "nome": "COOP SICOOB CREDIAUC",
+  "cnpj": "78.840.071/0001-90",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "78858107",
+  "nome": "CCLAA AURIVERDE-SICOOB CREDIAL",
+  "cnpj": "78.858.107/0001-62",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "78862083",
+  "nome": "COOP NOVOS CAMPOS",
+  "cnpj": "78.862.083/0001-15",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "78865995",
+  "nome": "CCLA VALE DO RIO DO PEIXE",
+  "cnpj": "78.865.995/0001-40",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "78907607",
+  "nome": "COOP SICREDI CENT SUL PR/SC/RJ",
+  "cnpj": "78.907.607/0001-47",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "79052122",
+  "nome": "COOP SICREDI ALIANÇA",
+  "cnpj": "79.052.122/0001-81",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "79063574",
+  "nome": "COOP SICREDI NORTE SUL",
+  "cnpj": "79.063.574/0001-69",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "79086997",
+  "nome": "COOP SICREDI PARANAPANEMA SERRANA PR/SP/RJ",
+  "cnpj": "79.086.997/0001-02",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "79342069",
+  "nome": "COOP SICREDI DEXIS",
+  "cnpj": "79.342.069/0001-53",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "79457883",
+  "nome": "COOP SICREDI AGROEMPRESARIAL",
+  "cnpj": "79.457.883/0001-13",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "80160260",
+  "nome": "CCC SICOOB CENTRAL SC/RS",
+  "cnpj": "80.160.260/0001-63",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "80959612",
+  "nome": "CC ALTO VALE DO ITAJAÍ",
+  "cnpj": "80.959.612/0001-45",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "80959638",
+  "nome": "CCLA MEIO OESTE CATARINENSE",
+  "cnpj": "80.959.638/0001-93",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "81011686",
+  "nome": "CC DO NORTE CATARINENSE E SUL PARANAENSE",
+  "cnpj": "81.011.686/0001-18",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "81014060",
+  "nome": "CCLAA ITAIPU SICOOB CREDITAIPU",
+  "cnpj": "81.014.060/0001-65",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "81016131",
+  "nome": "CCLA VALE DO VINHO",
+  "cnpj": "81.016.131/0001-69",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "81054686",
+  "nome": "COOP SICREDI INTEGRAÇÃO PR/SC",
+  "cnpj": "81.054.686/0001-03",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "81099491",
+  "nome": "COOP SICREDI VALE DO PIQUIRI",
+  "cnpj": "81.099.491/0001-71",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "81115149",
+  "nome": "COOP SICREDI GRANDES LAGOS",
+  "cnpj": "81.115.149/0001-18",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "81192106",
+  "nome": "COOP SICREDI NOSSA TERRA PR/SP",
+  "cnpj": "81.192.106/0001-36",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "81206039",
+  "nome": "COOP SICREDI RIO PARANÁ",
+  "cnpj": "81.206.039/0001-61",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "81292278",
+  "nome": "CC ORIGINAL - SICOOB ORIGINAL",
+  "cnpj": "81.292.278/0001-81",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "81367880",
+  "nome": "CCLA SUL CATARINENSE",
+  "cnpj": "81.367.880/0001-30",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "81466286",
+  "nome": "COOP SICREDI CAMPOS GERAIS E GRANDE CURITIBA PR/SP",
+  "cnpj": "81.466.286/0001-05",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "81607046",
+  "nome": "CCLAA SAO MIGUEL DO OESTE",
+  "cnpj": "81.607.046/0001-75",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "81706616",
+  "nome": "COOP SICREDI VLR SUSTENT PR/SP",
+  "cnpj": "81.706.616/0001-84",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "81723108",
+  "nome": "CREDICOAMO",
+  "cnpj": "81.723.108/0001-04",
+  "tipo": "Cooperativa de Crédito",
+  "compe": "010",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "82065285",
+  "nome": "COOP SICREDI SOMA",
+  "cnpj": "82.065.285/0001-03",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "82096447",
+  "nome": "COOP CREDI\u0026GENTE",
+  "cnpj": "82.096.447/0001-70",
+  "tipo": "Cooperativa de Crédito",
+  "compe": "440",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "82133182",
+  "nome": "CC DO VALE EUROPEU - SICOOB EURO VALE",
+  "cnpj": "82.133.182/0001-33",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "82527557",
+  "nome": "COOP SICREDI FRONTEIR PR/SC/SP",
+  "cnpj": "82.527.557/0001-40",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "82639451",
+  "nome": "COOP VIACREDI",
+  "cnpj": "82.639.451/0001-38",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "82842386",
+  "nome": "INFOPAGO",
+  "cnpj": "82.842.386/0001-43",
+  "tipo": "Instituição de Pagamento não sujeita à autorização pelo BCB",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "83836114",
+  "nome": "CCLA DO ESTADO DO PARÁ - SICOOB COOESA",
+  "cnpj": "83.836.114/0001-01",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "84156470",
+  "nome": "CC INTEGRANTES MIN PUBL E PODER JUDIC AP E CE E CCLA PA",
+  "cnpj": "84.156.470/0001-39",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "84974278",
+  "nome": "COOP SICREDI IGUAÇU PR/SC E REGIÃO METROP. DE CAMPINAS/SP",
+  "cnpj": "84.974.278/0001-50",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "85291086",
+  "nome": "CC LITORÂNEA",
+  "cnpj": "85.291.086/0001-01",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "86389236",
+  "nome": "COOP SICOOB UNI SUDESTE",
+  "cnpj": "86.389.236/0001-87",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "86564051",
+  "nome": "CC NOROESTE DE MINAS",
+  "cnpj": "86.564.051/0001-61",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "86585049",
+  "nome": "SICOOB CREDILEITE",
+  "cnpj": "86.585.049/0001-79",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "86791837",
+  "nome": "SICOOB VALE DOS PINHAIS",
+  "cnpj": "86.791.837/0001-11",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "86829827",
+  "nome": "CCLA DO VALE",
+  "cnpj": "86.829.827/0001-28",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "87067757",
+  "nome": "COOP SICREDI CENTRO SERRA",
+  "cnpj": "87.067.757/0001-80",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "87510475",
+  "nome": "COOP SICREDI ROTA DAS TERRAS",
+  "cnpj": "87.510.475/0001-06",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "87733077",
+  "nome": "COOP SICREDI ESSÊNCIA",
+  "cnpj": "87.733.077/0001-59",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "87733770",
+  "nome": "COOP. CRED. POUP. INVEST. CONEXÃO",
+  "cnpj": "87.733.770/0001-21",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "87779625",
+  "nome": "COOPERATIVA DE CRÉDITO COOPERAÇÃO - SICREDI COOPERAÇÃO",
+  "cnpj": "87.779.625/0001-81",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "87780268",
+  "nome": "COOP SICREDI UNIESTADOS",
+  "cnpj": "87.780.268/0001-71",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "87780284",
+  "nome": "COOP SICREDI VL JAGUA ZN MATA",
+  "cnpj": "87.780.284/0001-64",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "87781530",
+  "nome": "SICREDI INTEGRAÇÃO DE ESTADOS RS/SC/MG",
+  "cnpj": "87.781.530/0001-00",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "87784088",
+  "nome": "COOP SICREDI SUL MINAS RS/MG",
+  "cnpj": "87.784.088/0001-68",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "87795639",
+  "nome": "COOP SICREDI ALIANÇA",
+  "cnpj": "87.795.639/0001-99",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "87853206",
+  "nome": "COOP SICREDI OURO BRANCO RS/MG",
+  "cnpj": "87.853.206/0001-42",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "87900411",
+  "nome": "COOP SICREDI SEMENTES DO SUL",
+  "cnpj": "87.900.411/0001-11",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "87900601",
+  "nome": "COOP SICREDI BOTUCARAÍ RS/MG",
+  "cnpj": "87.900.601/0001-39",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "88038260",
+  "nome": "COOP SICREDI PLANALTO RS/MG",
+  "cnpj": "88.038.260/0001-05",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "88099247",
+  "nome": "COOP SICREDI RAIZES RS/SC/MG",
+  "cnpj": "88.099.247/0001-58",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "88471024",
+  "nome": "COOP SICREDI GERAÇÕES RS/MG",
+  "cnpj": "88.471.024/0001-70",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "88530142",
+  "nome": "COOP DE CRED E INVEST LIBERDADE - SICREDI LIBERDADE",
+  "cnpj": "88.530.142/0001-01",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "88894548",
+  "nome": "COOP SICREDI UNIÃO RS",
+  "cnpj": "88.894.548/0001-73",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "89049738",
+  "nome": "COOP SICREDI CONFIANÇA",
+  "cnpj": "89.049.738/0001-57",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "89126130",
+  "nome": "COOP SICREDI REGIÃO DOS VALES",
+  "cnpj": "89.126.130/0001-89",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "89280960",
+  "nome": "CECM DOS EMPR DAS EMP RANDON",
+  "cnpj": "89.280.960/0001-66",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "89468565",
+  "nome": "COOP SICREDI REG PROD RS/SC/MG",
+  "cnpj": "89.468.565/0001-01",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "89960090",
+  "nome": "RB INVESTIMENTOS DTVM LTDA.",
+  "compe": "283",
+  "situacao": "str"
+ },
+ {
+  "ispb": "89990501",
+  "nome": "COOP SICREDI IBIRAIARAS RS/MG",
+  "cnpj": "89.990.501/0001-76",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "90400888",
+  "nome": "BCO SANTANDER (BRASIL) S.A.",
+  "cnpj": "90.400.888/0001-42",
+  "tipo": "Banco Múltiplo",
+  "compe": "033",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "90497256",
+  "nome": "COOP SICREDI INTERESTADOS",
+  "cnpj": "90.497.256/0001-49",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "90608712",
+  "nome": "COOP SICREDI SERRANA",
+  "cnpj": "90.608.712/0001-80",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "90729369",
+  "nome": "COOP SICREDI CULTURAS RS/MG",
+  "cnpj": "90.729.369/0001-22",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "91159764",
+  "nome": "COOP SICREDI INTEGRAÇÃO RS/MG",
+  "cnpj": "91.159.764/0001-80",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "91586982",
+  "nome": "COOP SICREDI PIONEIRA RS",
+  "cnpj": "91.586.982/0001-09",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "91669747",
+  "nome": "DM SCFI",
+  "cnpj": "91.669.747/0001-92",
+  "tipo": "Sociedade de Crédito, Financiamento e Investimento",
+  "compe": "646",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "91884981",
+  "nome": "BANCO JOHN DEERE S.A.",
+  "compe": "217",
+  "situacao": "str"
+ },
+ {
+  "ispb": "92555150",
+  "nome": "COOP SICREDI ALT SERRA RS/SC",
+  "cnpj": "92.555.150/0001-80",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "92702067",
+  "nome": "BCO DO ESTADO DO RS S.A.",
+  "cnpj": "92.702.067/0001-96",
+  "tipo": "Banco Múltiplo",
+  "compe": "041",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "92796564",
+  "nome": "COOP SICREDI ORIGENS RS",
+  "cnpj": "92.796.564/0001-09",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "92825397",
+  "nome": "COOPCRECE",
+  "compe": "543",
+  "situacao": "str"
+ },
+ {
+  "ispb": "92874270",
+  "nome": "BCO DIGIMAIS S.A.",
+  "compe": "654",
+  "situacao": "str"
+ },
+ {
+  "ispb": "92894922",
+  "nome": "BANCO ORIGINAL",
+  "cnpj": "92.894.922/0001-08",
+  "tipo": "Banco Múltiplo",
+  "compe": "212",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "92934215",
+  "nome": "BANRISUL PAGAMENTOS IP",
+  "cnpj": "92.934.215/0001-06",
+  "tipo": "Instituição de Pagamento",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "94243839",
+  "nome": "UNICRED PIONEIRA",
+  "cnpj": "94.243.839/0001-02",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "94433109",
+  "nome": "CECM MÉD DE PORTO ALEGRE",
+  "cnpj": "94.433.109/0001-66",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "94968518",
+  "nome": "EFX CC LTDA.",
+  "compe": "289",
+  "situacao": "str"
+ },
+ {
+  "ispb": "95163002",
+  "nome": "UNICRED ELEVA",
+  "cnpj": "95.163.002/0001-08",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "95213211",
+  "nome": "COOP SICREDI CAMINHO DAS ÁGUAS RS",
+  "cnpj": "95.213.211/0001-19",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "95424891",
+  "nome": "COOP SICREDI VALE DO RIO PARDO",
+  "cnpj": "95.424.891/0001-10",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "95594941",
+  "nome": "COOP SICREDI REG CENTRO RS/MG",
+  "cnpj": "95.594.941/0001-07",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "97259253",
+  "nome": "CREDISIS CREDIPLAN - COOP DE CRÉD DE LIVRE ADMISSÃO DO PLANA",
+  "cnpj": "97.259.253/0001-16",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ },
+ {
+  "ispb": "97489280",
+  "nome": "COOP SICREDI INTEGRAÇÃO BAHIA - BA",
+  "cnpj": "97.489.280/0001-85",
+  "tipo": "Cooperativa de Crédito",
+  "situacao": "ativo"
+ }
+]
