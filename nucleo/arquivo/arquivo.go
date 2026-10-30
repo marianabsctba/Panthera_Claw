@@ -148,7 +148,7 @@ func jpeg(i *Info, d []byte) {
 		}
 		marca := d[k+1]
 		tam := int(binary.BigEndian.Uint16(d[k+2:]))
-		if marca == 0xDA || k+2+tam > len(d) {
+		if marca == 0xDA || tam < 2 || k+2+tam > len(d) {
 			return
 		}
 		seg := d[k+4 : k+2+tam]

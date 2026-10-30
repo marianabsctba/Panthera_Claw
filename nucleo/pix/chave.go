@@ -68,11 +68,17 @@ func LerChave(s string) Chave {
 			} else if !ddds[d[:2]] {
 				c.Tipo, c.Motivo, c.Impossivel = ChaveInvalida, "o DDD "+d[:2]+" não existe", true
 			}
-		case len(so) == 11:
+		case len(so) == 11 && CPFValido(so):
 			c.Tipo = ChaveCPF
-			if !CPFValido(so) {
-				c.Tipo, c.Motivo, c.Impossivel = ChaveInvalida, "esse CPF não existe: os dígitos finais não batem", true
-			}
+		case (len(so) == 11 || len(so) == 10) && pareceTelefone(s, so):
+			// Celular impresso sem o +55: "(11) 98765-4321".
+			c.Tipo = ChaveTelefone
+		case len(so) == 11:
+			// Onze dígitos que não formam CPF válido. Só é impossível se
+			// estiver escrito como CPF (000.000.000-00); sem formatação
+			// pode ser telefone ou erro de leitura.
+			c.Tipo, c.Motivo = ChaveInvalida, "esse CPF não existe: os dígitos finais não batem"
+			c.Impossivel = reCPFFormatado.MatchString(s)
 		case len(so) == 14:
 			c.Tipo = ChaveCNPJ
 			if !CNPJValido(so) {
@@ -83,6 +89,23 @@ func LerChave(s string) Chave {
 		}
 	}
 	return c
+}
+
+var (
+	reCPFFormatado = regexp.MustCompile(`^\d{3}\.\d{3}\.\d{3}-\d{2}$`)
+	reTelefone     = regexp.MustCompile(`^\(?\d{2}\)?[\s-]*9?\d{4}[\s-]?\d{4}$`)
+)
+
+// pareceTelefone: DDD existente e, no celular de 11 dígitos, o 9 na frente;
+// ou escrito como telefone, com parênteses no DDD.
+func pareceTelefone(s, so string) bool {
+	if !ddds[so[:2]] || reCPFFormatado.MatchString(s) {
+		return false
+	}
+	if strings.Contains(s, "(") {
+		return reTelefone.MatchString(strings.TrimSpace(s))
+	}
+	return len(so) == 11 && so[2] == '9'
 }
 
 func somenteDocumento(s string) string {

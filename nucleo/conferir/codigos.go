@@ -43,7 +43,7 @@ func ConferirCodigo(s string, agora time.Time) ResultadoCodigo {
 
 // ConferirBoleto confere a linha digitável ou o código de barras.
 func ConferirBoleto(s string, agora time.Time) ResultadoCodigo {
-	r := ResultadoCodigo{Tipo: "boleto"}
+	r := ResultadoCodigo{Tipo: "boleto", Resumo: []Linha{}, Achados: []Achado{}}
 	add := func(cod, peso, titulo, detalhe string) {
 		r.Achados = append(r.Achados, Achado{cod, peso, titulo, detalhe})
 	}
@@ -73,7 +73,9 @@ func ConferirBoleto(s string, agora time.Time) ResultadoCodigo {
 		}
 		if b.Vencimento != "" {
 			r.Resumo = append(r.Resumo, Linha{"Vencimento", b.Vencimento})
-			if v, err := time.Parse("02/01/2006", b.Vencimento); err == nil && v.Before(agora.AddDate(0, 0, -1)) {
+			// Compara datas no horário de Brasília: o boleto vence no fim do dia.
+			hoje := agora.In(pix.Brasilia).Format("2006-01-02")
+			if v, err := time.Parse("02/01/2006", b.Vencimento); err == nil && v.Format("2006-01-02") < hoje {
 				add("vencido", Info, "O vencimento ("+b.Vencimento+") já passou. Pode haver juros, ou o boleto pode ter sido trocado por um antigo.", "")
 			}
 		}
@@ -94,7 +96,7 @@ func ConferirBoleto(s string, agora time.Time) ResultadoCodigo {
 
 // ConferirPixCodigo confere o Pix copia e cola (o texto do QR Code).
 func ConferirPixCodigo(s string) ResultadoCodigo {
-	r := ResultadoCodigo{Tipo: "pix"}
+	r := ResultadoCodigo{Tipo: "pix", Resumo: []Linha{}, Achados: []Achado{}}
 	add := func(cod, peso, titulo, detalhe string) {
 		r.Achados = append(r.Achados, Achado{cod, peso, titulo, detalhe})
 	}

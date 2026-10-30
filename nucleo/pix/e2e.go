@@ -30,8 +30,9 @@ type E2E struct {
 // 2019, antes do lançamento do Pix, então o deslocamento fixo é exato.
 var Brasilia = time.FixedZone("Brasília", -3*3600)
 
-// Lancamento é o início da operação do Pix (16/11/2020).
-var Lancamento = time.Date(2020, 11, 16, 0, 0, 0, 0, Brasilia)
+// Lancamento é o início da operação do Pix: a fase restrita, com parte dos
+// clientes, começou em 03/11/2020; o lançamento geral foi em 16/11/2020.
+var Lancamento = time.Date(2020, 11, 3, 0, 0, 0, 0, Brasilia)
 
 // ErroE2E explica, em linguagem simples, por que o texto não é um
 // identificador possível.

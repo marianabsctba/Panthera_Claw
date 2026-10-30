@@ -153,3 +153,26 @@ func PorCompe(compe string) (Banco, bool) {
 	}
 	return Banco{}, false
 }
+
+// ReconhecerLogo reconhece a marca no topo do comprovante, onde fica o nome
+// do aplicativo. É mais exigente que Reconhecer: a linha tem que ser só a
+// marca ("nubank", "Banco Inter") ou conter um nome de várias palavras
+// ("nu pagamentos"). Assim um nome de pessoa como "Cora Lima" não vira o
+// banco Cora.
+func ReconhecerLogo(linha string) *Grupo {
+	n := Normalizar(linha)
+	if n == "" {
+		return nil
+	}
+	for i, m := range marcas {
+		for _, t := range m.termos {
+			if n == t || n == "banco "+t {
+				return grupos[i]
+			}
+			if strings.Contains(t, " ") && len(t) >= 8 && strings.Contains(" "+n+" ", " "+t+" ") {
+				return grupos[i]
+			}
+		}
+	}
+	return nil
+}
