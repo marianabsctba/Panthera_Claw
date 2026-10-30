@@ -29,6 +29,10 @@ type Campos struct {
 	// IDDuvidoso indica que o final do código, na imagem, tinha mais ou
 	// menos caracteres do que deveria: a pessoa precisa conferir.
 	IDDuvidoso bool `json:"idDuvidoso,omitempty"`
+	// Situacao indica Pix agendado, pendente, cancelado ou devolvido, e
+	// SituacaoTrecho a linha do comprovante que diz isso.
+	Situacao       string `json:"situacao,omitempty"`
+	SituacaoTrecho string `json:"situacaoTrecho,omitempty"`
 }
 
 // A leitura de imagem costuma trocar o @ por "(Q", "(@" ou "©".
@@ -83,6 +87,7 @@ func Ler(texto string) Campos {
 
 	c.ID = acharID(texto)
 	c.IDDuvidoso = duvidoso(texto, c.ID)
+	c.Situacao, c.SituacaoTrecho = LerSituacao(texto)
 
 	sec := nenhuma
 	for i, l := range linhas {

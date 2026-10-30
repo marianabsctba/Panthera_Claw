@@ -148,3 +148,19 @@ func TestIDDuvidoso(t *testing.T) {
 		t.Error("final com 12 caracteres deveria ser duvidoso")
 	}
 }
+
+func TestSituacao(t *testing.T) {
+	casos := map[string]string{
+		"Comprovante de agendamento\nPix agendado para 30/10/2026": SituacaoAgendado,
+		"Status: Em processamento":                                 SituacaoPendente,
+		"Transferência cancelada":                                  SituacaoCancelado,
+		"Comprovante de devolução":                                 SituacaoDevolvido,
+		"Comprovante de transferência\nPix enviado":                "",
+		"Sem pendências":                                           "",
+	}
+	for texto, quer := range casos {
+		if s, _ := LerSituacao(texto); s != quer {
+			t.Errorf("%q: %q, quero %q", texto, s, quer)
+		}
+	}
+}

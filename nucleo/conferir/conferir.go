@@ -20,10 +20,11 @@ import (
 
 // Pesos de um achado.
 const (
-	Falso  = "falso"  // impossível num comprovante verdadeiro
-	Alerta = "alerta" // suspeito, mas pode ter explicação
-	OK     = "ok"     // conferido e certo
-	Info   = "info"   // informação, sem peso
+	Falso   = "falso"    // impossível num comprovante verdadeiro
+	Alerta  = "alerta"   // suspeito, mas pode ter explicação
+	NaoPago = "nao_pago" // agendado, pendente, cancelado ou devolvido
+	OK      = "ok"       // conferido e certo
+	Info    = "info"     // informação, sem peso
 )
 
 // Vereditos.
@@ -32,6 +33,7 @@ const (
 	VereditoSuspeito   = "suspeito"
 	VereditoSemErros   = "sem_erros"
 	VereditoIncompleto = "incompleto"
+	VereditoNaoPago    = "nao_pago"
 )
 
 // Achado é uma conferência, com uma frase simples e o detalhe técnico.
@@ -137,6 +139,10 @@ func Conferir(e Entrada) Resultado {
 		}
 	}
 
+	if c.Situacao != "" {
+		add("situacao-"+c.Situacao, NaoPago, frasesSituacao[c.Situacao], "No comprovante: "+c.SituacaoTrecho)
+	}
+
 	if c.Valor != "" && valorZero(c.Valor) {
 		add("valor-zero", Alerta, "O valor do comprovante é zero.", "Valor: "+c.Valor)
 	}
@@ -147,6 +153,13 @@ func Conferir(e Entrada) Resultado {
 
 	r.Veredito = veredito(r.Achados, cod != nil)
 	return r
+}
+
+var frasesSituacao = map[string]string{
+	leitura.SituacaoAgendado:  "O comprovante é de um Pix agendado, não de um pagamento feito. Um agendamento pode ser cancelado a qualquer momento antes da data.",
+	leitura.SituacaoPendente:  "O comprovante mostra um Pix que ainda não foi concluído (pendente ou em processamento). O dinheiro pode não chegar.",
+	leitura.SituacaoCancelado: "O comprovante mostra um Pix cancelado ou que não foi realizado.",
+	leitura.SituacaoDevolvido: "O comprovante é de um Pix devolvido, não de um pagamento.",
 }
 
 var nomeChave = map[string]string{
@@ -350,16 +363,20 @@ func conferirVistos(e Entrada, cod *pix.E2E, add func(string, string, string, st
 }
 
 func veredito(as []Achado, temCodigo bool) string {
-	alerta := false
+	alerta, naoPago := false, false
 	for _, a := range as {
-		if a.Peso == Falso {
+		switch a.Peso {
+		case Falso:
 			return VereditoFalso
-		}
-		if a.Peso == Alerta {
+		case Alerta:
 			alerta = true
+		case NaoPago:
+			naoPago = true
 		}
 	}
 	switch {
+	case naoPago:
+		return VereditoNaoPago
 	case alerta:
 		return VereditoSuspeito
 	case !temCodigo:
